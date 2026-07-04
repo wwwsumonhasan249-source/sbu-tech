@@ -1,4 +1,3 @@
-html
 <!DOCTYPE html>
 <html lang="bn">
 <head>
@@ -19,8 +18,9 @@ html
             --accent: #e91e63;
             --text: #ffffff;
             --border: rgba(255, 255, 255, 0.06);
-            --radius: 18px;
-            --header-height: 75px;
+            --radius: 14px;
+            --header-height: 70px;
+            --max-player-height: 420px;
         }
         body {
             font-family: 'Inter', sans-serif;
@@ -29,9 +29,8 @@ html
             min-height: 100vh;
             overflow-y: auto;
         }
-        
         .app-container {
-            max-width: 1400px;
+            max-width: 1350px;
             margin: 0 auto;
             background: var(--card);
             min-height: 100vh;
@@ -40,57 +39,56 @@ html
             display: flex;
             flex-direction: column;
         }
-
-        /* ===== হেডার ===== */
         .app-header {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 12px 24px;
-            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 24px;
+            background: rgba(0, 0, 0, 0.85);
             backdrop-filter: blur(10px);
             border-bottom: 1px solid var(--border);
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 8px;
             position: sticky;
             top: 0;
             z-index: 100;
             height: var(--header-height);
-            min-height: 65px;
+            min-height: 60px;
         }
         .brand {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
         }
         .brand .logo-icon {
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 800;
             color: var(--accent);
             background: rgba(233, 30, 99, 0.15);
-            width: 42px;
-            height: 42px;
+            width: 38px;
+            height: 38px;
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 12px;
+            border-radius: 10px;
         }
         .brand h1 {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             font-weight: 800;
             background: linear-gradient(135deg, #fff 60%, var(--accent));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            white-space: nowrap;  }
+            white-space: nowrap;
+        }
         .profile-area {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
         }
         .profile-img {
-            width: 42px;
-            height: 42px;
+            width: 38px;
+            height: 38px;
             border-radius: 50%;
             object-fit: cover;
             border: 2px solid var(--accent);
@@ -98,33 +96,25 @@ html
         }
         .profile-name {
             font-weight: 600;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: #ccc;
         }
         .profile-name span {
             color: var(--accent);
         }
-
-        /* ===== মেইন গ্রিড ===== */
         .main-grid {
             display: flex;
             flex-direction: row;
             flex: 1;
-            min-height: calc(100vh - var(--header-height));
         }
-
-        /* ===== প্লেয়ার সেকশন ===== */
         .player-section {
             flex: 2;
             padding: 12px 16px 10px 20px;
             display: flex;
             flex-direction: column;
             background: #000;
-            position: sticky;
-            top: var(--header-height);
-            align-self: flex-start;
-            z-index: 50;
-            max-height: calc(100vh - var(--header-height));
+            max-height: var(--max-player-height);
+            min-height: 300px;
         }
         .video-wrapper {
             position: relative;
@@ -133,6 +123,7 @@ html
             border-radius: var(--radius);
             overflow: hidden;
             flex-shrink: 0;
+            max-height: 380px;
         }
         #main-player {
             position: absolute;
@@ -141,30 +132,28 @@ html
             width: 100% !important;
             height: 100% !important;
         }
-
-        /* ===== নিউজ ফিড (ম্যারি) ===== */
         .news-ticker {
             background: rgba(233, 30, 99, 0.08);
-            border: 1px solid rgba(233, 30, 99, 0.15);
-            border-radius: 10px;
-            padding: 8px 16px;
-            margin-top: 10px;
+            border: 1px solid rgba(233, 30, 99, 0.12);
+            border-radius: 8px;
+            padding: 6px 14px;
+            margin-top: 8px;
             overflow: hidden;
-            position: relative;
-            height: 38px;
+            height: 32px;
             display: flex;
             align-items: center;
+            flex-shrink: 0;
         }
         .news-ticker .ticker-label {
             font-weight: 700;
             color: var(--accent);
-            font-size: 0.7rem;
+            font-size: 0.6rem;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 0.8px;
             background: rgba(233, 30, 99, 0.15);
-            padding: 2px 12px;
+            padding: 2px 10px;
             border-radius: 20px;
-            margin-right: 14px;
+            margin-right: 12px;
             flex-shrink: 0;
             white-space: nowrap;
         }
@@ -175,8 +164,8 @@ html
         }
         .news-ticker .ticker-text {
             display: inline-block;
-            animation: tickerScroll 15s linear infinite;
-            font-size: 0.85rem;
+            animation: tickerScroll 18s linear infinite;
+            font-size: 0.8rem;
             font-weight: 500;
             color: #ddd;
             padding-left: 20px;
@@ -187,17 +176,19 @@ html
         }
         .news-ticker .ticker-text:hover {
             animation-play-state: paused;
-        }.player-footer {
+        }
+        .player-footer {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: 8px;
-            padding: 0 4px;
+            margin-top: 6px;
+            padding: 0 2px;
             flex-wrap: wrap;
-            gap: 6px;
+            gap: 4px;
+            flex-shrink: 0;
         }
         .now-playing {
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             font-weight: 600;
             color: #eee;
             white-space: nowrap;
@@ -208,30 +199,30 @@ html
         .player-controls {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
         }
         .credit-text {
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             font-weight: 600;
             color: var(--accent);
             background: rgba(233, 30, 99, 0.12);
-            padding: 4px 14px;
+            padding: 3px 12px;
             border-radius: 40px;
-            border: 1px solid rgba(233, 30, 99, 0.2);
+            border: 1px solid rgba(233, 30, 99, 0.15);
         }
         .fullscreen-btn {
             background: rgba(255, 255, 255, 0.08);
             border: 1px solid var(--border);
             color: #fff;
-            padding: 6px 12px;
+            padding: 5px 12px;
             border-radius: 8px;
             cursor: pointer;
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             font-weight: 600;
             transition: 0.2s;
             display: flex;
             align-items: center;
-            gap: 6px;
+            gap: 5px;
         }
         .fullscreen-btn:hover {
             background: var(--accent);
@@ -242,12 +233,10 @@ html
             height: 14px;
             fill: currentColor;
         }
-
-        /* ===== সাইডবার ===== */
         .sidebar {
             flex: 1;
-            min-width: 260px;
-            max-width: 380px;
+            min-width: 250px;
+            max-width: 360px;
             background: var(--card);
             border-left: 1px solid var(--border);
             display: flex;
@@ -258,7 +247,7 @@ html
             overflow: hidden;
         }
         .search-box {
-            padding: 14px 18px 10px 18px;
+            padding: 12px 16px 10px 16px;
             border-bottom: 1px solid var(--border);
             flex-shrink: 0;
             background: var(--card);
@@ -266,12 +255,12 @@ html
         }
         #channelSearch {
             width: 100%;
-            padding: 10px 14px;
+            padding: 9px 14px;
             border-radius: 40px;
             border: 1px solid var(--border);
             background: rgba(255, 255, 255, 0.04);
             color: #fff;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             outline: none;
             transition: 0.2s;
         }
@@ -282,19 +271,18 @@ html
         #channelSearch::placeholder {
             color: rgba(255, 255, 255, 0.25);
         }
-
         .category-tabs {
             display: flex;
             flex-wrap: wrap;
-            gap: 5px;
-            margin-top: 10px;
+            gap: 4px;
+            margin-top: 8px;
         }
         .cat-tab {
-            padding: 4px 12px;
+            padding: 3px 10px;
             border-radius: 30px;
             background: rgba(255, 255, 255, 0.05);
             color: #aaa;
-            font-size: 0.6rem;
+            font-size: 0.55rem;
             font-weight: 600;
             border: none;
             cursor: pointer;
@@ -308,22 +296,23 @@ html
         }
         .cat-tab:hover {
             background: rgba(255, 255, 255, 0.1);
-        }  .channel-list {
+        }
+        .channel-list {
             list-style: none;
-            padding: 12px 16px 20px 16px;
+            padding: 10px 14px 16px 14px;
             margin: 0;
             overflow-y: auto;
             flex: 1;
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-            gap: 10px;
+            grid-template-columns: repeat(auto-fill, minmax(95px, 1fr));
+            gap: 8px;
             align-content: start;
         }
         .channel-item {
             background: rgba(255, 255, 255, 0.03);
-            border-radius: 12px;
+            border-radius: 10px;
             cursor: pointer;
-            padding: 12px 6px;
+            padding: 10px 4px;
             text-align: center;
             border: 2px solid transparent;
             transition: 0.2s;
@@ -331,29 +320,28 @@ html
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            min-height: 75px;
+            min-height: 65px;
         }
         .channel-item:hover {
             background: rgba(255, 255, 255, 0.06);
-            transform: translateY(-2px);
+            transform: translateY(-1px);
         }
         .channel-item.active {
             border-color: var(--accent);
             background: rgba(233, 30, 99, 0.06);
         }
         .channel-item .ch-name {
-            font-size: 0.7rem;
+            font-size: 0.65rem;
             font-weight: 600;
             color: #ddd;
-            line-height: 1.3;
+            line-height: 1.2;
             word-break: break-word;
         }
         .channel-item .ch-icon {
-            font-size: 22px;
-            margin-bottom: 4px;
+            font-size: 20px;
+            margin-bottom: 3px;
             opacity: 0.6;
         }
-
         .channel-list::-webkit-scrollbar {
             width: 4px;
         }
@@ -361,8 +349,6 @@ html
             background: rgba(255, 255, 255, 0.12);
             border-radius: 10px;
         }
-
-        /* ===== ফুলস্ক্রিন ===== */
         .app-container.fullscreen-mode {
             max-width: 100% !important;
             border-left: none !important;
@@ -375,12 +361,20 @@ html
             flex: 1 !important;
             padding: 0 !important;
             max-height: 100vh !important;
+            min-height: 100vh !important;
+            position: fixed !important;
             top: 0 !important;
+            left: 0 !important;
+            width: 100vw !important;
+            height: 100vh !important;
+            z-index: 9999 !important;
+            background: #000 !important;
         }
         .app-container.fullscreen-mode .video-wrapper {
             border-radius: 0 !important;
             padding-top: 0 !important;
             height: 100vh !important;
+            max-height: 100vh !important;
         }
         .app-container.fullscreen-mode .player-footer,
         .app-container.fullscreen-mode .news-ticker {
@@ -398,31 +392,29 @@ html
             z-index: 9999 !important;
             border-radius: 0 !important;
         }
-
-        /* ===== যোগাযোগ সেকশন (ফুটার) ===== */
         .contact-footer {
             background: rgba(0, 0, 0, 0.4);
             border-top: 1px solid var(--border);
-            padding: 20px 30px;
+            padding: 14px 24px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 8px;
-            margin-top: auto;
+            gap: 6px;
+            flex-shrink: 0;
         }
         .contact-footer .contact-title {
-            font-size: 0.8rem;
+            font-size: 0.7rem;
             font-weight: 600;
             color: #888;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 1.5px;
         }
         .contact-footer .contact-info {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 20px 40px;
-            font-size: 0.85rem;
+            gap: 16px 30px;
+            font-size: 0.8rem;
             color: #ccc;
         }
         .contact-footer .contact-info a {
@@ -438,123 +430,51 @@ html
         .contact-footer .contact-info .contact-item {
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
         }
         .contact-footer .contact-info .contact-item .icon {
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
-
-        /* ===== রেসপন্সিভ ===== */
+        .contact-footer .copyright {
+            font-size: 0.55rem;
+            color: #555;
+            margin-top: 2px;
+        }
         @media (max-width: 992px) {
-            .main-grid {
-                flex-direction: column;
-                min-height: auto;
-            }
-            .player-section {
-                position: relative !important;
-                top: 0 !important;
-                max-height: none !important;
-                padding: 12px;
-            }
-            .sidebar {
-                min-width: 100%;
-                max-width: 100%;
-                border-left: none;
-                border-top: 1px solid var(--border);
-                height: 55vh;
-                position: relative !important;
-                top: 0 !important;
-            }
-            .channel-list {
-                grid-template-columns: repeat(auto-fill, minmax(85px, 1fr));
-                gap: 8px;
-                padding: 10px 12px;
-            }
-            .brand h1 {
-                font-size: 1.1rem;
-            }
-            .profile-img {
-                width: 36px;
-                height: 36px;
-            }
-            .now-playing {
-                font-size: 0.8rem;
-                max-width: 50%;
-            }
-            .credit-text {
-                font-size: 0.6rem;
-                padding: 3px 10px;
-            }
-            .app-header {
-                padding: 10px 16px;
-                height: auto;
-                min-height: 60px;
-                position: relative !important;
-            }
-            .fullscreen-btn {
-                padding: 4px 10px;
-                font-size: 0.65rem;
-            }
-            .news-ticker {
-                height: 34px;
-                padding: 4px 12px;
-            }
-            .news-ticker .ticker-text {
-                font-size: 0.75rem;
-                animation-duration: 12s;
-            }
-            .contact-footer {
-                padding: 16px 20px;
-            }
-            .contact-footer .contact-info {
-                gap: 12px 20px;
-                font-size: 0.75rem;
-            }
-        }@media (max-width: 480px) {
-            .channel-list {
-                grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
-            }
-            .channel-item {
-                min-height: 60px;
-                padding: 8px 4px;
-            }
-            .channel-item .ch-name {
-                font-size: 0.55rem;
-            }
-            .brand .logo-icon {
-                width: 32px;
-                height: 32px;
-                font-size: 16px;
-            }
-            .brand h1 {
-                font-size: 0.85rem;
-            }
-            .profile-name {
-                font-size: 0.65rem;
-            }
-            .app-header {
-                padding: 8px 12px;
-                gap: 6px;
-            }
-            .player-section {
-                padding: 8px;
-            }
-            .news-ticker .ticker-text {
-                font-size: 0.65rem;
-                animation-duration: 10s;
-            }
-            .contact-footer .contact-info {
-                flex-direction: column;
-                align-items: center;
-                gap: 6px;
-            }
+            .main-grid { flex-direction: column; }
+            .player-section { max-height: none !important; min-height: 260px !important; padding: 10px; position: relative !important; }
+            .video-wrapper { max-height: 320px !important; }
+            .sidebar { min-width: 100%; max-width: 100%; border-left: none; border-top: 1px solid var(--border); height: 55vh; position: relative !important; top: 0 !important; }
+            .channel-list { grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); gap: 6px; padding: 8px 10px; }
+            .brand h1 { font-size: 1rem; }
+            .profile-img { width: 34px; height: 34px; }
+            .now-playing { font-size: 0.75rem; max-width: 45%; }
+            .credit-text { font-size: 0.55rem; padding: 2px 8px; }
+            .app-header { padding: 8px 14px; height: auto; min-height: 55px; position: relative !important; }
+            .fullscreen-btn { padding: 3px 8px; font-size: 0.6rem; }
+            .news-ticker { height: 28px; padding: 4px 10px; }
+            .news-ticker .ticker-text { font-size: 0.7rem; animation-duration: 14s; }
+            .contact-footer { padding: 12px 16px; }
+            .contact-footer .contact-info { gap: 10px 16px; font-size: 0.7rem; }
+        }
+        @media (max-width: 480px) {
+            .player-section { min-height: 200px !important; padding: 6px; }
+            .video-wrapper { max-height: 220px !important; }
+            .channel-list { grid-template-columns: repeat(auto-fill, minmax(65px, 1fr)); }
+            .channel-item { min-height: 55px; padding: 6px 3px; }
+            .channel-item .ch-name { font-size: 0.5rem; }
+            .brand .logo-icon { width: 28px; height: 28px; font-size: 14px; }
+            .brand h1 { font-size: 0.8rem; }
+            .profile-name { font-size: 0.6rem; }
+            .app-header { padding: 6px 10px; gap: 4px; min-height: 48px; }
+            .news-ticker .ticker-text { font-size: 0.6rem; animation-duration: 10s; }
+            .contact-footer .contact-info { flex-direction: column; align-items: center; gap: 4px; font-size: 0.65rem; }
+            .now-playing { font-size: 0.65rem; max-width: 40%; }
         }
     </style>
 </head>
 <body>
-
 <div class="app-container" id="appContainer">
-    <!-- ===== হেডার ===== -->
     <header class="app-header">
         <div class="brand">
             <div class="logo-icon">📺</div>
@@ -567,16 +487,12 @@ html
         </div>
     </header>
 
-    <!-- ===== মেইন গ্রিড ===== -->
     <div class="main-grid">
-
-        <!-- প্লেয়ার সেকশন -->
         <section class="player-section" id="playerSection">
             <div class="video-wrapper" id="videoWrapper">
                 <div id="main-player"></div>
             </div>
 
-            <!-- ===== নিউজ ফিড (ম্যারি) ===== -->
             <div class="news-ticker">
                 <span class="ticker-label">📰 BREAKING</span>
                 <div class="ticker-content">
@@ -599,7 +515,6 @@ html
             </div>
         </section>
 
-        <!-- সাইডবার -->
         <aside class="sidebar">
             <div class="search-box">
                 <input id="channelSearch" placeholder="🔍 চ্যানেল খুঁজুন..." autocomplete="off" />
@@ -618,8 +533,8 @@ html
             </div>
             <ul class="channel-list" id="channelList"></ul>
         </aside>
+    </div>
 
-    </div><!-- ===== যোগাযোগ সেকশন (ফুটার) ===== -->
     <footer class="contact-footer">
         <div class="contact-title">📬 যোগাযোগ করুন</div>
         <div class="contact-info">
@@ -632,11 +547,8 @@ html
                 <a href="mailto:ww.sumanhasan249@gmail.com">ww.sumanhasan249@gmail.com</a>
             </span>
         </div>
-        <div style="font-size:0.6rem;color:#555;margin-top:4px;">
-            &copy; 2026 SBU TV Player - All Rights Reserved
-        </div>
+        <div class="copyright">&copy; 2026 SBU TV Player - All Rights Reserved</div>
     </footer>
-
 </div>
 
 <script>
@@ -655,35 +567,25 @@ html
     let channels = [];
     let isFullscreen = false;
 
-    // ===== নিউজ ফিড কাস্টমাইজ (এখানে আপনার লেখা পরিবর্তন করুন) =====
-    // আপনি চাইলে নিচের লাইনটি পরিবর্তন করে আপনার নিজের লেখা দিতে পারেন
     newsText.textContent = 'স্বাগতম SBU TV Player-এ | সর্বশেষ খবর, স্পোর্টস, বিনোদন ও আরও অনেক কিছু | লাইভ স্ট্রিমিং উপভোগ করুন | আপনার মতামত আমাদের কাছে গুরুত্বপূর্ণ';
 
-    // ===== ফুলস্ক্রিন =====
     function toggleFullscreen() {
         isFullscreen = !isFullscreen;
         appContainer.classList.toggle('fullscreen-mode', isFullscreen);
         fullscreenBtn.innerHTML = isFullscreen ? 
             '✕ বেরুন' : 
             '<svg viewBox="0 0 24 24" style="width:14px;height:14px;fill:currentColor;"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg> ফুল স্ক্রিন';
-        
-        if (isFullscreen) {
-            document.body.style.overflow = 'hidden';
-        } else {
-            document.body.style.overflow = '';
-        }
+        document.body.style.overflow = isFullscreen ? 'hidden' : '';
     }
 
     fullscreenBtn.addEventListener('click', toggleFullscreen);
 
-    // ===== JW Player =====
     function setupPlayer(url) {
         if (jwInstance) {
             jwInstance.load([{ file: url }]);
             jwInstance.play();
             return;
         }
-
         jwInstance = jwplayer('main-player').setup({
             file: url,
             width: '100%',
@@ -701,7 +603,6 @@ html
             androidhls: true,
             playbackRateControls: false
         });
-
         jwInstance.on('error', function(e) {
             console.log('JW Player Error:', e);
             if (e.message) {
@@ -710,7 +611,6 @@ html
         });
     }
 
-    // ===== JSON লোড =====
     fetch('tv_channels.json')
         .then(res => {
             if (!res.ok) throw new Error('JSON লোড হয়নি');
@@ -724,7 +624,6 @@ html
             channels = data.channels.filter(ch => ch.status !== 'hidden');
             buildChannelList(channels);
             if (allItems.length) allItems[0].click();
-
             const cats = new Set(channels.map(c => c.category));
             tabs.forEach(tab => {
                 const cat = tab.dataset.cat;
@@ -737,51 +636,38 @@ html
             console.error(err);
             listEl.innerHTML = `<li style="grid-column:1/-1;text-align:center;color:#888;padding:30px;">⚠️ tv_channels.json পাওয়া যায়নি<br><small style="color:#555;">ফাইলটি index.html-এর পাশে রাখুন</small></li>`;
         });
- // ===== চ্যানেল লিস্ট =====
+
     function buildChannelList(channelArray) {
         listEl.innerHTML = '';
         allItems = [];
-
         channelArray.forEach((ch) => {
             const li = document.createElement('li');
             li.className = 'channel-item';
             li.dataset.name = ch.name.toLowerCase();
             li.dataset.category = ch.category || 'Other';
             li.dataset.url = ch.url;
-
-            li.innerHTML = `
-                <div class="ch-icon">📺</div>
-                <div class="ch-name">${ch.name}</div>
-            `;
-
+            li.innerHTML = `<div class="ch-icon">📺</div><div class="ch-name">${ch.name}</div>`;
             li.addEventListener('click', function() {
                 const url = this.dataset.url;
                 const name = this.dataset.name;
-
                 if (!url) {
                     titleEl.textContent = '❌ URL নেই';
                     return;
                 }
-
                 document.querySelectorAll('.channel-item').forEach(el => el.classList.remove('active'));
                 this.classList.add('active');
-
                 titleEl.textContent = name.charAt(0).toUpperCase() + name.slice(1);
                 setupPlayer(url);
-
                 if (isFullscreen) {
                     toggleFullscreen();
                 }
             });
-
             listEl.appendChild(li);
             allItems.push(li);
         });
-
         filterChannels();
     }
 
-    // ===== ফিল্টার =====
     function filterChannels() {
         const query = searchInput.value.toLowerCase().trim();
         allItems.forEach(item => {
@@ -792,7 +678,6 @@ html
     }
 
     searchInput.addEventListener('input', filterChannels);
-
     tabs.forEach(tab => {
         tab.addEventListener('click', function() {
             tabs.forEach(t => t.classList.remove('active'));
@@ -802,13 +687,11 @@ html
         });
     });
 
-    // ===== Escape =====
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape' && isFullscreen) {
             toggleFullscreen();
         }
     });
-
 })();
 </script>
 
