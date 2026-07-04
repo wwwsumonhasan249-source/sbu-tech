@@ -1,396 +1,385 @@
-{
-    "channels": [
-        {
-            "name": "tSPORTS HD",
-            "category": "Sports",
-            "url": "http://198.195.239.50:8095/tsports/index.m3u8",
-            "logo": "img/channels/T SPORTS.png",
-            "status": "visible"
-        },
-        {
-            "name": "T sports 2",
-            "category": "Sports",
-            "url": "http://198.195.239.50:8095/t-sports-hd4k/video.m3u8",
-            "logo": "img/channels/T SPORTS.png",
-            "status": "hidden"
-        },
-        {
-            "name": "STAR SPORTS2",
-            "category": "Sports",
-            "url": "http://198.195.239.50:8095/starSports2/index.m3u8",
-            "logo": "img/channels/STAR SPORTS2 HD.png",
-            "status": "hidden"
-        },
-        {
-            "name": "STAR SPORTS3",
-            "category": "Sports",
-            "url": "http://198.195.239.50:8095/starSports3/index.m3u8",
-            "logo": "img/channels/STAR SPORTS3.png",
-            "status": "hidden"
-        },
-        {
-            "name": "STAR SPORTS SELECT1 HD",
-            "category": "Sports",
-            "url": "http://198.195.239.50:8095/starSportsSelect1/index.m3u8",
-            "logo": "img/channels/STAR SPORTS SELECT1 HD.png",
-            "status": "hidden"
-        },
-        {
-            "name": "STAR SPORTS SELECT2 HD",
-            "category": "Sports",
-            "url": "http://198.195.239.50:8095/starSportsSelect2/index.m3u8",
-            "logo": "img/channels/STAR SPORTS SELECT2 HD.png",
-            "status": "hidden"
-        },
-        {
-            "name": "SONY SPORTS1 HD",
-            "category": "Sports",
-            "url": "http://198.195.239.50:8095/sonyTenSports1/index.m3u8",
-            "logo": "img/channels/SONY SPORTS1 HD.png",
-            "status": "hidden"
-        },
-        {
-            "name": "SONY SPORTS2 HD",
-            "category": "Sports",
-            "url": "http://198.195.239.50:8095/sonyTenSports2/index.m3u8",
-            "logo": "img/channels/SONY SPORTS2 HD.png",
-            "status": "hidden"
-        },
-        {
-            "name": "SONY SPORTS3 HD",
-            "category": "Sports",
-            "url": "http://198.195.239.50:8095/sonyTenSports3/index.m3u8",
-            "logo": "img/channels/SONY SPORTS3 HD.png",
-            "status": "hidden"
-        },
-        {
-            "name": "SONY SPORTS4 HD",
-            "category": "Sports",
-            "url": "http://198.195.239.50:8095/sonyTenSports4/index.m3u8",
-            "logo": "img/channels/SONY SPORTS4 HD.png",
-            "status": "hidden"
-        },
-        {
-            "name": "SONY SPORTS5 HD",
-            "category": "Sports",
-            "url": "http://198.195.239.50:8095/sonyTenSports5/index.m3u8",
-            "logo": "img/channels/SONY SPORTS5 HD.png",
-            "status": "hidden"
-        },
-        {
-            "name": "PTV",
-            "category": "Sports",
-            "url": "http://198.195.239.50:8095/ptv/index.m3u8",
-            "logo": "img/channels/PTV SPORTS HD.png",
-            "status": "visible"
-        },
-        {
-            "name": "EURO SPORTS HD",
-            "category": "Sports",
-            "url": "http://198.195.239.50:8095/euroSports/index.m3u8",
-            "logo": "img/channels/EUROSPORTS HD.png",
-            "status": "hidden"
-        },
-        {
-            "name": "SHOMOY TV HD",
-            "category": "Sports",
-            "url": "http://198.195.239.50:8095/somoyTv/index.m3u8",
-            "logo": "img/channels/SOMOY TV.png",
-            "status": "visible"
-        },
-        {
-            "name": "NEWS24 HD",
-            "category": "News",
-            "url": "http://198.195.239.50:8095/news24/index.m3u8",
-            "logo": "img/channels/NEWS24 HD.png",
-            "status": "hidden"
-        },
-        {
-            "name": "CHANNEL 24",
-            "category": "News",
-            "url": "http://198.195.239.50:8095/channel24/index.m3u8",
-            "logo": "img/channels/CHANNEL 24.png",
-            "status": "visible"
-        },
-        {
-            "name": "ATN NEWS HD",
-            "category": "News",
-            "url": "http://198.195.239.50:8095/atnNews/index.m3u8",
-            "logo": "img/channels/ATN NEWS.png",
-            "status": "visible"
-        },
-        {
-            "name": "EKATTOR TV HD",
-            "category": "News",
-            "url": "http://198.195.239.50:8095/ekattorTv/index.m3u8",
-            "logo": "img/channels/EKATTOR_TV.png",
-            "status": "visible"
-        },
-        {
-            "name": "JAMUNA TV",
-            "category": "News",
-            "url": "http://198.195.239.50:8095/jamunaTv/index.m3u8",
-            "logo": "img/channels/JAMUNA TV.png",
-            "status": "visible"
-        },
-        {
-            "name": "ATN Bangla HD",
-            "category": "Bangla",
-            "url": "http://198.195.239.50:8095/atnBangla/index.m3u8",
-            "logo": "img/channels/ATN BANGLA.png",
-            "status": "visible"
-        },
-        {
-            "name": "BANGLA VISION HD",
-            "category": "Bangla",
-            "url": "http://198.195.239.50:8095/banglaVision/index.m3u8",
-            "logo": "img/channels/BANGLA_VISION.png",
-            "status": "visible"
-        },
-        {
-            "name": "CHANNEL I HD",
-            "category": "Bangla",
-            "url": "http://198.195.239.50:8095/channelI/index.m3u8",
-            "logo": "img/channels/CHANNEL I.png",
-            "status": "visible"
-        },
-        {
-            "name": "GTV HD",
-            "category": "Bangla",
-            "url": "http://198.195.239.50:8095/GTV/index.m3u8",
-            "logo": "img/channels/GTV.png",
-            "status": "hidden"
-        },
-        {
-            "name": "NTV HD",
-            "category": "Bangla",
-            "url": "http://198.195.239.50:8095/ntv/index.m3u8",
-            "logo": "img/channels/NTV.png",
-            "status": "visible"
-        },
-        {
-            "name": "MASSRANGA HD",
-            "category": "Bangla",
-            "url": "http://198.195.239.50:8095/maasranga/index.m3u8",
-            "logo": "img/channels/MAASRANGA HD.png",
-            "status": "hidden"
-        },
-        {
-            "name": "DEEPTO",
-            "category": "Bangla",
-            "url": "http://198.195.239.50:8095/deepto/index.m3u8",
-            "logo": "img/channels/DEEPTO.png",
-            "status": "visible"
-        },
-        {
-            "name": "BTV",
-            "category": "Bangla",
-            "url": "http://198.195.239.50:8095/btv/index.m3u8",
-            "logo": "img/channels/BTV.HD.png",
-            "status": "visible"
-        },
-        {
-            "name": "STAR JALSHA HD",
-            "category": "Indian Bangla",
-            "url": "http://198.195.239.50:8095/starJalsha/index.m3u8",
-            "logo": "img/channels/STAR JALSHA HD.png",
-            "status": "visible"
-        },
-        {
-            "name": "JALSHA MOVIES HD",
-            "category": "Indian Bangla",
-            "url": "http://198.195.239.50:8095/jalshaMovies/index.m3u8",
-            "logo": "img/channels/JALSHA MOVIES HD.png",
-            "status": "visible"
-        },
-        {
-            "name": "ZEE BANGLA  HD",
-            "category": "Indian Bangla",
-            "url": "http://198.195.239.50:8095/zeeBangla/index.m3u8",
-            "logo": "img/channels/ZEE BANGLA HD.png",
-            "status": "visible"
-        },
-        {
-            "name": "ZEE BANGLA CHINEMA HD",
-            "category": "Indian Bangla",
-            "url": "http://198.195.239.50:8095/zeeBanglaCinema/index.m3u8",
-            "logo": "img/channels/ZEE BANGLA CINEMA.png",
-            "status": "hidden"
-        },
-        {
-            "name": "COLOR BANGLA HD",
-            "category": "Indian Bangla",
-            "url": "http://198.195.239.50:8095/colorsBangla/index.m3u8",
-            "logo": "img/channels/COLORS BANGLA HD.png",
-            "status": "hidden"
-        },
-        {
-            "name": "COLOR BANGLA CHINEMA HD",
-            "category": "Indian Bangla",
-            "url": "http://198.195.239.50:8095/colorsBanglaChinema/index.m3u8",
-            "logo": "img/channels/COLORS BANGLA CINEMA.png",
-            "status": "visible"
-        },
-        {
-            "name": "SONY AATH",
-            "category": "Indian Bangla",
-            "url": "http://198.195.239.50:8095/sonyAath/index.m3u8",
-            "logo": "img/channels/SONY AATH.png",
-            "status": "visible"
-        },
-        {
-            "name": "SANGEET BANGLA",
-            "category": "Music",
-            "url": "http://198.195.239.50:8095/sangeetBangla/index.m3u8",
-            "logo": "img/channels/SANGEET BANGLA.png",
-            "status": "visible"
-        },
-        {
-            "name": "ENTER 10 BANGLA",
-            "category": "Indian Bangla",
-            "url": "http://198.195.239.50:8095/enter10Bangla/index.m3u8",
-            "logo": "img/channels/ENTERR 10 BANGLA.png",
-            "status": "hidden"
-        },
-        {
-            "name": "SONY MAX HD",
-            "category": "Hindi",
-            "url": "http://198.195.239.50:8095/sonyMax/index.m3u8",
-            "logo": "img/channels/SONY MAX HD.png",
-            "status": "visible"
-        },
-        {
-            "name": "SONY ENTERTAINMENT HD",
-            "category": "Hindi",
-            "url": "http://198.195.239.50:8095/sonyEntertainment/index.m3u8",
-            "logo": "img/channels/SONY ENTERTAINMENT HD.png",
-            "status": "visible"
-        },
-        {
-            "name": "STAR GOLD HD",
-            "category": "Hindi",
-            "url": "http://198.195.239.50:8095/starGold/index.m3u8",
-            "logo": "img/channels/STAR GOLD HD.png",
-            "status": "hidden"
-        },
-        {
-            "name": "STAR PLUS HD",
-            "category": "Hindi",
-            "url": "http://198.195.239.50:8095/starPlus/index.m3u8",
-            "logo": "img/channels/STAR PLUS HD.png",
-            "status": "visible"
-        },
-        {
-            "name": "STAR MOVIES HD",
-            "category": "Hindi",
-            "url": "http://198.195.239.50:8095/starMovies/index.m3u8",
-            "logo": "img/channels/STAR MOVIES HD.png",
-            "status": "visible"
-        },
-        {
-            "name": "ZEE TV HD",
-            "category": "Hindi",
-            "url": "http://198.195.239.50:8095/zeeTV/index.m3u8",
-            "logo": "img/channels/ZEE TV HD.png",
-            "status": "hidden"
-        },
-        {
-            "name": "ZEE CHINEMA HD",
-            "category": "Hindi",
-            "url": "http://198.195.239.50:8095/zeeChinema/index.m3u8",
-            "logo": "img/channels/ZEE CINEMA HD.png",
-            "status": "hidden"
-        },
-        {
-            "name": "COLOR HD",
-            "category": "Hindi",
-            "url": "http://198.195.239.50:8095/colors/index.m3u8",
-            "logo": "img/channels/COLORS HD.png",
-            "status": "visible"
-        },
-        {
-            "name": "COLOR CINEPLEX HD",
-            "category": "Hindi",
-            "url": "http://198.195.239.50:8095/colorsCineplex/index.m3u8",
-            "logo": "img/channels/COLORS CINEPLEX HD.png",
-            "status": "visible"
-        },
-        {
-            "name": "9XM MUSIC",
-            "category": "Music",
-            "url": "http://198.195.239.50:8095/9xm/index.m3u8",
-            "logo": "img/channels/9XM MUSIC.png",
-            "status": "visible"
-        },
-        {
-            "name": "DISCOVERY HD",
-            "category": "Documentary",
-            "url": "http://198.195.239.50:8095/discovery/index.m3u8",
-            "logo": "img/channels/DISCOVERY HD.png",
-            "status": "visible"
-        },
-        {
-            "name": "NATIONAL GEOGRAPHIC HD",
-            "category": "Documentary",
-            "url": "http://198.195.239.50:8095/nationalGeographic/index.m3u8",
-            "logo": "img/channels/NATGEO HD.png",
-            "status": "hidden"
-        },
-        {
-            "name": "ANIMAL PLANET HD",
-            "category": "Documentary",
-            "url": "http://198.195.239.50:8095/animalPlanet/index.m3u8",
-            "logo": "img/channels/ANIMAL PLANET HD.png",
-            "status": "hidden"
-        },
-        {
-            "name": "CARTOON NETWORK HD",
-            "category": "Kids",
-            "url": "http://198.195.239.50:8095/cartoonNetwork/index.m3u8",
-            "logo": "img/channels/CARTOON NETWORK.png",
-            "status": "visible"
-        },
-        {
-            "name": "POGO",
-            "category": "Kids",
-            "url": "http://198.195.239.50:8095/pogo/index.m3u8",
-            "logo": "img/channels/POGO.png",
-            "status": "hidden"
-        },
-        {
-            "name": "NICK",
-            "category": "Kids",
-            "url": "http://198.195.239.50:8095/nick/index.m3u8",
-            "logo": "img/channels/NICK.png",
-            "status": "hidden"
-        },
-        {
-            "name": "DISCOVERY KIDS HD",
-            "category": "Kids",
-            "url": "http://198.195.239.50:8095/disnepKids/index.m3u8",
-            "logo": "img/channels/DISCOVERY KIDS.png",
-            "status": "visible"
-        },
-        {
-            "name": "FIFA",
-            "category": "Sports",
-            "url": "http://198.195.239.50:8095/Fifa-1/video.m3u8",
-            "logo": "img/channels/images.jpeg",
-            "status": "visible"
-        },
-        {
-            "name": "United-Sports",
-            "category": "Sports",
-            "url": "http://198.195.239.50:8095/unt-s/video.m3u8",
-            "logo": "img/channels/USTC-HorizLogo-600.png",
-            "status": "visible"
-        },
-        {
-            "name": "BTV",
-            "category": "Sports",
-            "url": "http://198.195.239.50:8095/btv/video.m3u8",
-            "logo": "img/channels/BTV.HD.png",
-            "status": "visible"
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+    <title>SBU TV Player</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <script src="https://jwpsrv.com/library/XpMfzFwiEeOfZhIxOQfUww.js"></script>
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        :root {
+            --bg: #0a0a0f;
+            --card: #14141c;
+            --accent: #e91e63;
+            --text: #ffffff;
+            --border: rgba(255,255,255,0.06);
+            --radius: 18px;
         }
-    ]
-}
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 12px;
+        }
+        .app-container {
+            max-width: 1300px;
+            width: 100%;
+            background: var(--card);
+            border-radius: var(--radius);
+            overflow: hidden;
+            border: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+        }
+        .app-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 24px;
+            background: rgba(255,255,255,0.02);
+            border-bottom: 1px solid var(--border);
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .brand { display: flex; align-items: center; gap: 12px; }
+        .brand .logo-icon {
+            font-size: 26px; font-weight: 800; color: var(--accent);
+            background: rgba(233,30,99,0.15);
+            width: 44px; height: 44px;
+            display: flex; align-items: center; justify-content: center;
+            border-radius: 14px;
+        }
+        .brand h1 {
+            font-size: 1.5rem; font-weight: 800;
+            background: linear-gradient(135deg, #fff 60%, var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .profile-area { display: flex; align-items: center; gap: 12px; }
+        .profile-img {
+            width: 46px; height: 46px; border-radius: 50%;
+            object-fit: cover; border: 2px solid var(--accent);
+            background: #222;
+        }
+        .profile-name { font-weight: 600; font-size: 0.95rem; color: #ccc; }
+        .profile-name span { color: var(--accent); }
+
+        .main-grid { display: flex; flex-direction: row; height: calc(100vh - 90px); min-height: 450px; }
+        .player-section {
+            flex: 2; padding: 16px 16px 12px 20px;
+            display: flex; flex-direction: column;
+            background: #000;
+            position: relative;
+        }
+        .video-wrapper {
+            position: relative; padding-top: 56.25%;
+            background: #0a0a0a; border-radius: var(--radius);
+            overflow: hidden; flex-shrink: 0;
+        }
+        #main-player {
+            position: absolute; top: 0; left: 0;
+            width: 100% !important; height: 100% !important;
+        }
+        .player-footer {
+            display: flex; justify-content: space-between;
+            align-items: center; margin-top: 12px;
+            padding: 0 4px; flex-wrap: wrap; gap: 6px;
+        }
+        .now-playing {
+            font-size: 1rem; font-weight: 600; color: #eee;
+            white-space: nowrap; overflow: hidden;
+            text-overflow: ellipsis; max-width: 70%;
+        }
+        .credit-text {
+            font-size: 0.8rem; font-weight: 600; color: var(--accent);
+            background: rgba(233,30,99,0.12);
+            padding: 5px 14px; border-radius: 40px;
+            border: 1px solid rgba(233,30,99,0.2);
+        }
+
+        .sidebar {
+            flex: 1; min-width: 260px; max-width: 380px;
+            background: var(--card);
+            border-left: 1px solid var(--border);
+            display: flex; flex-direction: column;
+            overflow: hidden;
+        }
+        .search-box {
+            padding: 14px 18px 10px 18px;
+            border-bottom: 1px solid var(--border);
+            flex-shrink: 0;
+        }
+        #channelSearch {
+            width: 100%; padding: 10px 14px;
+            border-radius: 40px; border: 1px solid var(--border);
+            background: rgba(255,255,255,0.04);
+            color: #fff; font-size: 0.9rem;
+            outline: none; transition: 0.2s;
+        }
+        #channelSearch:focus { border-color: var(--accent); background: rgba(255,255,255,0.07); }
+        #channelSearch::placeholder { color: rgba(255,255,255,0.25); }
+
+        .category-tabs {
+            display: flex; flex-wrap: wrap; gap: 5px;
+            margin-top: 10px;
+        }
+        .cat-tab {
+            padding: 4px 12px; border-radius: 30px;
+            background: rgba(255,255,255,0.05);
+            color: #aaa; font-size: 0.65rem; font-weight: 600;
+            border: none; cursor: pointer; transition: 0.2s;
+            text-transform: uppercase; letter-spacing: 0.3px;
+        }
+        .cat-tab.active { background: var(--accent); color: #fff; }
+        .cat-tab:hover { background: rgba(255,255,255,0.1); }
+
+        .channel-list {
+            list-style: none; padding: 12px 16px 20px 16px;
+            margin: 0; overflow-y: auto; flex: 1;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 10px; align-content: start;
+        }
+        .channel-item {
+            background: rgba(255,255,255,0.03);
+            border-radius: 12px; cursor: pointer;
+            padding: 12px 6px; text-align: center;
+            border: 2px solid transparent;
+            transition: 0.2s;
+            display: flex; flex-direction: column;
+            align-items: center; justify-content: center;
+            min-height: 80px;
+        }
+        .channel-item:hover { background: rgba(255,255,255,0.06); transform: translateY(-2px); }
+        .channel-item.active { border-color: var(--accent); background: rgba(233,30,99,0.06); }
+        .channel-item .ch-name { font-size: 0.75rem; font-weight: 600; color: #ddd; line-height: 1.3; word-break: break-word; }
+        .channel-item .ch-icon { font-size: 24px; margin-bottom: 4px; opacity: 0.6; }
+
+        .channel-list::-webkit-scrollbar { width: 4px; }
+        .channel-list::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.12); border-radius: 10px; }
+
+        @media (max-width: 992px) {
+            .main-grid { flex-direction: column; height: auto; min-height: auto; }
+            .player-section { padding: 12px; }
+            .sidebar { min-width: 100%; max-width: 100%; border-left: none; border-top: 1px solid var(--border); max-height: 55vh; }
+            .channel-list { grid-template-columns: repeat(auto-fill, minmax(85px, 1fr)); gap: 8px; padding: 10px 12px; }
+            .brand h1 { font-size: 1.1rem; }
+            .profile-img { width: 38px; height: 38px; }
+            .now-playing { font-size: 0.85rem; max-width: 60%; }
+            .credit-text { font-size: 0.65rem; padding: 4px 10px; }
+            .app-header { padding: 12px 16px; }
+        }
+        @media (max-width: 480px) {
+            .channel-list { grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)); }
+            .channel-item { min-height: 65px; padding: 8px 4px; }
+            .channel-item .ch-name { font-size: 0.6rem; }
+            .brand .logo-icon { width: 34px; height: 34px; font-size: 18px; }
+            .brand h1 { font-size: 0.9rem; }
+            .profile-name { font-size: 0.7rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="app-container">
+    <header class="app-header">
+        <div class="brand">
+            <div class="logo-icon">📺</div>
+            <h1>ESBU TV Player</h1>
+        </div>
+        <div class="profile-area">
+            <span class="profile-name">👤 <span>MD.Sumon</span></span>
+            <img src="profile.jpg" alt="Profile" class="profile-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2250%22 height=%2250%22 viewBox=%220 0 50 50%22%3E%3Ccircle cx=%2225%22 cy=%2225%22 r=%2224%22 fill=%22%23333%22/%3E%3Ctext x=%2225%22 y=%2232%22 font-size=%2224%22 text-anchor=%22middle%22 fill=%22%23666%22%3E😎%3C/text%3E%3C/svg%3E'" />
+        </div>
+    </header>
+
+    <div class="main-grid">
+        <section class="player-section">
+            <div class="video-wrapper">
+                <div id="main-player"></div>
+            </div>
+            <div class="player-footer">
+                <span class="now-playing" id="nowPlayingTitle">📡 চ্যানেল নির্বাচন করুন</span>
+                <span class="credit-text">SUMON.Net</span>
+            </div>
+        </section>
+
+        <aside class="sidebar">
+            <div class="search-box">
+                <input id="channelSearch" placeholder="🔍 চ্যানেল খুঁজুন..." autocomplete="off" />
+                <div class="category-tabs" id="categoryTabs">
+                    <button class="cat-tab active" data-cat="all">সব</button>
+                    <button class="cat-tab" data-cat="Sports">স্পোর্টস</button>
+                    <button class="cat-tab" data-cat="News">নিউজ</button>
+                    <button class="cat-tab" data-cat="Bangla">বাংলা</button>
+                    <button class="cat-tab" data-cat="Indian Bangla">ইন্ডিয়ান</button>
+                    <button class="cat-tab" data-cat="Hindi">হিন্দি</button>
+                    <button class="cat-tab" data-cat="Kids">কিডস</button>
+                    <button class="cat-tab" data-cat="Documentary">ডকু</button>
+                    <button class="cat-tab" data-cat="Music">মিউজিক</button>
+                    <button class="cat-tab" data-cat="Other">অন্যান্য</button>
+                </div>
+            </div>
+            <ul class="channel-list" id="channelList"></ul>
+        </aside>
+    </div>
+</div>
+
+<script>
+(function() {
+    const listEl = document.getElementById('channelList');
+    const titleEl = document.getElementById('nowPlayingTitle');
+    const searchInput = document.getElementById('channelSearch');
+    const tabs = document.querySelectorAll('.cat-tab');
+
+    let jwInstance = null;
+    let allItems = [];
+    let activeCategory = 'all';
+    let channels = [];
+
+    // ===== JW Player কাস্টম সেটআপ =====
+    function setupPlayer(url) {
+        if (jwInstance) {
+            jwInstance.load([{ file: url }]);
+            jwInstance.play();
+            return;
+        }
+
+        jwInstance = jwplayer('main-player').setup({
+            file: url,
+            width: '100%',
+            height: '100%',
+            autostart: true,
+            mute: false,
+            primary: 'html5',
+            // HTTP স্ট্রিমের জন্য অতিরিক্ত কনফিগারেশন
+            hlsjsConfig: {
+                enableWorker: true,
+                useCues: true,
+                // HTTP স্ট্রিমিং এর জন্য
+                xhrSetup: function(xhr, url) {
+                    // CORS সমস্যা এড়ানোর জন্য
+                    xhr.withCredentials = false;
+                }
+            },
+            // অন্যান্য সেটিংস
+            androidhls: true,
+            playbackRateControls: false
+        });
+
+        // Error হ্যান্ডলিং
+        jwInstance.on('error', function(e) {
+            console.log('JW Player Error:', e);
+            // যদি ভিডিও না চলে, তবুও ইউজারকে জানান
+            if (e.message) {
+                titleEl.textContent = '⚠️ ' + e.message;
+            }
+        });
+    }
+
+    // ===== JSON লোড =====
+    fetch('tv_channels.json')
+        .then(res => {
+            if (!res.ok) throw new Error('JSON লোড হয়নি');
+            return res.json();
+        })
+        .then(data => {
+            if (!data.channels || !data.channels.length) {
+                listEl.innerHTML = '<li style="grid-column:1/-1;text-align:center;color:#666;padding:30px;">কোন চ্যানেল পাওয়া যায়নি</li>';
+                return;
+            }
+            channels = data.channels.filter(ch => ch.status !== 'hidden');
+            buildChannelList(channels);
+            if (allItems.length) allItems[0].click();
+
+            const cats = new Set(channels.map(c => c.category));
+            tabs.forEach(tab => {
+                const cat = tab.dataset.cat;
+                if (cat !== 'all' && !cats.has(cat)) {
+                    tab.style.display = 'none';
+                }
+            });
+        })
+        .catch(err => {
+            console.error(err);
+            listEl.innerHTML = `<li style="grid-column:1/-1;text-align:center;color:#888;padding:30px;">⚠️ tv_channels.json পাওয়া যায়নি<br><small style="color:#555;">ফাইলটি index.html-এর পাশে রাখুন</small></li>`;
+        });
+
+    // ===== চ্যানেল লিস্ট =====
+    function buildChannelList(channelArray) {
+        listEl.innerHTML = '';
+        allItems = [];
+
+        channelArray.forEach((ch) => {
+            const li = document.createElement('li');
+            li.className = 'channel-item';
+            li.dataset.name = ch.name.toLowerCase();
+            li.dataset.category = ch.category || 'Other';
+            li.dataset.url = ch.url;
+
+            li.innerHTML = `
+                <div class="ch-icon">📺</div>
+                <div class="ch-name">${ch.name}</div>
+            `;
+
+            li.addEventListener('click', function() {
+                const url = this.dataset.url;
+                const name = this.dataset.name;
+
+                if (!url) {
+                    titleEl.textContent = '❌ URL নেই';
+                    return;
+                }
+
+                document.querySelectorAll('.channel-item').forEach(el => el.classList.remove('active'));
+                this.classList.add('active');
+
+                titleEl.textContent = name.charAt(0).toUpperCase() + name.slice(1);
+
+                // প্লেয়ার সেটআপ
+                setupPlayer(url);
+
+                if (window.innerWidth < 992) {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            });
+
+            listEl.appendChild(li);
+            allItems.push(li);
+        });
+
+        filterChannels();
+    }
+
+    // ===== ফিল্টার =====
+    function filterChannels() {
+        const query = searchInput.value.toLowerCase().trim();
+        allItems.forEach(item => {
+            const nameMatch = item.dataset.name.includes(query);
+            const catMatch = (activeCategory === 'all' || item.dataset.category === activeCategory);
+            item.style.display = (nameMatch && catMatch) ? 'flex' : 'none';
+        });
+    }
+
+    searchInput.addEventListener('input', filterChannels);
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            tabs.forEach(t => t.classList.remove('active'));
+            this.classList.add('active');
+            activeCategory = this.dataset.cat;
+            filterChannels();
+        });
+    });
+
+})();
+</script>
+
+</body>
+</html>
