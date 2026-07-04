@@ -4,28 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
     <title>SBU TV Player</title>
-
-    <!-- Google Font & JW Player -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
     <script src="https://jwpsrv.com/library/XpMfzFwiEeOfZhIxOQfUww.js"></script>
-
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin:0; padding:0; box-sizing:border-box; }
         :root {
             --bg: #0a0a0f;
             --card: #14141c;
             --accent: #e91e63;
             --text: #ffffff;
-            --border: rgba(255, 255, 255, 0.06);
+            --border: rgba(255,255,255,0.06);
             --radius: 18px;
-            --shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
         }
-
         body {
             font-family: 'Inter', sans-serif;
             background: var(--bg);
@@ -34,533 +24,362 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 16px;
+            padding: 12px;
         }
-
-        /* 📱 অ্যাপ কন্টেইনার */
         .app-container {
             max-width: 1300px;
             width: 100%;
             background: var(--card);
             border-radius: var(--radius);
-            box-shadow: var(--shadow);
             overflow: hidden;
             border: 1px solid var(--border);
             display: flex;
             flex-direction: column;
         }
-
-        /* ===== হেডার ===== */
         .app-header {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 18px 24px;
-            background: rgba(255, 255, 255, 0.02);
+            padding: 16px 24px;
+            background: rgba(255,255,255,0.02);
             border-bottom: 1px solid var(--border);
             flex-wrap: wrap;
-            gap: 12px;
+            gap: 10px;
         }
-
-        .brand {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-        }
-
+        .brand { display: flex; align-items: center; gap: 12px; }
         .brand .logo-icon {
-            font-size: 28px;
-            font-weight: 800;
-            color: var(--accent);
-            background: rgba(233, 30, 99, 0.15);
-            width: 48px;
-            height: 48px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            font-size: 26px; font-weight: 800; color: var(--accent);
+            background: rgba(233,30,99,0.15);
+            width: 44px; height: 44px;
+            display: flex; align-items: center; justify-content: center;
             border-radius: 14px;
-            font-family: 'Inter', sans-serif;
         }
-
         .brand h1 {
-            font-size: 1.6rem;
-            font-weight: 800;
-            letter-spacing: -0.5px;
+            font-size: 1.5rem; font-weight: 800;
             background: linear-gradient(135deg, #fff 60%, var(--accent));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-
-        .profile-area {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-        }
-
+        .profile-area { display: flex; align-items: center; gap: 12px; }
         .profile-img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 2px solid var(--accent);
+            width: 46px; height: 46px; border-radius: 50%;
+            object-fit: cover; border: 2px solid var(--accent);
             background: #222;
         }
+        .profile-name { font-weight: 600; font-size: 0.95rem; color: #ccc; }
+        .profile-name span { color: var(--accent); }
 
-        .profile-name {
-            font-weight: 600;
-            font-size: 1rem;
-            color: #ccc;
-        }
-        .profile-name span {
-            color: var(--accent);
-        }
-
-        /* ===== মেইন লেআউট ===== */
-        .main-grid {
-            display: flex;
-            flex-direction: row;
-            height: calc(100vh - 100px);
-            min-height: 500px;
-        }
-
-        /* ===== প্লেয়ার সেকশন (বামে) ===== */
+        .main-grid { display: flex; flex-direction: row; height: calc(100vh - 90px); min-height: 450px; }
         .player-section {
-            flex: 2;
-            padding: 20px 20px 16px 24px;
-            display: flex;
-            flex-direction: column;
+            flex: 2; padding: 16px 16px 12px 20px;
+            display: flex; flex-direction: column;
             background: #000;
             position: relative;
         }
-
         .video-wrapper {
-            position: relative;
-            padding-top: 56.25%;
-            background: #0a0a0a;
-            border-radius: var(--radius);
-            overflow: hidden;
-            flex-shrink: 0;
+            position: relative; padding-top: 56.25%;
+            background: #0a0a0a; border-radius: var(--radius);
+            overflow: hidden; flex-shrink: 0;
         }
-
         #main-player {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100% !important;
-            height: 100% !important;
+            position: absolute; top: 0; left: 0;
+            width: 100% !important; height: 100% !important;
         }
-
         .player-footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 14px;
-            padding: 0 4px;
-            flex-wrap: wrap;
-            gap: 8px;
+            display: flex; justify-content: space-between;
+            align-items: center; margin-top: 12px;
+            padding: 0 4px; flex-wrap: wrap; gap: 6px;
         }
-
         .now-playing {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: #eee;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            max-width: 70%;
+            font-size: 1rem; font-weight: 600; color: #eee;
+            white-space: nowrap; overflow: hidden;
+            text-overflow: ellipsis; max-width: 70%;
         }
-
         .credit-text {
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: var(--accent);
-            background: rgba(233, 30, 99, 0.12);
-            padding: 6px 16px;
-            border-radius: 40px;
-            letter-spacing: 0.3px;
-            border: 1px solid rgba(233, 30, 99, 0.2);
+            font-size: 0.8rem; font-weight: 600; color: var(--accent);
+            background: rgba(233,30,99,0.12);
+            padding: 5px 14px; border-radius: 40px;
+            border: 1px solid rgba(233,30,99,0.2);
         }
 
-        /* ===== সাইডবার (ডানে) ===== */
         .sidebar {
-            flex: 1;
-            min-width: 280px;
-            max-width: 400px;
+            flex: 1; min-width: 260px; max-width: 380px;
             background: var(--card);
             border-left: 1px solid var(--border);
-            display: flex;
-            flex-direction: column;
+            display: flex; flex-direction: column;
             overflow: hidden;
         }
-
         .search-box {
-            padding: 18px 20px 12px 20px;
+            padding: 14px 18px 10px 18px;
             border-bottom: 1px solid var(--border);
             flex-shrink: 0;
         }
-
-        #channel-search {
-            width: 100%;
-            padding: 12px 16px;
-            border-radius: 40px;
-            border: 1px solid var(--border);
-            background: rgba(255, 255, 255, 0.04);
-            color: #fff;
-            font-size: 0.95rem;
-            outline: none;
-            transition: 0.2s;
+        #channelSearch {
+            width: 100%; padding: 10px 14px;
+            border-radius: 40px; border: 1px solid var(--border);
+            background: rgba(255,255,255,0.04);
+            color: #fff; font-size: 0.9rem;
+            outline: none; transition: 0.2s;
         }
-
-        #channel-search:focus {
-            border-color: var(--accent);
-            background: rgba(255, 255, 255, 0.07);
-        }
-        #channel-search::placeholder {
-            color: rgba(255, 255, 255, 0.25);
-        }
+        #channelSearch:focus { border-color: var(--accent); background: rgba(255,255,255,0.07); }
+        #channelSearch::placeholder { color: rgba(255,255,255,0.25); }
 
         .category-tabs {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6px;
-            margin-top: 12px;
+            display: flex; flex-wrap: wrap; gap: 5px;
+            margin-top: 10px;
         }
-
         .cat-tab {
-            padding: 5px 14px;
-            border-radius: 30px;
-            background: rgba(255, 255, 255, 0.05);
-            color: #aaa;
-            font-size: 0.7rem;
-            font-weight: 600;
-            border: none;
-            cursor: pointer;
-            transition: 0.2s;
-            text-transform: uppercase;
-            letter-spacing: 0.4px;
+            padding: 4px 12px; border-radius: 30px;
+            background: rgba(255,255,255,0.05);
+            color: #aaa; font-size: 0.65rem; font-weight: 600;
+            border: none; cursor: pointer; transition: 0.2s;
+            text-transform: uppercase; letter-spacing: 0.3px;
         }
+        .cat-tab.active { background: var(--accent); color: #fff; }
+        .cat-tab:hover { background: rgba(255,255,255,0.1); }
 
-        .cat-tab.active {
-            background: var(--accent);
-            color: #fff;
-        }
-        .cat-tab:hover {
-            background: rgba(255, 255, 255, 0.1);
-        }
-        .cat-tab.active:hover {
-            background: var(--accent);
-        }
-
-        /* চ্যানেল লিস্ট */
         .channel-list {
-            list-style: none;
-            padding: 16px 20px 30px 20px;
-            margin: 0;
-            overflow-y: auto;
-            flex: 1;
+            list-style: none; padding: 12px 16px 20px 16px;
+            margin: 0; overflow-y: auto; flex: 1;
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-            gap: 12px;
-            align-content: start;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 10px; align-content: start;
         }
-
         .channel-item {
-            background: rgba(255, 255, 255, 0.03);
-            border-radius: 14px;
-            cursor: pointer;
-            padding: 14px 8px;
-            text-align: center;
+            background: rgba(255,255,255,0.03);
+            border-radius: 12px; cursor: pointer;
+            padding: 12px 6px; text-align: center;
             border: 2px solid transparent;
             transition: 0.2s;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 90px;
+            display: flex; flex-direction: column;
+            align-items: center; justify-content: center;
+            min-height: 80px;
         }
+        .channel-item:hover { background: rgba(255,255,255,0.06); transform: translateY(-2px); }
+        .channel-item.active { border-color: var(--accent); background: rgba(233,30,99,0.06); }
+        .channel-item .ch-name { font-size: 0.75rem; font-weight: 600; color: #ddd; line-height: 1.3; word-break: break-word; }
+        .channel-item .ch-icon { font-size: 24px; margin-bottom: 4px; opacity: 0.6; }
 
-        .channel-item:hover {
-            background: rgba(255, 255, 255, 0.06);
-            transform: translateY(-2px);
-        }
+        .channel-list::-webkit-scrollbar { width: 4px; }
+        .channel-list::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.12); border-radius: 10px; }
 
-        .channel-item.active {
-            border-color: var(--accent);
-            background: rgba(233, 30, 99, 0.06);
-        }
-
-        .channel-item .ch-name {
-            font-size: 0.8rem;
-            font-weight: 600;
-            color: #ddd;
-            line-height: 1.3;
-            word-break: break-word;
-        }
-
-        .channel-item .ch-icon {
-            font-size: 28px;
-            margin-bottom: 6px;
-            opacity: 0.7;
-        }
-
-        /* স্ক্রলবার */
-        .channel-list::-webkit-scrollbar {
-            width: 4px;
-        }
-        .channel-list::-webkit-scrollbar-thumb {
-            background: rgba(255, 255, 255, 0.12);
-            border-radius: 10px;
-        }
-
-        /* ===== রেসপন্সিভ ===== */
         @media (max-width: 992px) {
-            .main-grid {
-                flex-direction: column;
-                height: auto;
-                min-height: auto;
-            }
-
-            .player-section {
-                padding: 16px;
-            }
-
-            .sidebar {
-                min-width: 100%;
-                max-width: 100%;
-                border-left: none;
-                border-top: 1px solid var(--border);
-                max-height: 60vh;
-            }
-
-            .channel-list {
-                grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
-                gap: 10px;
-                padding: 12px 16px;
-            }
-
-            .brand h1 {
-                font-size: 1.2rem;
-            }
-            .profile-img {
-                width: 40px;
-                height: 40px;
-            }
-            .now-playing {
-                font-size: 0.95rem;
-                max-width: 60%;
-            }
-            .credit-text {
-                font-size: 0.7rem;
-                padding: 4px 12px;
-            }
-            .app-header {
-                padding: 14px 18px;
-            }
+            .main-grid { flex-direction: column; height: auto; min-height: auto; }
+            .player-section { padding: 12px; }
+            .sidebar { min-width: 100%; max-width: 100%; border-left: none; border-top: 1px solid var(--border); max-height: 55vh; }
+            .channel-list { grid-template-columns: repeat(auto-fill, minmax(85px, 1fr)); gap: 8px; padding: 10px 12px; }
+            .brand h1 { font-size: 1.1rem; }
+            .profile-img { width: 38px; height: 38px; }
+            .now-playing { font-size: 0.85rem; max-width: 60%; }
+            .credit-text { font-size: 0.65rem; padding: 4px 10px; }
+            .app-header { padding: 12px 16px; }
         }
-
         @media (max-width: 480px) {
-            .channel-list {
-                grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
-            }
-            .channel-item {
-                min-height: 70px;
-                padding: 10px 4px;
-            }
-            .channel-item .ch-name {
-                font-size: 0.65rem;
-            }
-            .brand .logo-icon {
-                width: 38px;
-                height: 38px;
-                font-size: 20px;
-            }
-            .brand h1 {
-                font-size: 1rem;
-            }
-            .profile-name {
-                font-size: 0.8rem;
-            }
+            .channel-list { grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)); }
+            .channel-item { min-height: 65px; padding: 8px 4px; }
+            .channel-item .ch-name { font-size: 0.6rem; }
+            .brand .logo-icon { width: 34px; height: 34px; font-size: 18px; }
+            .brand h1 { font-size: 0.9rem; }
+            .profile-name { font-size: 0.7rem; }
         }
     </style>
 </head>
 <body>
 
-    <div class="app-container">
-
-        <!-- ===== হেডার ===== -->
-        <header class="app-header">
-            <div class="brand">
-                <div class="logo-icon">📺</div>
-                <h1>ESBU TV Player</h1>
-            </div>
-            <div class="profile-area">
-                <span class="profile-name">👤 <span>সুমন হাসান</span></span>
-                <img src="profile.jpg" alt="Profile" class="profile-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2250%22 height=%2250%22 viewBox=%220 0 50 50%22%3E%3Ccircle cx=%2225%22 cy=%2225%22 r=%2224%22 fill=%22%23333%22/%3E%3Ctext x=%2225%22 y=%2232%22 font-size=%2224%22 text-anchor=%22middle%22 fill=%22%23666%22%3E😎%3C/text%3E%3C/svg%3E'" />
-            </div>
-        </header>
-
-        <!-- ===== মেইন গ্রিড ===== -->
-        <div class="main-grid">
-
-            <!-- প্লেয়ার সেকশন -->
-            <section class="player-section">
-                <div class="video-wrapper">
-                    <div id="main-player"></div>
-                </div>
-                <div class="player-footer">
-                    <span class="now-playing" id="nowPlayingTitle">📡 একটি চ্যানেল নির্বাচন করুন</span>
-                    <span class="credit-text">সুমন ডট নেট</span>
-                </div>
-            </section>
-
-            <!-- সাইডবার -->
-            <aside class="sidebar">
-                <div class="search-box">
-                    <input id="channelSearch" placeholder="🔍 চ্যানেল খুঁজুন..." autocomplete="off" />
-                    <div class="category-tabs" id="categoryTabs">
-                        <button class="cat-tab active" data-cat="all">সব</button>
-                        <button class="cat-tab" data-cat="Sports">স্পোর্টস</button>
-                        <button class="cat-tab" data-cat="News">নিউজ</button>
-                        <button class="cat-tab" data-cat="Bangla">বাংলা</button>
-                        <button class="cat-tab" data-cat="Indian Bangla">ইন্ডিয়ান</button>
-                        <button class="cat-tab" data-cat="Hindi">হিন্দি</button>
-                        <button class="cat-tab" data-cat="Kids">কিডস</button>
-                        <button class="cat-tab" data-cat="Documentary">ডকু</button>
-                        <button class="cat-tab" data-cat="Music">মিউজিক</button>
-                        <button class="cat-tab" data-cat="Other">অন্যান্য</button>
-                    </div>
-                </div>
-                <ul class="channel-list" id="channelList"></ul>
-            </aside>
-
+<div class="app-container">
+    <header class="app-header">
+        <div class="brand">
+            <div class="logo-icon">📺</div>
+            <h1>SBU TV Player</h1>
         </div>
+        <div class="profile-area">
+            <span class="profile-name">👤 <span>সুমন হাসান</span></span>
+            <img src="profile.jpg" alt="Profile" class="profile-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2250%22 height=%2250%22 viewBox=%220 0 50 50%22%3E%3Ccircle cx=%2225%22 cy=%2225%22 r=%2224%22 fill=%22%23333%22/%3E%3Ctext x=%2225%22 y=%2232%22 font-size=%2224%22 text-anchor=%22middle%22 fill=%22%23666%22%3E😎%3C/text%3E%3C/svg%3E'" />
+        </div>
+    </header>
+
+    <div class="main-grid">
+        <section class="player-section">
+            <div class="video-wrapper">
+                <div id="main-player"></div>
+            </div>
+            <div class="player-footer">
+                <span class="now-playing" id="nowPlayingTitle">📡 চ্যানেল নির্বাচন করুন</span>
+                <span class="credit-text">Sumon.Net</span>
+            </div>
+        </section>
+
+        <aside class="sidebar">
+            <div class="search-box">
+                <input id="channelSearch" placeholder="🔍 চ্যানেল খুঁজুন..." autocomplete="off" />
+                <div class="category-tabs" id="categoryTabs">
+                    <button class="cat-tab active" data-cat="all">সব</button>
+                    <button class="cat-tab" data-cat="Sports">স্পোর্টস</button>
+                    <button class="cat-tab" data-cat="News">নিউজ</button>
+                    <button class="cat-tab" data-cat="Bangla">বাংলা</button>
+                    <button class="cat-tab" data-cat="Indian Bangla">ইন্ডিয়ান</button>
+                    <button class="cat-tab" data-cat="Hindi">হিন্দি</button>
+                    <button class="cat-tab" data-cat="Kids">কিডস</button>
+                    <button class="cat-tab" data-cat="Documentary">ডকু</button>
+                    <button class="cat-tab" data-cat="Music">মিউজিক</button>
+                    <button class="cat-tab" data-cat="Other">অন্যান্য</button>
+                </div>
+            </div>
+            <ul class="channel-list" id="channelList"></ul>
+        </aside>
     </div>
+</div>
 
-    <script>
-        (function() {
-            const listEl = document.getElementById('channelList');
-            const titleEl = document.getElementById('nowPlayingTitle');
-            const searchInput = document.getElementById('channelSearch');
-            const tabs = document.querySelectorAll('.cat-tab');
+<script>
+(function() {
+    const listEl = document.getElementById('channelList');
+    const titleEl = document.getElementById('nowPlayingTitle');
+    const searchInput = document.getElementById('channelSearch');
+    const tabs = document.querySelectorAll('.cat-tab');
 
-            let jwInstance = null;
-            let allItems = [];
-            let activeCategory = 'all';
-            let channels = [];
+    let jwInstance = null;
+    let allItems = [];
+    let activeCategory = 'all';
+    let channels = [];
 
-            // ===== JSON থেকে চ্যানেল লোড =====
-            fetch('tv_channels.json')
-                .then(res => {
-                    if (!res.ok) throw new Error('JSON লোড হয়নি');
-                    return res.json();
-                })
-                .then(data => {
-                    if (!data.channels || !data.channels.length) {
-                        listEl.innerHTML = '<li style="grid-column:1/-1;text-align:center;color:#666;padding:30px;">কোন চ্যানেল পাওয়া যায়নি</li>';
-                        return;
-                    }
-                    channels = data.channels.filter(ch => ch.status !== 'hidden');
-                    buildChannelList(channels);
-                    if (allItems.length) allItems[0].click();
+    // ===== JW Player কাস্টম সেটআপ =====
+    function setupPlayer(url) {
+        if (jwInstance) {
+            jwInstance.load([{ file: url }]);
+            jwInstance.play();
+            return;
+        }
 
-                    // ক্যাটাগরি ট্যাব লুকানো
-                    const cats = new Set(channels.map(c => c.category));
-                    tabs.forEach(tab => {
-                        const cat = tab.dataset.cat;
-                        if (cat !== 'all' && !cats.has(cat)) {
-                            tab.style.display = 'none';
-                        }
-                    });
-                })
-                .catch(err => {
-                    console.error(err);
-                    listEl.innerHTML = `<li style="grid-column:1/-1;text-align:center;color:#888;padding:30px;">⚠️ tv_channels.json পাওয়া যায়নি<br><small style="color:#555;">ফাইলটি index.html-এর পাশে রাখুন</small></li>`;
-                });
+        jwInstance = jwplayer('main-player').setup({
+            file: url,
+            width: '100%',
+            height: '100%',
+            autostart: true,
+            mute: false,
+            primary: 'html5',
+            // HTTP স্ট্রিমের জন্য অতিরিক্ত কনফিগারেশন
+            hlsjsConfig: {
+                enableWorker: true,
+                useCues: true,
+                // HTTP স্ট্রিমিং এর জন্য
+                xhrSetup: function(xhr, url) {
+                    // CORS সমস্যা এড়ানোর জন্য
+                    xhr.withCredentials = false;
+                }
+            },
+            // অন্যান্য সেটিংস
+            androidhls: true,
+            playbackRateControls: false
+        });
 
-            // ===== চ্যানেল লিস্ট বিল্ড =====
-            function buildChannelList(channelArray) {
-                listEl.innerHTML = '';
-                allItems = [];
-
-                channelArray.forEach((ch, idx) => {
-                    const li = document.createElement('li');
-                    li.className = 'channel-item';
-                    li.dataset.name = ch.name.toLowerCase();
-                    li.dataset.category = ch.category || 'Other';
-                    li.dataset.url = ch.url;
-
-                    li.innerHTML = `
-                        <div class="ch-icon">📺</div>
-                        <div class="ch-name">${ch.name}</div>
-                    `;
-
-                    li.addEventListener('click', function() {
-                        const url = this.dataset.url;
-                        const name = this.dataset.name;
-
-                        if (!url) return;
-
-                        // active ক্লাস পরিবর্তন
-                        document.querySelectorAll('.channel-item').forEach(el => el.classList.remove('active'));
-                        this.classList.add('active');
-
-                        // টাইটেল আপডেট
-                        titleEl.textContent = name.charAt(0).toUpperCase() + name.slice(1);
-
-                        // JW Player
-                        if (jwInstance) {
-                            jwInstance.load([{ file: url }]);
-                            jwInstance.play();
-                        } else {
-                            jwInstance = jwplayer('main-player').setup({
-                                file: url,
-                                width: '100%',
-                                height: '100%',
-                                autostart: true,
-                                mute: false,
-                                primary: 'html5',
-                                hlsjsConfig: { enableWorker: true }
-                            });
-                        }
-
-                        // মোবাইলে স্ক্রল
-                        if (window.innerWidth < 992) {
-                            window.scrollTo({ top: 0, behavior: 'smooth' });
-                        }
-                    });
-
-                    listEl.appendChild(li);
-                    allItems.push(li);
-                });
-
-                filterChannels();
+        // Error হ্যান্ডলিং
+        jwInstance.on('error', function(e) {
+            console.log('JW Player Error:', e);
+            // যদি ভিডিও না চলে, তবুও ইউজারকে জানান
+            if (e.message) {
+                titleEl.textContent = '⚠️ ' + e.message;
             }
+        });
+    }
 
-            // ===== ফিল্টার =====
-            function filterChannels() {
-                const query = searchInput.value.toLowerCase().trim();
-                allItems.forEach(item => {
-                    const nameMatch = item.dataset.name.includes(query);
-                    const catMatch = (activeCategory === 'all' || item.dataset.category === activeCategory);
-                    item.style.display = (nameMatch && catMatch) ? 'flex' : 'none';
-                });
+    // ===== JSON লোড =====
+    fetch('tv_channels.json')
+        .then(res => {
+            if (!res.ok) throw new Error('JSON লোড হয়নি');
+            return res.json();
+        })
+        .then(data => {
+            if (!data.channels || !data.channels.length) {
+                listEl.innerHTML = '<li style="grid-column:1/-1;text-align:center;color:#666;padding:30px;">কোন চ্যানেল পাওয়া যায়নি</li>';
+                return;
             }
+            channels = data.channels.filter(ch => ch.status !== 'hidden');
+            buildChannelList(channels);
+            if (allItems.length) allItems[0].click();
 
-            // ===== ইভেন্ট =====
-            searchInput.addEventListener('input', filterChannels);
-
+            const cats = new Set(channels.map(c => c.category));
             tabs.forEach(tab => {
-                tab.addEventListener('click', function() {
-                    tabs.forEach(t => t.classList.remove('active'));
-                    this.classList.add('active');
-                    activeCategory = this.dataset.cat;
-                    filterChannels();
-                });
+                const cat = tab.dataset.cat;
+                if (cat !== 'all' && !cats.has(cat)) {
+                    tab.style.display = 'none';
+                }
+            });
+        })
+        .catch(err => {
+            console.error(err);
+            listEl.innerHTML = `<li style="grid-column:1/-1;text-align:center;color:#888;padding:30px;">⚠️ tv_channels.json পাওয়া যায়নি<br><small style="color:#555;">ফাইলটি index.html-এর পাশে রাখুন</small></li>`;
+        });
+
+    // ===== চ্যানেল লিস্ট =====
+    function buildChannelList(channelArray) {
+        listEl.innerHTML = '';
+        allItems = [];
+
+        channelArray.forEach((ch) => {
+            const li = document.createElement('li');
+            li.className = 'channel-item';
+            li.dataset.name = ch.name.toLowerCase();
+            li.dataset.category = ch.category || 'Other';
+            li.dataset.url = ch.url;
+
+            li.innerHTML = `
+                <div class="ch-icon">📺</div>
+                <div class="ch-name">${ch.name}</div>
+            `;
+
+            li.addEventListener('click', function() {
+                const url = this.dataset.url;
+                const name = this.dataset.name;
+
+                if (!url) {
+                    titleEl.textContent = '❌ URL নেই';
+                    return;
+                }
+
+                document.querySelectorAll('.channel-item').forEach(el => el.classList.remove('active'));
+                this.classList.add('active');
+
+                titleEl.textContent = name.charAt(0).toUpperCase() + name.slice(1);
+
+                // প্লেয়ার সেটআপ
+                setupPlayer(url);
+
+                if (window.innerWidth < 992) {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
             });
 
-        })();
-    </script>
+            listEl.appendChild(li);
+            allItems.push(li);
+        });
+
+        filterChannels();
+    }
+
+    // ===== ফিল্টার =====
+    function filterChannels() {
+        const query = searchInput.value.toLowerCase().trim();
+        allItems.forEach(item => {
+            const nameMatch = item.dataset.name.includes(query);
+            const catMatch = (activeCategory === 'all' || item.dataset.category === activeCategory);
+            item.style.display = (nameMatch && catMatch) ? 'flex' : 'none';
+        });
+    }
+
+    searchInput.addEventListener('input', filterChannels);
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            tabs.forEach(t => t.classList.remove('active'));
+            this.classList.add('active');
+            activeCategory = this.dataset.cat;
+            filterChannels();
+        });
+    });
+
+})();
+</script>
 
 </body>
 </html>
