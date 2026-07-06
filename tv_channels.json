@@ -1,396 +1,396 @@
 {
-    "channels": [
+    "চ্যানেল": [
         {
-            "name": "TSPORTS HD",
-            "category": "Sports",
-            "url": "http://198.195.239.50:8095/tsports/index.m3u8",
-            "logo": "img/channels/T SPORTS.png",
-            "status": "visible"
+            "নাম": "টিস্পোর্টস এইচডি",
+            "বিভাগ": "ক্রীড়া",
+            "url": "http://103.165.93.31:8095/tsports/video.m3u8",
+            "লোগো": "img/channels/T SPORTS.png",
+            "অবস্থা": "দৃশ্যমান"
         },
         {
-            "name": "T sports 2",
-            "category": "Sports",
-            "url": "http://198.195.239.50:8095/t-sports-hd4k/video.m3u8",
-            "logo": "img/channels/T SPORTS.png",
-            "status": "hidden"
+            "নাম": "টি স্পোর্টস ২",
+            "বিভাগ": "ক্রীড়া",
+            "url": "http://103.165.93.31:8095/t-sports-hd4k/video.m3u8",
+            "লোগো": "img/channels/T SPORTS.png",
+            "স্ট্যাটাস": "লুকানো"
         },
         {
-            "name": "STAR SPORTS2",
-            "category": "Sports",
-            "url": "http://198.195.239.50:8095/starSports2/index.m3u8",
-            "logo": "img/channels/STAR SPORTS2 HD.png",
-            "status": "hidden"
+            'নাম': 'স্টার স্পোর্টস ২',
+            "বিভাগ": "ক্রীড়া",
+            "url": "http://103.165.93.31:8095/starSports2/index.m3u8",
+            "লোগো": "img/channels/STAR SPORTS2 HD.png",
+            "স্ট্যাটাস": "লুকানো"
         },
         {
-            "name": "STAR SPORTS3",
-            "category": "Sports",
-            "url": "http://198.195.239.50:8095/starSports3/index.m3u8",
-            "logo": "img/channels/STAR SPORTS3.png",
-            "status": "hidden"
+            'নাম': 'স্টার স্পোর্টস ৩',
+            "বিভাগ": "ক্রীড়া",
+            "url": "http://103.165.93.31:8095/starSports3/index.m3u8",
+            "লোগো": "img/channels/STAR SPORTS3.png",
+            "স্ট্যাটাস": "লুকানো"
         },
         {
-            "name": "STAR SPORTS SELECT1 HD",
-            "category": "Sports",
-            "url": "http://198.195.239.50:8095/starSportsSelect1/index.m3u8",
-            "logo": "img/channels/STAR SPORTS SELECT1 HD.png",
-            "status": "hidden"
+            "নাম": "স্টার স্পোর্টস সিলেক্ট১ এইচডি",
+            "বিভাগ": "ক্রীড়া",
+            "url": "http://103.165.93.31:8095/starSportsSelect1/index.m3u8",
+            "লোগো": "img/channels/STAR SPORTS SELECT1 HD.png",
+            "স্ট্যাটাস": "লুকানো"
         },
         {
-            "name": "STAR SPORTS SELECT2 HD",
-            "category": "Sports",
-            "url": "http://198.195.239.50:8095/starSportsSelect2/index.m3u8",
-            "logo": "img/channels/STAR SPORTS SELECT2 HD.png",
-            "status": "hidden"
+            "নাম": "স্টার স্পোর্টস সিলেক্ট২ এইচডি",
+            "বিভাগ": "ক্রীড়া",
+            "url": "http://103.165.93.31:8095/starSportsSelect2/index.m3u8",
+            "লোগো": "img/channels/STAR SPORTS SELECT2 HD.png",
+            "স্ট্যাটাস": "লুকানো"
         },
         {
-            "name": "SONY SPORTS1 HD",
-            "category": "Sports",
-            "url": "http://198.195.239.50:8095/sonyTenSports1/index.m3u8",
-            "logo": "img/channels/SONY SPORTS1 HD.png",
-            "status": "hidden"
+            "নাম": "সনি স্পোর্টস ১ এইচডি",
+            "বিভাগ": "ক্রীড়া",
+            "url": "http://103.165.93.31:8095/sonyTenSports1/index.m3u8",
+            "লোগো": "img/channels/SONY SPORTS1 HD.png",
+            "স্ট্যাটাস": "লুকানো"
         },
         {
-            "name": "SONY SPORTS2 HD",
-            "category": "Sports",
-            "url": "http://198.195.239.50:8095/sonyTenSports2/index.m3u8",
-            "logo": "img/channels/SONY SPORTS2 HD.png",
-            "status": "hidden"
+            "নাম": "সনি স্পোর্টস ২ এইচডি",
+            "বিভাগ": "ক্রীড়া",
+            "url": "http://103.165.93.31:8095/sonyTenSports2/index.m3u8",
+            "লোগো": "img/channels/SONY SPORTS2 HD.png",
+            "স্ট্যাটাস": "লুকানো"
         },
         {
-            "name": "SONY SPORTS3 HD",
-            "category": "Sports",
-            "url": "http://198.195.239.50:8095/sonyTenSports3/index.m3u8",
-            "logo": "img/channels/SONY SPORTS3 HD.png",
-            "status": "hidden"
+            "নাম": "সনি স্পোর্টস ৩ এইচডি",
+            "বিভাগ": "ক্রীড়া",
+            "url": "http://103.165.93.31:8095/sonyTenSports3/index.m3u8",
+            "লোগো": "img/channels/SONY SPORTS3 HD.png",
+            "স্ট্যাটাস": "লুকানো"
         },
         {
-            "name": "SONY SPORTS4 HD",
-            "category": "Sports",
-            "url": "http://198.195.239.50:8095/sonyTenSports4/index.m3u8",
-            "logo": "img/channels/SONY SPORTS4 HD.png",
-            "status": "hidden"
+            "নাম": "সনি স্পোর্টস ৪ এইচডি",
+            "বিভাগ": "ক্রীড়া",
+            "url": "http://103.165.93.31:8095/sonyTenSports4/index.m3u8",
+            "লোগো": "img/channels/SONY SPORTS4 HD.png",
+            "স্ট্যাটাস": "লুকানো"
         },
         {
-            "name": "SONY SPORTS5 HD",
-            "category": "Sports",
-            "url": "http://198.195.239.50:8095/sonyTenSports5/index.m3u8",
-            "logo": "img/channels/SONY SPORTS5 HD.png",
-            "status": "hidden"
+            "নাম": "সনি স্পোর্টস ৫ এইচডি",
+            "বিভাগ": "ক্রীড়া",
+            "url": "http://103.165.93.31:8095/sonyTenSports5/index.m3u8",
+            "লোগো": "img/channels/SONY SPORTS5 HD.png",
+            "স্ট্যাটাস": "লুকানো"
         },
         {
-            "name": "PTV",
-            "category": "Sports",
-            "url": "http://198.195.239.50:8095/ptv/index.m3u8",
-            "logo": "img/channels/PTV SPORTS HD.png",
-            "status": "visible"
+            "নাম": "পিটিভি",
+            "বিভাগ": "ক্রীড়া",
+            "url": "http://103.165.93.31:8095/ptv/video.m3u8",
+            "লোগো": "img/channels/PTV SPORTS HD.png",
+            "অবস্থা": "দৃশ্যমান"
         },
         {
-            "name": "EURO SPORTS HD",
-            "category": "Sports",
-            "url": "http://198.195.239.50:8095/euroSports/index.m3u8",
-            "logo": "img/channels/EUROSPORTS HD.png",
-            "status": "hidden"
+            "নাম": "ইউরো স্পোর্টস এইচডি",
+            "বিভাগ": "ক্রীড়া",
+            "url": "http://103.165.93.31:8095/euroSports/index.m3u8",
+            "লোগো": "img/channels/EUROSPORTS HD.png",
+            "স্ট্যাটাস": "লুকানো"
         },
         {
-            "name": "SHOMOY TV HD",
-            "category": "Sports",
-            "url": "http://198.195.239.50:8095/somoyTv/index.m3u8",
+            "নাম": "সময় টিভি এইচডি",
+            "বিভাগ": "ক্রীড়া",
+            "url": "http://103.165.93.31:8095/somoyTv/index.m3u8",
             "logo": "img/channels/SOMOY TV.png",
-            "status": "visible"
+            "অবস্থা": "দৃশ্যমান"
         },
         {
-            "name": "NEWS24 HD",
-            "category": "News",
-            "url": "http://198.195.239.50:8095/news24/index.m3u8",
-            "logo": "img/channels/NEWS24 HD.png",
-            "status": "hidden"
+            "নাম": "নিউজ২৪ এইচডি",
+            "বিভাগ": "সংবাদ",
+            "url": "http://103.165.93.31:8095/news24/index.m3u8",
+            "লোগো": "img/channels/NEWS24 HD.png",
+            "স্ট্যাটাস": "লুকানো"
         },
         {
-            "name": "CHANNEL 24",
-            "category": "News",
-            "url": "http://198.195.239.50:8095/channel24/index.m3u8",
-            "logo": "img/channels/CHANNEL 24.png",
-            "status": "visible"
+            "নাম": "চ্যানেল ২৪",
+            "বিভাগ": "সংবাদ",
+            "url": "http://103.165.93.31:8095/channel24/index.m3u8",
+            "লোগো": "img/channels/CHANNEL 24.png",
+            "অবস্থা": "দৃশ্যমান"
         },
         {
-            "name": "ATN NEWS HD",
-            "category": "News",
-            "url": "http://198.195.239.50:8095/atnNews/index.m3u8",
-            "logo": "img/channels/ATN NEWS.png",
-            "status": "visible"
+            "নাম": "এটিএন নিউজ এইচডি",
+            "বিভাগ": "সংবাদ",
+            "url": "http://103.165.93.31:8095/atnNews/video.m3u8",
+            "লোগো": "img/channels/ATN NEWS.png",
+            "অবস্থা": "দৃশ্যমান"
         },
         {
-            "name": "EKATTOR TV HD",
-            "category": "News",
-            "url": "http://198.195.239.50:8095/ekattorTv/index.m3u8",
-            "logo": "img/channels/EKATTOR_TV.png",
-            "status": "visible"
+            "নাম": "একাট্টর টিভি এইচডি",
+            "বিভাগ": "সংবাদ",
+            "url": "http://103.165.93.31:8095/ekattorTv/index.m3u8",
+            "লোগো": "img/channels/EKATTOR_TV.png",
+            "অবস্থা": "দৃশ্যমান"
         },
         {
-            "name": "JAMUNA TV",
-            "category": "News",
-            "url": "http://198.195.239.50:8095/jamunaTv/index.m3u8",
-            "logo": "img/channels/JAMUNA TV.png",
-            "status": "visible"
+            "নাম": "যমুনা টিভি",
+            "বিভাগ": "সংবাদ",
+            "url": "http://103.165.93.31:8095/jamunaTv/index.m3u8",
+            "লোগো": "img/channels/JAMUNA TV.png",
+            "অবস্থা": "দৃশ্যমান"
         },
         {
-            "name": "ATN Bangla HD",
-            "category": "Bangla",
-            "url": "http://198.195.239.50:8095/atnBangla/index.m3u8",
+            "নাম": "এটিএন বাংলা এইচডি",
+            "বিভাগ": "বাংলা",
+            "url": "http://103.165.93.31:8095/atnBangla/index.m3u8",
             "logo": "img/channels/ATN BANGLA.png",
-            "status": "visible"
+            "অবস্থা": "দৃশ্যমান"
         },
         {
             "name": "BANGLA VISION HD",
-            "category": "Bangla",
-            "url": "http://198.195.239.50:8095/banglaVision/index.m3u8",
-            "logo": "img/channels/BANGLA_VISION.png",
-            "status": "visible"
+            "বিভাগ": "বাংলা",
+            "url": "http://103.165.93.31:8095/banglaVision/index.m3u8",
+            "লোগো": "img/channels/BANGLA_VISION.png",
+            "অবস্থা": "দৃশ্যমান"
         },
         {
-            "name": "CHANNEL I HD",
-            "category": "Bangla",
-            "url": "http://198.195.239.50:8095/channelI/index.m3u8",
-            "logo": "img/channels/CHANNEL I.png",
-            "status": "visible"
+            "নাম": "চ্যানেল ১ এইচডি",
+            "বিভাগ": "বাংলা",
+            "url": "http://103.165.93.31:8095/channelI/index.m3u8",
+            "লোগো": "img/channels/CHANNEL I.png",
+            "অবস্থা": "দৃশ্যমান"
         },
         {
-            "name": "GTV HD",
-            "category": "Bangla",
-            "url": "http://198.195.239.50:8095/GTV/index.m3u8",
-            "logo": "img/channels/GTV.png",
-            "status": "hidden"
+            "নাম": "জিটিভি এইচডি",
+            "বিভাগ": "বাংলা",
+            "url": "http://103.165.93.31:8095/GTV/index.m3u8",
+            "লোগো": "img/channels/GTV.png",
+            "স্ট্যাটাস": "লুকানো"
         },
         {
-            "name": "NTV HD",
-            "category": "Bangla",
-            "url": "http://198.195.239.50:8095/ntv/index.m3u8",
-            "logo": "img/channels/NTV.png",
-            "status": "visible"
+            "নাম": "এনটিভি এইচডি",
+            "বিভাগ": "বাংলা",
+            "url": "http://103.165.93.31:8095/ntv/index.m3u8",
+            "লোগো": "img/channels/NTV.png",
+            "অবস্থা": "দৃশ্যমান"
         },
         {
-            "name": "MASSRANGA HD",
-            "category": "Bangla",
-            "url": "http://198.195.239.50:8095/maasranga/index.m3u8",
+            "নাম": "মাসরাঙ্গা এইচডি",
+            "বিভাগ": "বাংলা",
+            "url": "http://103.165.93.31:8095/maasranga/index.m3u8",
             "logo": "img/channels/MAASRANGA HD.png",
-            "status": "hidden"
+            "স্ট্যাটাস": "লুকানো"
         },
         {
-            "name": "DEEPTO",
-            "category": "Bangla",
-            "url": "http://198.195.239.50:8095/deepto/index.m3u8",
-            "logo": "img/channels/DEEPTO.png",
-            "status": "visible"
+            "নাম": "দীপ্ত",
+            "বিভাগ": "বাংলা",
+            "url": "http://103.165.93.31:8095/deepto/index.m3u8",
+            "লোগো": "img/channels/DEEPTO.png",
+            "অবস্থা": "দৃশ্যমান"
         },
         {
-            "name": "BTV",
-            "category": "Bangla",
-            "url": "http://198.195.239.50:8095/btv/index.m3u8",
-            "logo": "img/channels/BTV.HD.png",
-            "status": "visible"
+            "নাম": "বিটিভি",
+            "বিভাগ": "বাংলা",
+            "url": "http://103.165.93.31:8095/btv/index.m3u8",
+            "লোগো": "img/channels/BTV.HD.png",
+            "অবস্থা": "দৃশ্যমান"
         },
         {
-            "name": "STAR JALSHA HD",
-            "category": "Indian Bangla",
-            "url": "http://198.195.239.50:8095/starJalsha/index.m3u8",
-            "logo": "img/channels/STAR JALSHA HD.png",
-            "status": "visible"
+            "নাম": "স্টার জলশা এইচডি",
+            "বিভাগ": "ভারতীয় বাংলা",
+            "url": "http://103.165.93.31:8095/starJalsha/index.m3u8",
+            "লোগো": "img/channels/STAR JALSHA HD.png",
+            "অবস্থা": "দৃশ্যমান"
         },
         {
-            "name": "JALSHA MOVIES HD",
-            "category": "Indian Bangla",
-            "url": "http://198.195.239.50:8095/jalshaMovies/index.m3u8",
-            "logo": "img/channels/JALSHA MOVIES HD.png",
-            "status": "visible"
+            "নাম": "জলশা মুভিজ এইচডি",
+            "বিভাগ": "ভারতীয় বাংলা",
+            "url": "http://103.165.93.31:8095/jalshaMovies/index.m3u8",
+            "লোগো": "img/channels/JALSHA MOVIES HD.png",
+            "অবস্থা": "দৃশ্যমান"
         },
         {
-            "name": "ZEE BANGLA  HD",
-            "category": "Indian Bangla",
-            "url": "http://198.195.239.50:8095/zeeBangla/index.m3u8",
-            "logo": "img/channels/ZEE BANGLA HD.png",
-            "status": "visible"
+            "নাম": "জি বাংলা এইচডি",
+            "বিভাগ": "ভারতীয় বাংলা",
+            "url": "http://103.165.93.31:8095/zeeBangla/index.m3u8",
+            "লোগো": "img/channels/ZEE BANGLA HD.png",
+            "অবস্থা": "দৃশ্যমান"
         },
         {
-            "name": "ZEE BANGLA CHINEMA HD",
-            "category": "Indian Bangla",
-            "url": "http://198.195.239.50:8095/zeeBanglaCinema/index.m3u8",
-            "logo": "img/channels/ZEE BANGLA CINEMA.png",
-            "status": "hidden"
+            "নাম": "জি বাংলা সিনেমা এইচডি",
+            "বিভাগ": "ভারতীয় বাংলা",
+            "url": "http://103.165.93.31:8095/zeeBanglaCinema/index.m3u8",
+            "লোগো": "img/channels/ZEE BANGLA CINEMA.png",
+            "স্ট্যাটাস": "লুকানো"
         },
         {
-            "name": "COLOR BANGLA HD",
-            "category": "Indian Bangla",
-            "url": "http://198.195.239.50:8095/colorsBangla/index.m3u8",
-            "logo": "img/channels/COLORS BANGLA HD.png",
-            "status": "hidden"
+            "নাম": "কালার বাংলা এইচডি",
+            "বিভাগ": "ভারতীয় বাংলা",
+            "url": "http://103.165.93.31:8095/colorsBangla/index.m3u8",
+            "লোগো": "img/channels/COLORS BANGLA HD.png",
+            "স্ট্যাটাস": "লুকানো"
         },
         {
-            "name": "COLOR BANGLA CHINEMA HD",
-            "category": "Indian Bangla",
-            "url": "http://198.195.239.50:8095/colorsBanglaChinema/index.m3u8",
-            "logo": "img/channels/COLORS BANGLA CINEMA.png",
-            "status": "visible"
+            "নাম": "কালার বাংলা চিনেমা এইচডি",
+            "বিভাগ": "ভারতীয় বাংলা",
+            "url": "http://103.165.93.31:8095/colorsBanglaChinema/index.m3u8",
+            "লোগো": "img/channels/COLORS BANGLA CINEMA.png",
+            "অবস্থা": "দৃশ্যমান"
         },
         {
-            "name": "SONY AATH",
-            "category": "Indian Bangla",
-            "url": "http://198.195.239.50:8095/sonyAath/index.m3u8",
-            "logo": "img/channels/SONY AATH.png",
-            "status": "visible"
+            "নাম": "সনি আথ",
+            "বিভাগ": "ভারতীয় বাংলা",
+            "url": "http://103.165.93.31:8095/sonyAath/index.m3u8",
+            "লোগো": "img/channels/SONY AATH.png",
+            "অবস্থা": "দৃশ্যমান"
         },
         {
-            "name": "SANGEET BANGLA",
-            "category": "Music",
-            "url": "http://198.195.239.50:8095/sangeetBangla/index.m3u8",
-            "logo": "img/channels/SANGEET BANGLA.png",
-            "status": "visible"
+            "নাম": "সংগীত বাংলা",
+            "বিভাগ": "সঙ্গীত",
+            "url": "http://103.165.93.31:8095/sangeetBangla/index.m3u8",
+            "লোগো": "img/channels/SANGEET BANGLA.png",
+            "অবস্থা": "দৃশ্যমান"
         },
         {
-            "name": "ENTER 10 BANGLA",
-            "category": "Indian Bangla",
-            "url": "http://198.195.239.50:8095/enter10Bangla/index.m3u8",
-            "logo": "img/channels/ENTERR 10 BANGLA.png",
-            "status": "hidden"
+            "name": "১০টি বাংলা লিখুন",
+            "বিভাগ": "ভারতীয় বাংলা",
+            "url": "http://103.165.93.31:8095/enter10Bangla/index.m3u8",
+            "লোগো": "img/channels/ENTERR 10 BANGLA.png",
+            "স্ট্যাটাস": "লুকানো"
         },
         {
             "name": "SONY MAX HD",
-            "category": "Hindi",
-            "url": "http://198.195.239.50:8095/sonyMax/index.m3u8",
-            "logo": "img/channels/SONY MAX HD.png",
-            "status": "visible"
+            "বিভাগ": "হিন্দি",
+            "url": "http://103.165.93.31:8095/sonyMax/index.m3u8",
+            "লোগো": "img/channels/SONY MAX HD.png",
+            "অবস্থা": "দৃশ্যমান"
         },
         {
-            "name": "SONY ENTERTAINMENT HD",
-            "category": "Hindi",
-            "url": "http://198.195.239.50:8095/sonyEntertainment/index.m3u8",
-            "logo": "img/channels/SONY ENTERTAINMENT HD.png",
-            "status": "visible"
+            "নাম": "সনি এন্টারটেইনমেন্ট এইচডি",
+            "বিভাগ": "হিন্দি",
+            "url": "http://103.165.93.31:8095/sonyEntertainment/index.m3u8",
+            "লোগো": "img/channels/SONY ENTERTAINMENT HD.png",
+            "অবস্থা": "দৃশ্যমান"
         },
         {
-            "name": "STAR GOLD HD",
-            "category": "Hindi",
-            "url": "http://198.195.239.50:8095/starGold/index.m3u8",
-            "logo": "img/channels/STAR GOLD HD.png",
-            "status": "hidden"
+            "নাম": "স্টার গোল্ড এইচডি",
+            "বিভাগ": "হিন্দি",
+            "url": "http://103.165.93.31:8095/starGold/index.m3u8",
+            "লোগো": "img/channels/STAR GOLD HD.png",
+            "স্ট্যাটাস": "লুকানো"
         },
         {
-            "name": "STAR PLUS HD",
-            "category": "Hindi",
-            "url": "http://198.195.239.50:8095/starPlus/index.m3u8",
-            "logo": "img/channels/STAR PLUS HD.png",
-            "status": "visible"
+            "নাম": "স্টার প্লাস এইচডি",
+            "বিভাগ": "হিন্দি",
+            "url": "http://103.165.93.31:8095/starPlus/index.m3u8",
+            "লোগো": "img/channels/STAR PLUS HD.png",
+            "অবস্থা": "দৃশ্যমান"
         },
         {
-            "name": "STAR MOVIES HD",
-            "category": "Hindi",
-            "url": "http://198.195.239.50:8095/starMovies/index.m3u8",
-            "logo": "img/channels/STAR MOVIES HD.png",
-            "status": "visible"
+            "নাম": "স্টার মুভিজ এইচডি",
+            "বিভাগ": "হিন্দি",
+            "url": "http://103.165.93.31:8095/starMovies/index.m3u8",
+            "লোগো": "img/channels/STAR MOVIES HD.png",
+            "অবস্থা": "দৃশ্যমান"
         },
         {
-            "name": "ZEE TV HD",
-            "category": "Hindi",
-            "url": "http://198.195.239.50:8095/zeeTV/index.m3u8",
-            "logo": "img/channels/ZEE TV HD.png",
-            "status": "hidden"
+            "নাম": "জি টিভি এইচডি",
+            "বিভাগ": "হিন্দি",
+            "url": "http://103.165.93.31:8095/zeeTV/index.m3u8",
+            "লোগো": "img/channels/ZEE TV HD.png",
+            "স্ট্যাটাস": "লুকানো"
         },
         {
-            "name": "ZEE CHINEMA HD",
-            "category": "Hindi",
-            "url": "http://198.195.239.50:8095/zeeChinema/index.m3u8",
-            "logo": "img/channels/ZEE CINEMA HD.png",
-            "status": "hidden"
+            "নাম": "জি চাইনেমা এইচডি",
+            "বিভাগ": "হিন্দি",
+            "url": "http://103.165.93.31:8095/zeeChinema/index.m3u8",
+            "লোগো": "img/channels/ZEE CINEMA HD.png",
+            "স্ট্যাটাস": "লুকানো"
         },
         {
-            "name": "COLOR HD",
-            "category": "Hindi",
-            "url": "http://198.195.239.50:8095/colors/index.m3u8",
-            "logo": "img/channels/COLORS HD.png",
-            "status": "visible"
+            "নাম": "কালার এইচডি",
+            "বিভাগ": "হিন্দি",
+            "url": "http://103.165.93.31:8095/colors/index.m3u8",
+            "লোগো": "img/channels/COLORS HD.png",
+            "অবস্থা": "দৃশ্যমান"
         },
         {
-            "name": "COLOR CINEPLEX HD",
-            "category": "Hindi",
-            "url": "http://198.195.239.50:8095/colorsCineplex/index.m3u8",
-            "logo": "img/channels/COLORS CINEPLEX HD.png",
-            "status": "visible"
+            "নাম": "কালার সিনেপ্লেক্স এইচডি",
+            "বিভাগ": "হিন্দি",
+            "url": "http://103.165.93.31:8095/colorsCineplex/index.m3u8",
+            "লোগো": "img/channels/COLORS CINEPLEX HD.png",
+            "অবস্থা": "দৃশ্যমান"
         },
         {
-            "name": "9XM MUSIC",
-            "category": "Music",
-            "url": "http://198.195.239.50:8095/9xm/index.m3u8",
-            "logo": "img/channels/9XM MUSIC.png",
-            "status": "visible"
+            "নাম": "9XM মিউজিক",
+            "বিভাগ": "সঙ্গীত",
+            "url": "http://103.165.93.31:8095/9xm/index.m3u8",
+            "লোগো": "img/channels/9XM MUSIC.png",
+            "অবস্থা": "দৃশ্যমান"
         },
         {
-            "name": "DISCOVERY HD",
-            "category": "Documentary",
-            "url": "http://198.195.239.50:8095/discovery/index.m3u8",
-            "logo": "img/channels/DISCOVERY HD.png",
-            "status": "visible"
+            "নাম": "ডিসকভারি এইচডি",
+            "বিভাগ": "তথ্যচিত্র",
+            "url": "http://103.165.93.31:8095/discovery/index.m3u8",
+            "লোগো": "img/channels/DISCOVERY HD.png",
+            "অবস্থা": "দৃশ্যমান"
         },
         {
-            "name": "NATIONAL GEOGRAPHIC HD",
-            "category": "Documentary",
-            "url": "http://198.195.239.50:8095/nationalGeographic/index.m3u8",
-            "logo": "img/channels/NATGEO HD.png",
-            "status": "hidden"
+            "নাম": "ন্যাশনাল জিওগ্রাফিক এইচডি",
+            "বিভাগ": "তথ্যচিত্র",
+            "url": "http://103.165.93.31:8095/nationalGeographic/index.m3u8",
+            "লোগো": "img/channels/NATGEO HD.png",
+            "স্ট্যাটাস": "লুকানো"
         },
         {
-            "name": "ANIMAL PLANET HD",
-            "category": "Documentary",
-            "url": "http://198.195.239.50:8095/animalPlanet/index.m3u8",
-            "logo": "img/channels/ANIMAL PLANET HD.png",
-            "status": "hidden"
+            "নাম": "অ্যানিমেল প্ল্যানেট এইচডি",
+            "বিভাগ": "তথ্যচিত্র",
+            "url": "http://103.165.93.31:8095/animalPlanet/index.m3u8",
+            "লোগো": "img/channels/ANIMAL PLANET HD.png",
+            "স্ট্যাটাস": "লুকানো"
         },
         {
-            "name": "CARTOON NETWORK HD",
-            "category": "Kids",
-            "url": "http://198.195.239.50:8095/cartoonNetwork/index.m3u8",
-            "logo": "img/channels/CARTOON NETWORK.png",
-            "status": "visible"
+            "নাম": "কার্টুন নেটওয়ার্ক এইচডি",
+            "বিভাগ": "বাচ্চাদের",
+            "url": "http://103.165.93.31:8095/cartoonNetwork/index.m3u8",
+            "লোগো": "img/channels/CARTOON NETWORK.png",
+            "অবস্থা": "দৃশ্যমান"
         },
         {
-            "name": "POGO",
-            "category": "Kids",
-            "url": "http://198.195.239.50:8095/pogo/index.m3u8",
-            "logo": "img/channels/POGO.png",
-            "status": "hidden"
+            "নাম": "পোগো",
+            "বিভাগ": "বাচ্চাদের",
+            "url": "http://103.165.93.31:8095/pogo/index.m3u8",
+            "লোগো": "img/channels/POGO.png",
+            "স্ট্যাটাস": "লুকানো"
         },
         {
-            "name": "NICK",
-            "category": "Kids",
-            "url": "http://198.195.239.50:8095/nick/index.m3u8",
-            "logo": "img/channels/NICK.png",
-            "status": "hidden"
+            "নাম": "নিক",
+            "বিভাগ": "বাচ্চাদের",
+            "url": "http://103.165.93.31:8095/nick/index.m3u8",
+            "লোগো": "img/channels/NICK.png",
+            "স্ট্যাটাস": "লুকানো"
         },
         {
-            "name": "DISCOVERY KIDS HD",
-            "category": "Kids",
-            "url": "http://198.195.239.50:8095/disnepKids/index.m3u8",
-            "logo": "img/channels/DISCOVERY KIDS.png",
-            "status": "visible"
+            "নাম": "ডিসকভারি কিডস এইচডি",
+            "বিভাগ": "বাচ্চাদের",
+            "url": "http://103.165.93.31:8095/disnepKids/index.m3u8",
+            "লোগো": "img/channels/DISCOVERY KIDS.png",
+            "অবস্থা": "দৃশ্যমান"
         },
         {
-            "name": "FIFA",
-            "category": "Sports",
-            "url": "http://198.195.239.50:8095/Fifa-1/video.m3u8",
-            "logo": "img/channels/images.jpeg",
-            "status": "visible"
+            "নাম": "ফিফা",
+            "বিভাগ": "ক্রীড়া",
+            "url": "http://103.165.93.31:8095/Fifa-1/video.m3u8",
+            "লোগো": "img/channels/images.jpeg",
+            "অবস্থা": "দৃশ্যমান"
         },
         {
-            "name": "United-Sports",
-            "category": "Sports",
-            "url": "http://198.195.239.50:8095/unt-s/video.m3u8",
-            "logo": "img/channels/USTC-HorizLogo-600.png",
-            "status": "visible"
+            "নাম": "ইউনাইটেড-স্পোর্টস",
+            "বিভাগ": "ক্রীড়া",
+            "url": "http://103.165.93.31:8095/unt-s/video.m3u8",
+            "লোগো": "img/channels/USTC-HorizLogo-600.png",
+            "অবস্থা": "দৃশ্যমান"
         },
         {
-            "name": "BTV",
-            "category": "Sports",
-            "url": "http://198.195.239.50:8095/btv/video.m3u8",
-            "logo": "img/channels/BTV.HD.png",
-            "status": "visible"
+            "নাম": "বিটিভি",
+            "বিভাগ": "ক্রীড়া",
+            "url": "http://103.165.93.31:8095/btv/video.m3u8",
+            "লোগো": "img/channels/BTV.HD.png",
+            "অবস্থা": "দৃশ্যমান"
         }
     ]
 }
