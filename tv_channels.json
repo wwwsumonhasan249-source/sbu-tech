@@ -4,392 +4,392 @@
             "name": "TSPORTS HD",
             "category": "Sports",
             "url": "http://103.165.93.31:8095/tsports/video.m3u8",
-            "logo": "img/channels/T SPORTS.png",
+            "logo": "",
             "status": "visible"
         },
         {
             "name": "T sports 2",
             "category": "Sports",
             "url": "http://103.165.93.31:8095/t-sports-hd4k/video.m3u8",
-            "logo": "img/channels/T SPORTS.png",
+            "logo": "",
             "status": "hidden"
         },
         {
             "name": "STAR SPORTS2",
             "category": "Sports",
             "url": "http://103.165.93.31:8095/starSports2/index.m3u8",
-            "logo": "img/channels/STAR SPORTS2 HD.png",
+            "logo": "",
             "status": "hidden"
         },
         {
             "name": "STAR SPORTS3",
             "category": "Sports",
             "url": "http://103.165.93.31:8095/starSports3/index.m3u8",
-            "logo": "img/channels/STAR SPORTS3.png",
+            "logo": "",
             "status": "hidden"
         },
         {
             "name": "STAR SPORTS SELECT1 HD",
             "category": "Sports",
             "url": "http://103.165.93.31:8095/starSportsSelect1/index.m3u8",
-            "logo": "img/channels/STAR SPORTS SELECT1 HD.png",
+            "logo": "",
             "status": "hidden"
         },
         {
             "name": "STAR SPORTS SELECT2 HD",
             "category": "Sports",
             "url": "http://103.165.93.31:8095/starSportsSelect2/index.m3u8",
-            "logo": "img/channels/STAR SPORTS SELECT2 HD.png",
+            "logo": "",
             "status": "hidden"
         },
         {
             "name": "SONY SPORTS1 HD",
             "category": "Sports",
             "url": "http://103.165.93.31:8095/sonyTenSports1/index.m3u8",
-            "logo": "img/channels/SONY SPORTS1 HD.png",
+            "logo": "",
             "status": "hidden"
         },
         {
             "name": "SONY SPORTS2 HD",
             "category": "Sports",
             "url": "http://103.165.93.31:8095/sonyTenSports2/index.m3u8",
-            "logo": "img/channels/SONY SPORTS2 HD.png",
+            "logo": "",
             "status": "hidden"
         },
         {
             "name": "SONY SPORTS3 HD",
             "category": "Sports",
             "url": "http://103.165.93.31:8095/sonyTenSports3/index.m3u8",
-            "logo": "img/channels/SONY SPORTS3 HD.png",
+            "logo": "",
             "status": "hidden"
         },
         {
             "name": "SONY SPORTS4 HD",
             "category": "Sports",
             "url": "http://103.165.93.31:8095/sonyTenSports4/index.m3u8",
-            "logo": "img/channels/SONY SPORTS4 HD.png",
+            "logo": "",
             "status": "hidden"
         },
         {
             "name": "SONY SPORTS5 HD",
             "category": "Sports",
             "url": "http://103.165.93.31:8095/sonyTenSports5/index.m3u8",
-            "logo": "img/channels/SONY SPORTS5 HD.png",
+            "logo": "",
             "status": "hidden"
         },
         {
             "name": "PTV",
             "category": "Sports",
             "url": "http://103.165.93.31:8095/ptv/video.m3u8",
-            "logo": "img/channels/PTV SPORTS HD.png",
+            "logo": "",
             "status": "visible"
         },
         {
             "name": "EURO SPORTS HD",
             "category": "Sports",
             "url": "http://103.165.93.31:8095/euroSports/index.m3u8",
-            "logo": "img/channels/EUROSPORTS HD.png",
+            "logo": "",
             "status": "hidden"
         },
         {
             "name": "SHOMOY TV HD",
             "category": "Sports",
             "url": "http://103.165.93.31:8095/somoyTv/index.m3u8",
-            "logo": "img/channels/SOMOY TV.png",
+            "logo": "",
             "status": "visible"
         },
         {
             "name": "NEWS24 HD",
             "category": "News",
             "url": "http://103.165.93.31:8095/news24/index.m3u8",
-            "logo": "img/channels/NEWS24 HD.png",
+            "logo": "",
             "status": "hidden"
         },
         {
             "name": "CHANNEL 24",
             "category": "News",
             "url": "http://103.165.93.31:8095/channel24/index.m3u8",
-            "logo": "img/channels/CHANNEL 24.png",
+            "logo": "",
             "status": "visible"
         },
         {
             "name": "ATN NEWS HD",
             "category": "News",
             "url": "http://103.165.93.31:8095/atnNews/video.m3u8",
-            "logo": "img/channels/ATN NEWS.png",
+            "logo": "",
             "status": "visible"
         },
         {
             "name": "EKATTOR TV HD",
             "category": "News",
             "url": "http://103.165.93.31:8095/ekattorTv/index.m3u8",
-            "logo": "img/channels/EKATTOR_TV.png",
+            "logo": "",
             "status": "visible"
         },
         {
             "name": "JAMUNA TV",
             "category": "News",
             "url": "http://103.165.93.31:8095/jamunaTv/index.m3u8",
-            "logo": "img/channels/JAMUNA TV.png",
+            "logo": "",
             "status": "visible"
         },
         {
             "name": "ATN Bangla HD",
             "category": "Bangla",
             "url": "http://103.165.93.31:8095/atnBangla/index.m3u8",
-            "logo": "img/channels/ATN BANGLA.png",
+            "logo": "",
             "status": "visible"
         },
         {
             "name": "BANGLA VISION HD",
             "category": "Bangla",
             "url": "http://103.165.93.31:8095/banglaVision/index.m3u8",
-            "logo": "img/channels/BANGLA_VISION.png",
+            "logo": "",
             "status": "visible"
         },
         {
             "name": "CHANNEL I HD",
             "category": "Bangla",
             "url": "http://103.165.93.31:8095/channelI/index.m3u8",
-            "logo": "img/channels/CHANNEL I.png",
+            "logo": "",
             "status": "visible"
         },
         {
             "name": "GTV HD",
             "category": "Bangla",
             "url": "http://103.165.93.31:8095/GTV/index.m3u8",
-            "logo": "img/channels/GTV.png",
+            "logo": "",
             "status": "hidden"
         },
         {
             "name": "NTV HD",
             "category": "Bangla",
             "url": "http://103.165.93.31:8095/ntv/index.m3u8",
-            "logo": "img/channels/NTV.png",
+            "logo": "",
             "status": "visible"
         },
         {
             "name": "MASSRANGA HD",
             "category": "Bangla",
             "url": "http://103.165.93.31:8095/maasranga/index.m3u8",
-            "logo": "img/channels/MAASRANGA HD.png",
+            "logo": "",
             "status": "hidden"
         },
         {
             "name": "DEEPTO",
             "category": "Bangla",
             "url": "http://103.165.93.31:8095/deepto/index.m3u8",
-            "logo": "img/channels/DEEPTO.png",
+            "logo": "",
             "status": "visible"
         },
         {
             "name": "BTV",
             "category": "Bangla",
             "url": "http://103.165.93.31:8095/btv/index.m3u8",
-            "logo": "img/channels/BTV.HD.png",
+            "logo": "",
             "status": "visible"
         },
         {
             "name": "STAR JALSHA HD",
             "category": "Indian Bangla",
             "url": "http://103.165.93.31:8095/starJalsha/index.m3u8",
-            "logo": "img/channels/STAR JALSHA HD.png",
+            "logo": "",
             "status": "visible"
         },
         {
             "name": "JALSHA MOVIES HD",
             "category": "Indian Bangla",
             "url": "http://103.165.93.31:8095/jalshaMovies/index.m3u8",
-            "logo": "img/channels/JALSHA MOVIES HD.png",
+            "logo": "",
             "status": "visible"
         },
         {
             "name": "ZEE BANGLA HD",
             "category": "Indian Bangla",
             "url": "http://103.165.93.31:8095/zeeBangla/index.m3u8",
-            "logo": "img/channels/ZEE BANGLA HD.png",
+            "logo": "",
             "status": "visible"
         },
         {
             "name": "ZEE BANGLA CINEMA HD",
             "category": "Indian Bangla",
             "url": "http://103.165.93.31:8095/zeeBanglaCinema/index.m3u8",
-            "logo": "img/channels/ZEE BANGLA CINEMA.png",
+            "logo": "",
             "status": "hidden"
         },
         {
             "name": "COLORS BANGLA HD",
             "category": "Indian Bangla",
             "url": "http://103.165.93.31:8095/colorsBangla/index.m3u8",
-            "logo": "img/channels/COLORS BANGLA HD.png",
+            "logo": "",
             "status": "hidden"
         },
         {
             "name": "COLORS BANGLA CINEMA HD",
             "category": "Indian Bangla",
             "url": "http://103.165.93.31:8095/colorsBanglaChinema/index.m3u8",
-            "logo": "img/channels/COLORS BANGLA CINEMA.png",
+            "logo": "",
             "status": "visible"
         },
         {
             "name": "SONY AATH",
             "category": "Indian Bangla",
             "url": "http://103.165.93.31:8095/sonyAath/index.m3u8",
-            "logo": "img/channels/SONY AATH.png",
+            "logo": "",
             "status": "visible"
         },
         {
             "name": "SANGEET BANGLA",
             "category": "Music",
             "url": "http://103.165.93.31:8095/sangeetBangla/index.m3u8",
-            "logo": "img/channels/SANGEET BANGLA.png",
+            "logo": "",
             "status": "visible"
         },
         {
             "name": "ENTER 10 BANGLA",
             "category": "Indian Bangla",
             "url": "http://103.165.93.31:8095/enter10Bangla/index.m3u8",
-            "logo": "img/channels/ENTERR 10 BANGLA.png",
+            "logo": "",
             "status": "hidden"
         },
         {
             "name": "SONY MAX HD",
             "category": "Hindi",
             "url": "http://103.165.93.31:8095/sonyMax/index.m3u8",
-            "logo": "img/channels/SONY MAX HD.png",
+            "logo": "",
             "status": "visible"
         },
         {
             "name": "SONY ENTERTAINMENT HD",
             "category": "Hindi",
             "url": "http://103.165.93.31:8095/sonyEntertainment/index.m3u8",
-            "logo": "img/channels/SONY ENTERTAINMENT HD.png",
+            "logo": "",
             "status": "visible"
         },
         {
             "name": "STAR GOLD HD",
             "category": "Hindi",
             "url": "http://103.165.93.31:8095/starGold/index.m3u8",
-            "logo": "img/channels/STAR GOLD HD.png",
+            "logo": "",
             "status": "hidden"
         },
         {
             "name": "STAR PLUS HD",
             "category": "Hindi",
             "url": "http://103.165.93.31:8095/starPlus/index.m3u8",
-            "logo": "img/channels/STAR PLUS HD.png",
+            "logo": "",
             "status": "visible"
         },
         {
             "name": "STAR MOVIES HD",
             "category": "Hindi",
             "url": "http://103.165.93.31:8095/starMovies/index.m3u8",
-            "logo": "img/channels/STAR MOVIES HD.png",
+            "logo": "",
             "status": "visible"
         },
         {
             "name": "ZEE TV HD",
             "category": "Hindi",
             "url": "http://103.165.93.31:8095/zeeTV/index.m3u8",
-            "logo": "img/channels/ZEE TV HD.png",
+            "logo": "",
             "status": "hidden"
         },
         {
             "name": "ZEE CINEMA HD",
             "category": "Hindi",
             "url": "http://103.165.93.31:8095/zeeChinema/index.m3u8",
-            "logo": "img/channels/ZEE CINEMA HD.png",
+            "logo": "",
             "status": "hidden"
         },
         {
             "name": "COLORS HD",
             "category": "Hindi",
             "url": "http://103.165.93.31:8095/colors/index.m3u8",
-            "logo": "img/channels/COLORS HD.png",
+            "logo": "",
             "status": "visible"
         },
         {
             "name": "COLORS CINEPLEX HD",
             "category": "Hindi",
             "url": "http://103.165.93.31:8095/colorsCineplex/index.m3u8",
-            "logo": "img/channels/COLORS CINEPLEX HD.png",
+            "logo": "",
             "status": "visible"
         },
         {
             "name": "9XM MUSIC",
             "category": "Music",
             "url": "http://103.165.93.31:8095/9xm/index.m3u8",
-            "logo": "img/channels/9XM MUSIC.png",
+            "logo": "",
             "status": "visible"
         },
         {
             "name": "DISCOVERY HD",
             "category": "Documentary",
             "url": "http://103.165.93.31:8095/discovery/index.m3u8",
-            "logo": "img/channels/DISCOVERY HD.png",
+            "logo": "",
             "status": "visible"
         },
         {
             "name": "NATIONAL GEOGRAPHIC HD",
             "category": "Documentary",
             "url": "http://103.165.93.31:8095/nationalGeographic/index.m3u8",
-            "logo": "img/channels/NATGEO HD.png",
+            "logo": "",
             "status": "hidden"
         },
         {
             "name": "ANIMAL PLANET HD",
             "category": "Documentary",
             "url": "http://103.165.93.31:8095/animalPlanet/index.m3u8",
-            "logo": "img/channels/ANIMAL PLANET HD.png",
+            "logo": "",
             "status": "hidden"
         },
         {
             "name": "CARTOON NETWORK HD",
             "category": "Kids",
             "url": "http://103.165.93.31:8095/cartoonNetwork/index.m3u8",
-            "logo": "img/channels/CARTOON NETWORK.png",
+            "logo": "",
             "status": "visible"
         },
         {
             "name": "POGO",
             "category": "Kids",
             "url": "http://103.165.93.31:8095/pogo/index.m3u8",
-            "logo": "img/channels/POGO.png",
+            "logo": "",
             "status": "hidden"
         },
         {
             "name": "NICK",
             "category": "Kids",
             "url": "http://103.165.93.31:8095/nick/index.m3u8",
-            "logo": "img/channels/NICK.png",
+            "logo": "",
             "status": "hidden"
         },
         {
             "name": "DISCOVERY KIDS HD",
             "category": "Kids",
             "url": "http://103.165.93.31:8095/disnepKids/index.m3u8",
-            "logo": "img/channels/DISCOVERY KIDS.png",
+            "logo": "",
             "status": "visible"
         },
         {
             "name": "FIFA",
             "category": "Sports",
             "url": "http://103.165.93.31:8095/Fifa-1/video.m3u8",
-            "logo": "img/channels/images.jpeg",
+            "logo": "",
             "status": "visible"
         },
         {
             "name": "United-Sports",
             "category": "Sports",
             "url": "http://103.165.93.31:8095/unt-s/video.m3u8",
-            "logo": "img/channels/USTC-HorizLogo-600.png",
+            "logo": "",
             "status": "visible"
         },
         {
             "name": "BTV",
             "category": "Sports",
             "url": "http://103.165.93.31:8095/btv/video.m3u8",
-            "logo": "img/channels/BTV.HD.png",
+            "logo": "",
             "status": "visible"
         }
     ]
