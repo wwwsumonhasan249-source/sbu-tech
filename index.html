@@ -87,8 +87,8 @@
             gap: 8px;
         }
         .profile-img {
-            width: 38px;
-            height: 38px;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
             object-fit: cover;
             border: 2px solid var(--accent);
@@ -481,7 +481,7 @@
             <h1>SBU TV Player</h1>
         </div>
         <div class="profile-area">
-            <span class="profile-name">👤 <span>সুমন হাসান</span></span>
+            <span class="profile-name">🧑‍💻 <span>MD.SUMON</span></span>
             <img src="profile.jpg" alt="Profile" class="profile-img" 
                  onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2250%22 height=%2250%22 viewBox=%220 0 50 50%22%3E%3Ccircle cx=%2225%22 cy=%2225%22 r=%2224%22 fill=%22%23333%22/%3E%3Ctext x=%2225%22 y=%2232%22 font-size=%2224%22 text-anchor=%22middle%22 fill=%22%23666%22%3E😎%3C/text%3E%3C/svg%3E'" />
         </div>
@@ -634,7 +634,7 @@
         })
         .catch(err => {
             console.error(err);
-            listEl.innerHTML = `<li style="grid-column:1/-1;text-align:center;color:#888;padding:30px;">⚠️ tv_channels.json পাওয়া যায়নি<br><small style="color:#555;">ফাইলটি index.html-এর পাশে রাখুন</small></li>`;
+            listEl.innerHTML = `<li style="grid-column:1/-1;text-align:center;color:#888;padding:30px;">⚠️ tv_channels.json পাওয়া যায়নি<br><small style="color:#555;">অ্যাপসটি বর্তমানে আপডেট মুডে আছে আপডেট হয়ে গেলে অবশ্যই চ্যানেল চলে আসবে</small></li>`;
         });
 
     function buildChannelList(channelArray) {
