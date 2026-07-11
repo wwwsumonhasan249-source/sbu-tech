@@ -6,8 +6,6 @@
             "url": "http://103.165.93.31:8095/tsports/video.m3u8",
             "status": "visible"
         },
-{
-    "channels": [
         {
             "name": "Al Jazeera",
             "category": "News",
@@ -18,61 +16,61 @@
             "name": "T sports 2",
             "category": "Sports",
             "url": "http://103.165.93.31:8095/t-sports-hd4k/video.m3u8",
-            "status": "hidden"
+            "status": "visible"
         },
         {
             "name": "STAR SPORTS2",
             "category": "Sports",
             "url": "http://103.165.93.31:8095/starSports2/index.m3u8",
-            "status": "hidden"
+            "status": "visible"
         },
         {
             "name": "STAR SPORTS3",
             "category": "Sports",
             "url": "http://103.165.93.31:8095/starSports3/index.m3u8",
-            "status": "hidden"
+            "status": "visible"
         },
         {
             "name": "STAR SPORTS SELECT1 HD",
             "category": "Sports",
             "url": "http://103.165.93.31:8095/starSportsSelect1/index.m3u8",
-            "status": "hidden"
+            "status": "visible"
         },
         {
             "name": "STAR SPORTS SELECT2 HD",
             "category": "Sports",
             "url": "http://103.165.93.31:8095/starSportsSelect2/index.m3u8",
-            "status": "hidden"
+            "status": "visible"
         },
         {
             "name": "SONY SPORTS1 HD",
             "category": "Sports",
             "url": "http://103.165.93.31:8095/sonyTenSports1/index.m3u8",
-            "status": "hidden"
+            "status": "visible"
         },
         {
             "name": "SONY SPORTS2 HD",
             "category": "Sports",
             "url": "http://103.165.93.31:8095/sonyTenSports2/index.m3u8",
-            "status": "hidden"
+            "status": "visible"
         },
         {
             "name": "SONY SPORTS3 HD",
             "category": "Sports",
             "url": "http://103.165.93.31:8095/sonyTenSports3/index.m3u8",
-            "status": "hidden"
+            "status": "visible"
         },
         {
             "name": "SONY SPORTS4 HD",
             "category": "Sports",
             "url": "http://103.165.93.31:8095/sonyTenSports4/index.m3u8",
-            "status": "hidden"
+            "status": "visible"
         },
         {
             "name": "SONY SPORTS5 HD",
             "category": "Sports",
             "url": "http://103.165.93.31:8095/sonyTenSports5/index.m3u8",
-            "status": "hidden"
+            "status": "visible"
         },
         {
             "name": "PTV",
@@ -84,7 +82,7 @@
             "name": "EURO SPORTS HD",
             "category": "Sports",
             "url": "http://103.165.93.31:8095/euroSports/index.m3u8",
-            "status": "hidden"
+            "status": "visible"
         },
         {
             "name": "SHOMOY TV HD",
@@ -96,7 +94,7 @@
             "name": "NEWS24 HD",
             "category": "News",
             "url": "http://103.165.93.31:8095/news24/index.m3u8",
-            "status": "hidden"
+            "status": "visible"
         },
         {
             "name": "CHANNEL 24",
@@ -144,7 +142,7 @@
             "name": "GTV HD",
             "category": "Bangla",
             "url": "http://103.165.93.31:8095/GTV/index.m3u8",
-            "status": "hidden"
+            "status": "visible"
         },
         {
             "name": "NTV HD",
@@ -156,7 +154,7 @@
             "name": "MASSRANGA HD",
             "category": "Bangla",
             "url": "http://103.165.93.31:8095/maasranga/index.m3u8",
-            "status": "hidden"
+            "status": "visible"
         },
         {
             "name": "DEEPTO",
@@ -183,7 +181,7 @@
             "status": "visible"
         },
         {
-            "name": "ZEE BANGLA  HD",
+            "name": "ZEE BANGLA HD",
             "category": "Indian Bangla",
             "url": "http://103.165.93.31:8095/zeeBangla/index.m3u8",
             "status": "visible"
@@ -192,13 +190,13 @@
             "name": "ZEE BANGLA CHINEMA HD",
             "category": "Indian Bangla",
             "url": "http://103.165.93.31:8095/zeeBanglaCinema/index.m3u8",
-            "status": "hidden"
+            "status": "visible"
         },
         {
             "name": "COLOR BANGLA HD",
             "category": "Indian Bangla",
             "url": "http://103.165.93.31:8095/colorsBangla/index.m3u8",
-            "status": "hidden"
+            "status": "visible"
         },
         {
             "name": "COLOR BANGLA CHINEMA HD",
@@ -222,7 +220,7 @@
             "name": "ENTER 10 BANGLA",
             "category": "Indian Bangla",
             "url": "http://103.165.93.31:8095/enter10Bangla/index.m3u8",
-            "status": "hidden"
+            "status": "visible"
         },
         {
             "name": "SONY MAX HD",
@@ -240,7 +238,7 @@
             "name": "STAR GOLD HD",
             "category": "Hindi",
             "url": "http://103.165.93.31:8095/starGold/index.m3u8",
-            "status": "hidden"
+            "status": "visible"
         },
         {
             "name": "STAR PLUS HD",
@@ -258,13 +256,13 @@
             "name": "ZEE TV HD",
             "category": "Hindi",
             "url": "http://103.165.93.31:8095/zeeTV/index.m3u8",
-            "status": "hidden"
+            "status": "visible"
         },
         {
             "name": "ZEE CHINEMA HD",
             "category": "Hindi",
             "url": "http://103.165.93.31:8095/zeeChinema/index.m3u8",
-            "status": "hidden"
+            "status": "visible"
         },
         {
             "name": "COLOR HD",
@@ -294,13 +292,13 @@
             "name": "NATIONAL GEOGRAPHIC HD",
             "category": "Documentary",
             "url": "http://103.165.93.31:8095/nationalGeographic/index.m3u8",
-            "status": "hidden"
+            "status": "visible"
         },
         {
             "name": "ANIMAL PLANET HD",
             "category": "Documentary",
             "url": "http://103.165.93.31:8095/animalPlanet/index.m3u8",
-            "status": "hidden"
+            "status": "visible"
         },
         {
             "name": "CARTOON NETWORK HD",
@@ -312,13 +310,13 @@
             "name": "POGO",
             "category": "Kids",
             "url": "http://103.165.93.31:8095/pogo/index.m3u8",
-            "status": "hidden"
+            "status": "visible"
         },
         {
             "name": "NICK",
             "category": "Kids",
             "url": "http://103.165.93.31:8095/nick/index.m3u8",
-            "status": "hidden"
+            "status": "visible"
         },
         {
             "name": "DISCOVERY KIDS HD",
