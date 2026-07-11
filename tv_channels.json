@@ -1,6 +1,14 @@
 {
     "channels": [
         {
+            "name": "Al Jazeera",
+            "category": "news",
+            "url": "https://live-hls-web-aja.getaj.net/AJA/index.m3u8",
+            "status": "visible"
+     },
+{
+    "channels": [
+        {
             "name": "TSPORTS HD",
             "category": "Sports",
             "url": "http://103.165.93.31:8095/tsports/video.m3u8",
