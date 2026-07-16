@@ -3,7 +3,7 @@
         {
             "name": "TSPORTS HD",
             "category": "Sports",
-            "url": "103.165.93.31:8095/tsports/video.m3u8",
+            "url": "http://103.165.93.31:8095/tsports/video.m3u8",
             "status": "visible"
         },
         {
@@ -187,19 +187,19 @@
             "status": "visible"
         },
         {
-            "name": "ZEE BANGLA CHINEMA HD",
+            "name": "ZEE BANGLA CINEMA HD",
             "category": "Indian Bangla",
             "url": "http://103.165.93.31:8095/zeeBanglaCinema/index.m3u8",
             "status": "hidden"
         },
         {
-            "name": "COLOR BANGLA HD",
+            "name": "COLORS BANGLA HD",
             "category": "Indian Bangla",
             "url": "http://103.165.93.31:8095/colorsBangla/index.m3u8",
             "status": "hidden"
         },
         {
-            "name": "COLOR BANGLA CHINEMA HD",
+            "name": "COLORS BANGLA CINEMA HD",
             "category": "Indian Bangla",
             "url": "http://103.165.93.31:8095/colorsBanglaChinema/index.m3u8",
             "status": "visible"
@@ -259,19 +259,19 @@
             "status": "hidden"
         },
         {
-            "name": "ZEE CHINEMA HD",
+            "name": "ZEE CINEMA HD",
             "category": "Hindi",
             "url": "http://103.165.93.31:8095/zeeChinema/index.m3u8",
             "status": "hidden"
         },
         {
-            "name": "COLOR HD",
+            "name": "COLORS HD",
             "category": "Hindi",
             "url": "http://103.165.93.31:8095/colors/index.m3u8",
             "status": "visible"
         },
         {
-            "name": "COLOR CINEPLEX HD",
+            "name": "COLORS CINEPLEX HD",
             "category": "Hindi",
             "url": "http://103.165.93.31:8095/colorsCineplex/index.m3u8",
             "status": "visible"
