@@ -7,94 +7,10 @@
             "status": "visible"
         },
         {
-            "name": "Al Jazeera",
-            "category": "News",
-            "url": "https://live-hls-web-aja.getaj.net/AJA/index.m3u8",
-            "status": "visible"
-        },
-        {
-            "name": "T sports 2",
-            "category": "Sports",
-            "url": "http://103.165.93.31:8095/t-sports-hd4k/video.m3u8",
-            "status": "hidden"
-        },
-        {
-            "name": "STAR SPORTS2",
-            "category": "Sports",
-            "url": "http://103.165.93.31:8095/starSports2/index.m3u8",
-            "status": "hidden"
-        },
-        {
-            "name": "STAR SPORTS3",
-            "category": "Sports",
-            "url": "http://103.165.93.31:8095/starSports3/index.m3u8",
-            "status": "hidden"
-        },
-        {
-            "name": "STAR SPORTS SELECT1 HD",
-            "category": "Sports",
-            "url": "http://103.165.93.31:8095/starSportsSelect1/index.m3u8",
-            "status": "hidden"
-        },
-        {
-            "name": "STAR SPORTS SELECT2 HD",
-            "category": "Sports",
-            "url": "http://103.165.93.31:8095/starSportsSelect2/index.m3u8",
-            "status": "hidden"
-        },
-        {
-            "name": "SONY SPORTS1 HD",
-            "category": "Sports",
-            "url": "http://103.165.93.31:8095/sonyTenSports1/index.m3u8",
-            "status": "hidden"
-        },
-        {
-            "name": "SONY SPORTS2 HD",
-            "category": "Sports",
-            "url": "http://103.165.93.31:8095/sonyTenSports2/index.m3u8",
-            "status": "hidden"
-        },
-        {
-            "name": "SONY SPORTS3 HD",
-            "category": "Sports",
-            "url": "http://103.165.93.31:8095/sonyTenSports3/index.m3u8",
-            "status": "hidden"
-        },
-        {
-            "name": "SONY SPORTS4 HD",
-            "category": "Sports",
-            "url": "http://103.165.93.31:8095/sonyTenSports4/index.m3u8",
-            "status": "hidden"
-        },
-        {
-            "name": "SONY SPORTS5 HD",
-            "category": "Sports",
-            "url": "http://103.165.93.31:8095/sonyTenSports5/index.m3u8",
-            "status": "hidden"
-        },
-        {
-            "name": "PTV",
-            "category": "Sports",
-            "url": "http://103.165.93.31:8095/ptv/video.m3u8",
-            "status": "visible"
-        },
-        {
-            "name": "EURO SPORTS HD",
-            "category": "Sports",
-            "url": "http://103.165.93.31:8095/euroSports/index.m3u8",
-            "status": "hidden"
-        },
-        {
             "name": "SHOMOY TV HD",
-            "category": "Sports",
+            "category": "News",
             "url": "http://103.165.93.31:8095/somoyTv/index.m3u8",
             "status": "visible"
-        },
-        {
-            "name": "NEWS24 HD",
-            "category": "News",
-            "url": "http://103.165.93.31:8095/news24/index.m3u8",
-            "status": "hidden"
         },
         {
             "name": "CHANNEL 24",
@@ -139,22 +55,10 @@
             "status": "visible"
         },
         {
-            "name": "GTV HD",
-            "category": "Bangla",
-            "url": "http://103.165.93.31:8095/GTV/index.m3u8",
-            "status": "hidden"
-        },
-        {
             "name": "NTV HD",
             "category": "Bangla",
             "url": "http://103.165.93.31:8095/ntv/index.m3u8",
             "status": "visible"
-        },
-        {
-            "name": "MASSRANGA HD",
-            "category": "Bangla",
-            "url": "http://103.165.93.31:8095/maasranga/index.m3u8",
-            "status": "hidden"
         },
         {
             "name": "DEEPTO",
@@ -166,6 +70,642 @@
             "name": "BTV",
             "category": "Bangla",
             "url": "http://103.165.93.31:8095/btv/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "PTV",
+            "category": "Sports",
+            "url": "http://103.165.93.31:8095/ptv/video.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "SANGEET BANGLA",
+            "category": "Music",
+            "url": "http://103.165.93.31:8095/sangeetBangla/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "9XM MUSIC",
+            "category": "Music",
+            "url": "http://103.165.93.31:8095/9xm/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "DISCOVERY HD",
+            "category": "Documentary",
+            "url": "http://103.165.93.31:8095/discovery/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "CARTOON NETWORK HD",
+            "category": "Kids",
+            "url": "http://103.165.93.31:8095/cartoonNetwork/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "DISCOVERY KIDS HD",
+            "category": "Kids",
+            "url": "http://103.165.93.31:8095/disnepKids/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "FIFA",
+            "category": "Sports",
+            "url": "http://103.165.93.31:8095/Fifa-1/video.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "United-Sports",
+            "category": "Sports",
+            "url": "http://103.165.93.31:8095/unt-s/video.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Ekushey TV",
+            "category": "Bangla",
+            "url": "http://210.4.72.204/hls-live/livepkgr/_definst_/liveevent/livestream3.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Deshe Bideshe",
+            "category": "Bangla",
+            "url": "https://dbcanada.sonarbanglatv.com/deshebideshe/dbtv/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Music Bangla",
+            "category": "Music",
+            "url": "http://live.matribhumitv.com/music-bangla/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "MY TV",
+            "category": "Bangla",
+            "url": "https://mytvbangla.com/0.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Maasranga HD",
+            "category": "Bangla",
+            "url": "http://mtv.sunplex.live/MAASRANGA-TV/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Somoy TV",
+            "category": "News",
+            "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1702/output/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Jamuna TV",
+            "category": "News",
+            "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1701/output/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "DBC News HD",
+            "category": "News",
+            "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1728/output/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Maasranga TV",
+            "category": "Entertainment",
+            "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1722/output/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Ekattor HD",
+            "category": "News",
+            "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1705/output/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Channel 24 HD",
+            "category": "News",
+            "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1703/output/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "ATN News",
+            "category": "News",
+            "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1706/output/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "News 24 HD",
+            "category": "News",
+            "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1708/output/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Star News",
+            "category": "News",
+            "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1710/output/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Islamic TV",
+            "category": "Islamic",
+            "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1724/output/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Deepto TV HD",
+            "category": "Entertainment",
+            "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1711/output/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Channel 9 HD",
+            "category": "Entertainment",
+            "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1729/output/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "SRK TV",
+            "category": "Entertainment",
+            "url": "https://srknowapp.ncare.live/srktvhlswodrm/srktv.stream/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Channel I HD",
+            "category": "Entertainment",
+            "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1723/output/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Cineedge HD",
+            "category": "Movies",
+            "url": "https://nomawnoijl.gpcdn.net/akash/cineedge/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Uniques HD",
+            "category": "Movies",
+            "url": "https://nomawnoijl.gpcdn.net/akash/uniques/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Superrix HD",
+            "category": "Movies",
+            "url": "https://nomawnoijl.gpcdn.net/akash/superrix/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Bangla Vision",
+            "category": "Entertainment",
+            "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1715/output/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "NTV",
+            "category": "Entertainment",
+            "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1716/output/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Screem",
+            "category": "Movies",
+            "url": "https://nomawnoijl.gpcdn.net/akash/screem/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Sports Legends",
+            "category": "Sports",
+            "url": "https://nomawnoijl.gpcdn.net/akash/sportslegends/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Flash Guys HD",
+            "category": "Sports",
+            "url": "https://nomawnoijl.gpcdn.net/akash/flashguys/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "BuddyStar HD",
+            "category": "Kids",
+            "url": "https://nomawnoijl.gpcdn.net/akash/buddystar/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Luxel HD",
+            "category": "Infotainment",
+            "url": "https://nomawnoijl.gpcdn.net/akash/luxell/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Joy",
+            "category": "Kids",
+            "url": "https://nomawnoijl.gpcdn.net/akash/joy/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Funny Junior HD",
+            "category": "Kids",
+            "url": "https://nomawnoijl.gpcdn.net/akash/funnyjunior/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Crimes",
+            "category": "Movies",
+            "url": "https://nomawnoijl.gpcdn.net/akash/crimes/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "True Stories",
+            "category": "Movies",
+            "url": "https://nomawnoijl.gpcdn.net/akash/truestories/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Intelligence",
+            "category": "Movies",
+            "url": "https://nomawnoijl.gpcdn.net/akash/intelligence/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Sports Range",
+            "category": "Sports",
+            "url": "https://nomawnoijl.gpcdn.net/akash/sportrange/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Thunder Er",
+            "category": "Sports",
+            "url": "https://nomawnoijl.gpcdn.net/akash/thunder/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Fighters",
+            "category": "Sports",
+            "url": "https://nomawnoijl.gpcdn.net/akash/fighter/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Smarty",
+            "category": "Kids",
+            "url": "https://nomawnoijl.gpcdn.net/akash/smarty/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Lucky Family",
+            "category": "Kids",
+            "url": "https://nomawnoijl.gpcdn.net/akash/luckyfamily/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Kids Stars",
+            "category": "Kids",
+            "url": "https://nomawnoijl.gpcdn.net/akash/kidsstars/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "BTV",
+            "category": "Entertainment",
+            "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1709/output/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Al Jazeera",
+            "category": "News",
+            "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1721/output/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Al Jazeera",
+            "category": "News",
+            "url": "https://live-hls-web-aja.getaj.net/AJA/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Party Universe",
+            "category": "Music",
+            "url": "https://nomawnoijl.gpcdn.net/akash/partyuniverse/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Al Quran",
+            "category": "Islamic",
+            "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1713/output/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Independent TV",
+            "category": "News",
+            "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1704/output/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Nikki",
+            "category": "Kids",
+            "url": "https://nomawnoijl.gpcdn.net/akash/nikky/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Originals",
+            "category": "Movies",
+            "url": "https://nomawnoijl.gpcdn.net/akash/originals/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Crazy Ex",
+            "category": "Sports",
+            "url": "https://nomawnoijl.gpcdn.net/akash/crazy_ex/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Delicious",
+            "category": "Infotainment",
+            "url": "https://nomawnoijl.gpcdn.net/akash/delicious/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "DD Sports",
+            "category": "Sports",
+            "url": "https://cdn-6.pishow.tv/live/13/master.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Deshi TV (720p)",
+            "category": "Bangla",
+            "url": "https://deshitv.deshitv24.net/live/myStream/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "ATN Music (360p)",
+            "category": "Music",
+            "url": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/atnmusic.stream/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Desh TV (1080p)",
+            "category": "Bangla",
+            "url": "https://bozztv.com/rongo/rongo-DeshTV/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Boishakhi TV",
+            "category": "Bangla",
+            "url": "https://boishakhi.sonarbanglatv.com/boishakhi/boishakhitv/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Ananda TV",
+            "category": "Bangla",
+            "url": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/anandatv.stream/live-orgin/anandatv.stream/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Channel S",
+            "category": "Bangla",
+            "url": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/channels.stream/live-orgin/channels.stream/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Gazi TV",
+            "category": "Bangla",
+            "url": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/gazibdz.stream/live-orgin/gazibdz.stream/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Channel 1 News HD",
+            "category": "News",
+            "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMDFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/channel1bd.stream/tracks-v1a1/mono.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Live Quran TV",
+            "category": "Islamic",
+            "url": "https://live.kwikmotion.com/sharjahtvquranlive/shqurantv.smil/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "FM Radio",
+            "category": "Music",
+            "url": "https://stream.spicefmbd.com/stream.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "G Series Drama",
+            "category": "Entertainment",
+            "url": "https://vods2.aynaott.com/gseriesDrama/tracks-v1a1/mono.ts.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Motor Vision",
+            "category": "Infotainment",
+            "url": "https://mvg-mv-xumo.otteravision.com/mvg/mv/mv.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Cartoon Network",
+            "category": "Kids",
+            "url": "https://live20.bozztv.com/giatvplayout7/giatv-209624/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "BBC Cbeebies",
+            "category": "Kids",
+            "url": "https://live20.bozztv.com/giatvplayout7/giatv-209622/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Arabica TV",
+            "category": "Bangla",
+            "url": "http://istream.binarywaves.com:8081/hls/arabica/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "PBS Kids",
+            "category": "Kids",
+            "url": "https://2-fss-2.streamhoster.com/pl_140/amlst:200914-1298290/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "AL SUNNAH TV",
+            "category": "Islamic",
+            "url": "http://m.live.net.sa:1935/live/sunnah/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Sunnah TV",
+            "category": "Islamic",
+            "url": "http://m.live.net.sa:1935/live/sunnah/chunklist.m3u8?v=1",
+            "status": "visible"
+        },
+        {
+            "name": "QURAN TV",
+            "category": "Islamic",
+            "url": "http://m.live.net.sa:1935/live/quran/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Saudi Sunnah TV",
+            "category": "Islamic",
+            "url": "https://cdn-globecast.akamaized.net/live/eds/saudi_sunnah/hls_roku/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Saudi Quran TV",
+            "category": "Islamic",
+            "url": "https://cdn-globecast.akamaized.net/live/eds/saudi_quran/hls_roku/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Peace TV Bangla",
+            "category": "Islamic",
+            "url": "https://dzkyvlfyge.erbvr.com/PeaceTvBangla/tracks-v3a1/mono.m3u8?sid=s7AaNdTzDE2912wNcPLejQ",
+            "status": "visible"
+        },
+        {
+            "name": "Rongeen TV",
+            "category": "Kids",
+            "url": "https://server.thelegitpro.in/rongeentv/rongeentv/tracks-v1a1/mono.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "ALMASIRA MUBASHER",
+            "category": "Islamic",
+            "url": "https://live2.cdnbridge.tv/AlmasirahMubasher/Mubasher_All/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Madani TV",
+            "category": "Islamic",
+            "url": "https://streaming.madanichannel.tv/static/streaming-playlists/hls/d3e49b76-ac06-4689-a641-9200445b647f/master.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "AL EKHBARIA",
+            "category": "Islamic",
+            "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-al-ekhbaria/297b3ef1cd0633ad9cfba7473a686a06/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Travel XP English NZ",
+            "category": "Documentary",
+            "url": "https://travelxp-travelxp-1-nz.samsung.wurl.tv/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Travel XP English",
+            "category": "Documentary",
+            "url": "https://travelxp-travelxp-1-eu.rakuten.wurl.tv/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Peace TV English",
+            "category": "Islamic",
+            "url": "https://dzkyvlfyge.erbvr.com/PeaceTvEnglish/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "QURAN RADIOTV SMC",
+            "category": "Islamic",
+            "url": "https://live.kwikmotion.com/smcquranlive/quranradiolive/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "REAL WILD",
+            "category": "Documentary",
+            "url": "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00426-littledotstudio-realwild-tcl/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "T Global News (Canada)",
+            "category": "News",
+            "url": "https://live.corusdigitaldev.com/groupd/live/49a91e7f-1023-430f-8d66-561055f3d0f7/live.isml/master.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "BAHRAIN QURAN",
+            "category": "Islamic",
+            "url": "https://5c7b683162943.streamlock.net/live/ngrp:bahrainquran_all/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "AL ISTIQAMA",
+            "category": "Islamic",
+            "url": "https://jmc-live.ercdn.net/alistiqama/alistiqama.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Sochi 24 HD",
+            "category": "Infotainment",
+            "url": "http://serv30.vintera.tv:8081/sochi/sochi24_tv/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "DW NEWS",
+            "category": "News",
+            "url": "https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/stream02/streamPlaylist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "AL QAMAR",
+            "category": "Islamic",
+            "url": "https://streamer3.premio.link/alqamar/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Press TV Iran",
+            "category": "News",
+            "url": "https://live.presstv.ir/hls/presstv_5_482/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "France 24",
+            "category": "News",
+            "url": "https://live.france24.com/hls/live/2037179/F24_FR_HI_HLS/master_5000.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Insight",
+            "category": "Documentary",
+            "url": "https://insighttv-samsung-us.amagi.tv/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Iran International (EN)",
+            "category": "News",
+            "url": "https://dev-live.livetvstream.co.uk/LS-63503-4/chunklist_b1196000.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Colors Infinity SD",
+            "category": "Entertainment",
+            "url": "https://livecdn.live247stream.com/joomusic/tv/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "FASHION ONE",
+            "category": "Infotainment",
+            "url": "https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e2ee6997cb_1/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "FASHION ONE HD",
+            "category": "Infotainment",
+            "url": "https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/broadcast_5c9e2ee690051.smil/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "DW English",
+            "category": "News",
+            "url": "https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Amazon SAT",
+            "category": "Infotainment",
+            "url": "https://amazonsat.brasilstream.com.br/hls/amazonsat/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Welcome to PlayZ TV",
+            "category": "Promo",
+            "url": "https://playztv.pages.dev/promo/master.m3u8",
             "status": "visible"
         },
         {
@@ -187,18 +727,6 @@
             "status": "visible"
         },
         {
-            "name": "ZEE BANGLA CINEMA HD",
-            "category": "Indian Bangla",
-            "url": "http://103.165.93.31:8095/zeeBanglaCinema/index.m3u8",
-            "status": "hidden"
-        },
-        {
-            "name": "COLORS BANGLA HD",
-            "category": "Indian Bangla",
-            "url": "http://103.165.93.31:8095/colorsBangla/index.m3u8",
-            "status": "hidden"
-        },
-        {
             "name": "COLORS BANGLA CINEMA HD",
             "category": "Indian Bangla",
             "url": "http://103.165.93.31:8095/colorsBanglaChinema/index.m3u8",
@@ -209,18 +737,6 @@
             "category": "Indian Bangla",
             "url": "http://103.165.93.31:8095/sonyAath/index.m3u8",
             "status": "visible"
-        },
-        {
-            "name": "SANGEET BANGLA",
-            "category": "Music",
-            "url": "http://103.165.93.31:8095/sangeetBangla/index.m3u8",
-            "status": "visible"
-        },
-        {
-            "name": "ENTER 10 BANGLA",
-            "category": "Indian Bangla",
-            "url": "http://103.165.93.31:8095/enter10Bangla/index.m3u8",
-            "status": "hidden"
         },
         {
             "name": "SONY MAX HD",
@@ -235,12 +751,6 @@
             "status": "visible"
         },
         {
-            "name": "STAR GOLD HD",
-            "category": "Hindi",
-            "url": "http://103.165.93.31:8095/starGold/index.m3u8",
-            "status": "hidden"
-        },
-        {
             "name": "STAR PLUS HD",
             "category": "Hindi",
             "url": "http://103.165.93.31:8095/starPlus/index.m3u8",
@@ -253,18 +763,6 @@
             "status": "visible"
         },
         {
-            "name": "ZEE TV HD",
-            "category": "Hindi",
-            "url": "http://103.165.93.31:8095/zeeTV/index.m3u8",
-            "status": "hidden"
-        },
-        {
-            "name": "ZEE CINEMA HD",
-            "category": "Hindi",
-            "url": "http://103.165.93.31:8095/zeeChinema/index.m3u8",
-            "status": "hidden"
-        },
-        {
             "name": "COLORS HD",
             "category": "Hindi",
             "url": "http://103.165.93.31:8095/colors/index.m3u8",
@@ -274,72 +772,6 @@
             "name": "COLORS CINEPLEX HD",
             "category": "Hindi",
             "url": "http://103.165.93.31:8095/colorsCineplex/index.m3u8",
-            "status": "visible"
-        },
-        {
-            "name": "9XM MUSIC",
-            "category": "Music",
-            "url": "http://103.165.93.31:8095/9xm/index.m3u8",
-            "status": "visible"
-        },
-        {
-            "name": "DISCOVERY HD",
-            "category": "Documentary",
-            "url": "http://103.165.93.31:8095/discovery/index.m3u8",
-            "status": "visible"
-        },
-        {
-            "name": "NATIONAL GEOGRAPHIC HD",
-            "category": "Documentary",
-            "url": "http://103.165.93.31:8095/nationalGeographic/index.m3u8",
-            "status": "hidden"
-        },
-        {
-            "name": "ANIMAL PLANET HD",
-            "category": "Documentary",
-            "url": "http://103.165.93.31:8095/animalPlanet/index.m3u8",
-            "status": "hidden"
-        },
-        {
-            "name": "CARTOON NETWORK HD",
-            "category": "Kids",
-            "url": "http://103.165.93.31:8095/cartoonNetwork/index.m3u8",
-            "status": "visible"
-        },
-        {
-            "name": "POGO",
-            "category": "Kids",
-            "url": "http://103.165.93.31:8095/pogo/index.m3u8",
-            "status": "hidden"
-        },
-        {
-            "name": "NICK",
-            "category": "Kids",
-            "url": "http://103.165.93.31:8095/nick/index.m3u8",
-            "status": "hidden"
-        },
-        {
-            "name": "DISCOVERY KIDS HD",
-            "category": "Kids",
-            "url": "http://103.165.93.31:8095/disnepKids/index.m3u8",
-            "status": "visible"
-        },
-        {
-            "name": "FIFA",
-            "category": "Sports",
-            "url": "http://103.165.93.31:8095/Fifa-1/video.m3u8",
-            "status": "visible"
-        },
-        {
-            "name": "United-Sports",
-            "category": "Sports",
-            "url": "http://103.165.93.31:8095/unt-s/video.m3u8",
-            "status": "visible"
-        },
-        {
-            "name": "BTV",
-            "category": "Sports",
-            "url": "http://103.165.93.31:8095/btv/video.m3u8",
             "status": "visible"
         }
     ]
