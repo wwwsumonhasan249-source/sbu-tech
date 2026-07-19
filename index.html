@@ -717,7 +717,7 @@
             <div class="icon">📺</div>
             <div>
                 <h1>SBU TV Player</h1>
-                <span class="sub">✦ প্রিমিয়াম লাইভ স্ট্রিমিং ✦</span>
+                <span class="sbu">✦ প্রিমিয়াম লাইভ স্ট্রিমিং ✦</span>
             </div>
         </div>
         <div class="header-actions">
@@ -752,7 +752,7 @@
                 <div class="controls-group">
                     <span class="credit">✦ sumon . net ✦</span>
                     <button class="btn" id="pipBtn">🖼️ PiP</button>
-                    <button class="btn btn-random" id="randomBtn">🎲 র্যান্ডম</button>
+                    <button class="btn btn-random" id="randomBtn">🎲Random</button>
                     <button class="btn btn-reload" id="reloadBtn">🔄</button>
                     <button class="btn" id="fullscreenBtn">⛶</button>
                 </div>
@@ -764,7 +764,7 @@
             <div class="sidebar-top">
                 <div class="search-box">
                     <span class="icon">🔍</span>
-                    <input id="searchInput" placeholder="চ্যানেল খুঁজুন..." autocomplete="off" />
+                    <input id="searchInput" placeholder="channels search..." autocomplete="off" />
                 </div>
                 <div class="cat-tabs" id="catTabs"></div>
             </div>
@@ -776,7 +776,7 @@
     <!-- ===== FULLSCREEN BACK BUTTON ===== -->
     <button class="fs-back" id="fsBackBtn">
         <svg viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
-        ⬅ ব্যাক
+        ⬅ back
     </button>
 
 </div>
@@ -787,10 +787,10 @@
         <button class="close-btn" id="closeProfileBtn">✕</button>
         <img src="profile.jpg" alt="Developer" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2250%22 height=%2250%22%3E%3Ccircle cx=%2225%22 cy=%2225%22 r=%2224%22 fill=%22%23333%22/%3E%3Ctext x=%2225%22 y=%2232%22 text-anchor=%22middle%22 fill=%22%23666%22 font-size=%2224%22%3E😎%3C/text%3E%3C/svg%3E'" />
         <h2>সুমন হাসান</h2>
-        <div class="desig">✦ Founder & Developer | SBU TV Player ✦</div>
+        <div class="desig">✦ web& apps Developer | graphics designers ✦</div>
         <div class="bio">
-            পেশাদার ওয়েব ডেভেলপার, UI/UX ডিজাইনার এবং লাইভ স্ট্রিমিং প্রযুক্তি বিশেষজ্ঞ।<br />
-            ৫+ বছর অভিজ্ঞতা, ১০০+ প্রজেক্ট সম্পন্ন।
+            Professional web developer, UI/UX designer and live streaming technology expert.<br />
+5+ years of experience, 100+ projects completed.।
         </div>
         <div class="tags">
             <span>🌐 ওয়েব ডেভেলপার</span>
@@ -1209,8 +1209,8 @@ function buildCategoryTabs(channels) {
         shareGroup.className = 'controls-group';
         shareGroup.style.gap = '4px';
         shareGroup.innerHTML = `
-            <button class="btn" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(window.location.href), '_blank')">📘</button>
-            <button class="btn" onclick="window.open('https://api.whatsapp.com/send?text='+encodeURIComponent(window.location.href), '_blank')">💚</button>
+            <button class="btn" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(window.location.href), '_blank')">Share.Facebook</button>
+            <button class="btn" onclick="window.open('https://api.whatsapp.com/send?text='+encodeURIComponent(window.location.href), '_blank')">Share.WhatsApp</button>
         `;
         document.querySelector('.controls-group').appendChild(shareGroup);
 
