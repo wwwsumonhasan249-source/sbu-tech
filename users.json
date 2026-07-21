@@ -1,1 +1,24 @@
-u
+{
+    "users": [
+        {
+            "username": "admin",
+            "password": "1234"
+        },
+        {
+            "username": "sumon",
+            "password": "5678"
+        },
+        {
+            "username": "user1",
+            "password": "9012"
+        },
+        {
+            "username": "vip",
+            "password": "vip2025"
+        },
+        {
+            "username": "guest",
+            "password": "guest123"
+        }
+    ]
+}
