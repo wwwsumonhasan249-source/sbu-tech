@@ -493,7 +493,7 @@ body.light-mode .theme-toggle::after { left:23px; }
 
     <header class="header">
         <div class="brand">
-            <div class="icon">📺</div>
+            <div class="icon">👑</div>
             <div>
                 <h1>SBU TV Player</h1>
                 <span class="sub">✦ প্রিমিয়াম লাইভ স্ট্রিমিং ✦</span>
@@ -501,8 +501,8 @@ body.light-mode .theme-toggle::after { left:23px; }
         </div>
         <div class="header-actions">
             <button class="theme-toggle" id="themeToggle" title="থিম পরিবর্তন"></button>
-            <button class="hidden-btn" id="hiddenBtn">🔒 হিডেন</button>
-            <button class="premium-btn" id="premiumBtn">⭐ প্রিমিয়াম</button>
+            <button class="hidden-btn" id="hiddenBtn">🔥🔒🔥</button>
+            <button class="premium-btn" id="premiumBtn">⭐🌟⭐ প্রিমিয়াম</button>
             <div class="dev-btn" id="devBtn">
                 <img src="profile.jpg" alt="Developer" id="devImg" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2250%22 height=%2250%22%3E%3Ccircle cx=%2225%22 cy=%2225%22 r=%2224%22 fill=%22%23333%22/%3E%3Ctext x=%2225%22 y=%2232%22 text-anchor=%22middle%22 fill=%22%23666%22 font-size=%2224%22%3E😎%3C/text%3E%3C/svg%3E'" />
                 <span class="name">👤 <span>সুমন হাসান</span></span>
@@ -861,7 +861,7 @@ body.light-mode .theme-toggle::after { left:23px; }
                 const btn = document.createElement('button');
                 btn.className = 'btn';
                 btn.dataset.index = index;
-                btn.textContent = '📺 ' + ch.name;
+                btn.textContent = '🖥️' + ch.name;
                 btn.addEventListener('click', () => playHiddenChannel(index));
                 container.appendChild(btn);
             });
@@ -1049,8 +1049,8 @@ body.light-mode .theme-toggle::after { left:23px; }
                 div.dataset.url = ch.url;
                 const fav = isFavorite(ch.name) ? 'active' : '';
                 div.innerHTML = `
-                    <button class="fav-btn ${fav}" data-name="${ch.name}">❤️</button>
-                    <div class="ch-icon">📺</div>
+                    <button class="fav-btn ${fav}" data-name="${ch.name}">🎬</button>
+                    <div class="ch-icon">📡</div>
                     <div class="ch-name">${ch.name}</div>
                 `;
                 const favBtn = div.querySelector('.fav-btn');
@@ -1091,8 +1091,8 @@ body.light-mode .theme-toggle::after { left:23px; }
         shareGroup.style.display = 'flex';
         shareGroup.style.gap = '4px';
         shareGroup.innerHTML = `
-            <button class="btn" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(window.location.href), '_blank')">📘</button>
-            <button class="btn" onclick="window.open('https://api.whatsapp.com/send?text='+encodeURIComponent(window.location.href), '_blank')">💚</button>
+            <button class="btn" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(window.location.href), '_blank')">ShareFacebook</button>
+            <button class="btn" onclick="window.open('https://api.whatsapp.com/send?text='+encodeURIComponent(window.location.href), '_blank')">Share WhatsApp</button>
         `;
         document.querySelector('.controls-group').appendChild(shareGroup);
 
