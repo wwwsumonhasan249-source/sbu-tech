@@ -1,7 +1,7 @@
 {
     "users": [
         {
-            "username": "admin",
+            "username": "sbu",
             "password": "1234"
         },
         {
@@ -9,8 +9,8 @@
             "password": "5678"
         },
         {
-            "username": "user1",
-            "password": "9012"
+            "username": "hossen",
+            "password": "1111"
         },
         {
             "username": "vip",
