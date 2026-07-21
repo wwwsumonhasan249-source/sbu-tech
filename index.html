@@ -7,850 +7,490 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet" />
     <script src="https://jwpsrv.com/library/XpMfzFwiEeOfZhIxOQfUww.js"></script>
     <style>
-        /* ========================================
-                   ROOT VARIABLES
-                ======================================== */
         :root {
             --bg-primary: #0a0a12;
             --bg-secondary: #12122a;
-            --bg-glass: rgba(255, 255, 255, 0.04);
-            --border-color: rgba(255, 255, 255, 0.06);
-            --shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
+            --bg-glass: rgba(255,255,255,0.04);
+            --border-color: rgba(255,255,255,0.06);
+            --shadow: 0 8px 40px rgba(0,0,0,0.6);
             --gold: #ffd700;
-            --premium-gold: #ffd700;
-            --premium-rose: #e8a87c;
             --gradient-premium: linear-gradient(135deg, #ffd700 0%, #ff6b00 30%, #ff006e 70%, #6c1b8a 100%);
             --gradient-premium-btn: linear-gradient(135deg, #ffd700, #ff6b00);
             --text-primary: #ffffff;
-            --text-secondary: rgba(255, 255, 255, 0.8);
-            --text-muted: rgba(255, 255, 255, 0.4);
+            --text-secondary: rgba(255,255,255,0.8);
+            --text-muted: rgba(255,255,255,0.4);
             --radius: 20px;
             --radius-sm: 12px;
             --radius-lg: 28px;
-            --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --transition: all 0.4s cubic-bezier(0.25,0.46,0.45,0.94);
         }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-
+        * { margin:0; padding:0; box-sizing:border-box; }
         body {
-            font-family: 'Inter', sans-serif;
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            min-height: 100vh;
-            transition: var(--transition);
-            overflow-x: hidden;
-            background-image:
-                radial-gradient(ellipse at 20% 30%, rgba(255, 215, 0, 0.04) 0%, transparent 60%),
-                radial-gradient(ellipse at 80% 70%, rgba(255, 0, 110, 0.04) 0%, transparent 60%);
+            font-family:'Inter',sans-serif;
+            background:var(--bg-primary);
+            color:var(--text-primary);
+            min-height:100vh;
+            transition:var(--transition);
+            overflow-x:hidden;
+            background-image:radial-gradient(ellipse at 20% 30%, rgba(255,215,0,0.04) 0%, transparent 60%), radial-gradient(ellipse at 80% 70%, rgba(255,0,110,0.04) 0%, transparent 60%);
         }
-
-        .app {
-            max-width: 1440px;
-            margin: 0 auto;
-            padding: 14px;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            gap: 14px;
-        }
-
-        ::-webkit-scrollbar { width: 5px; height: 5px; }
-        ::-webkit-scrollbar-track { background: transparent; }
-        ::-webkit-scrollbar-thumb { background: var(--gradient-premium); border-radius: 10px; }
-
-        /* ========================================
-                   HEADER
-                ======================================== */
-        .header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px 22px;
-            background: var(--bg-glass);
-            backdrop-filter: blur(24px);
-            border-radius: var(--radius-lg);
-            border: 1px solid var(--border-color);
-            box-shadow: var(--shadow);
-            flex-wrap: wrap;
-            gap: 10px;
-            position: sticky;
-            top: 14px;
-            z-index: 100;
-            position: relative;
-            overflow: hidden;
-        }
-        .header::before {
-            content: '';
-            position: absolute;
-            top: -50%; left: -50%;
-            width: 200%; height: 200%;
-            background: conic-gradient(from 0deg at 50% 50%, transparent, rgba(255, 215, 0, 0.03), transparent, rgba(255, 0, 110, 0.03), transparent);
-            animation: rotateGlow 20s linear infinite;
-            pointer-events: none;
-        }
-        @keyframes rotateGlow { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
-
-        .brand { display: flex; align-items: center; gap: 12px; position: relative; z-index: 1; }
-        .brand .icon {
-            width: 44px; height: 44px;
-            background: var(--gradient-premium);
-            border-radius: var(--radius-sm);
-            display: flex; align-items: center; justify-content: center;
-            font-size: 20px; font-weight: 900; color: #fff;
-            box-shadow: 0 4px 30px rgba(255, 215, 0, 0.25);
-            animation: pulseGlow 3s ease-in-out infinite;
-        }
-        @keyframes pulseGlow { 0%,100%{ box-shadow: 0 4px 30px rgba(255,215,0,0.25); } 50%{ box-shadow: 0 4px 60px rgba(255,215,0,0.5); } }
-        .brand h1 { font-size: 1.3rem; font-weight: 900; background: var(--gradient-premium); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-        .brand .sub { font-size: 0.45rem; color: var(--text-muted); letter-spacing: 2px; text-transform: uppercase; display: block; margin-top: -4px; }
-
-        .header-actions { display: flex; align-items: center; gap: 8px; position: relative; z-index: 1; flex-wrap: wrap; }
-
-        /* থিম টগল */
-        .theme-toggle {
-            width: 44px; height: 24px;
-            background: var(--text-muted);
-            border-radius: 40px;
-            cursor: pointer;
-            position: relative;
-            transition: var(--transition);
-            border: none;
-            flex-shrink: 0;
-        }
-        .theme-toggle::after {
-            content: '';
-            width: 18px; height: 18px;
-            background: #fff; border-radius: 50%;
-            position: absolute; top: 3px; left: 3px;
-            transition: var(--transition);
-        }
-        body.light-mode .theme-toggle::after { left: 23px; }
-
-        /* ডেভেলপার বাটন */
-        .dev-btn {
-            display: flex; align-items: center; gap: 10px;
-            padding: 4px 16px 4px 4px;
-            border-radius: 50px;
-            background: var(--bg-glass);
-            border: 1px solid var(--border-color);
-            cursor: pointer;
-            transition: var(--transition);
-        }
-        .dev-btn:hover { border-color: var(--gold); box-shadow: 0 0 30px rgba(255,215,0,0.1); }
-        .dev-btn img { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; border: 2.5px solid var(--gold); box-shadow: 0 0 25px rgba(255,215,0,0.15); }
-        .dev-btn .name { font-size: 0.7rem; font-weight: 600; color: var(--text-secondary); }
-        .dev-btn .name span { color: var(--gold); }
-        .dev-btn .vip { background: var(--gradient-premium); color: #fff; font-size: 0.4rem; font-weight: 700; padding: 2px 10px; border-radius: 40px; text-transform: uppercase; box-shadow: 0 2px 15px rgba(255,215,0,0.2); }
-
-        /* ===== হিডেন বাটন ===== */
-        .hidden-btn {
-            padding: 6px 16px;
-            background: var(--gradient-premium);
-            border: none;
-            border-radius: 40px;
-            color: #fff;
-            font-weight: 700;
-            font-size: 0.6rem;
-            cursor: pointer;
-            transition: var(--transition);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            box-shadow: 0 4px 25px rgba(255, 215, 0, 0.15);
-        }
-        .hidden-btn:hover { transform: scale(1.05); box-shadow: 0 8px 40px rgba(255, 215, 0, 0.25); }
-
-        /* ===== প্রিমিয়াম বাটন ===== */
-        .premium-btn {
-            padding: 6px 16px;
-            background: var(--gradient-premium-btn);
-            border: none;
-            border-radius: 40px;
-            color: #fff;
-            font-weight: 700;
-            font-size: 0.6rem;
-            cursor: pointer;
-            transition: var(--transition);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            box-shadow: 0 4px 25px rgba(255, 215, 0, 0.15);
-        }
-        .premium-btn:hover { transform: scale(1.05); box-shadow: 0 8px 40px rgba(255, 215, 0, 0.25); }
-/* ========================================
-           MAIN GRID
-        ======================================== */
-.main-grid {
-    display: flex;
-    gap: 16px;
-    flex: 1;
-    min-height: 500px;
+        .app { max-width:1440px; margin:0 auto; padding:14px; min-height:100vh; display:flex; flex-direction:column; gap:14px; }
+        ::-webkit-scrollbar { width:5px; height:5px; }
+        ::-webkit-scrollbar-track { background:transparent; }
+        ::-webkit-scrollbar-thumb { background:var(--gradient-premium); border-radius:10px; }
+.header {
+    display:flex; align-items:center; justify-content:space-between;
+    padding:10px 22px; background:var(--bg-glass); backdrop-filter:blur(24px);
+    border-radius:var(--radius-lg); border:1px solid var(--border-color);
+    box-shadow:var(--shadow); flex-wrap:wrap; gap:10px; position:sticky; top:14px; z-index:100; position:relative; overflow:hidden;
 }
+.header::before {
+    content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%;
+    background:conic-gradient(from 0deg at 50% 50%, transparent, rgba(255,215,0,0.03), transparent, rgba(255,0,110,0.03), transparent);
+    animation:rotateGlow 20s linear infinite; pointer-events:none;
+}
+@keyframes rotateGlow { 0%{ transform:rotate(0deg); } 100%{ transform:rotate(360deg); } }
 
-/* ========================================
-           PLAYER SECTION
-        ======================================== */
+.brand { display:flex; align-items:center; gap:12px; position:relative; z-index:1; }
+.brand .icon {
+    width:44px; height:44px; background:var(--gradient-premium); border-radius:var(--radius-sm);
+    display:flex; align-items:center; justify-content:center; font-size:20px; font-weight:900; color:#fff;
+    box-shadow:0 4px 30px rgba(255,215,0,0.25); animation:pulseGlow 3s ease-in-out infinite;
+}
+@keyframes pulseGlow { 0%,100%{ box-shadow:0 4px 30px rgba(255,215,0,0.25); } 50%{ box-shadow:0 4px 60px rgba(255,215,0,0.5); } }
+.brand h1 { font-size:1.3rem; font-weight:900; background:var(--gradient-premium); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+.brand .sub { font-size:0.45rem; color:var(--text-muted); letter-spacing:2px; text-transform:uppercase; display:block; margin-top:-4px; }
+
+.header-actions { display:flex; align-items:center; gap:8px; position:relative; z-index:1; flex-wrap:wrap; }
+
+.theme-toggle {
+    width:44px; height:24px; background:var(--text-muted); border-radius:40px; cursor:pointer;
+    position:relative; transition:var(--transition); border:none; flex-shrink:0;
+}
+.theme-toggle::after {
+    content:''; width:18px; height:18px; background:#fff; border-radius:50%;
+    position:absolute; top:3px; left:3px; transition:var(--transition);
+}
+body.light-mode .theme-toggle::after { left:23px; }
+
+.dev-btn {
+    display:flex; align-items:center; gap:10px; padding:4px 16px 4px 4px;
+    border-radius:50px; background:var(--bg-glass); border:1px solid var(--border-color);
+    cursor:pointer; transition:var(--transition);
+}
+.dev-btn:hover { border-color:var(--gold); box-shadow:0 0 30px rgba(255,215,0,0.1); }
+.dev-btn img { width:40px; height:40px; border-radius:50%; object-fit:cover; border:2.5px solid var(--gold); box-shadow:0 0 25px rgba(255,215,0,0.15); }
+.dev-btn .name { font-size:0.7rem; font-weight:600; color:var(--text-secondary); }
+.dev-btn .name span { color:var(--gold); }
+.dev-btn .vip { background:var(--gradient-premium); color:#fff; font-size:0.4rem; font-weight:700; padding:2px 10px; border-radius:40px; text-transform:uppercase; box-shadow:0 2px 15px rgba(255,215,0,0.2); }
+
+.hidden-btn {
+    padding:6px 16px; background:var(--gradient-premium); border:none; border-radius:40px;
+    color:#fff; font-weight:700; font-size:0.6rem; cursor:pointer; transition:var(--transition);
+    text-transform:uppercase; letter-spacing:0.5px; box-shadow:0 4px 25px rgba(255,215,0,0.15);
+}
+.hidden-btn:hover { transform:scale(1.05); box-shadow:0 8px 40px rgba(255,215,0,0.25); }
+
+.premium-btn {
+    padding:6px 16px; background:var(--gradient-premium-btn); border:none; border-radius:40px;
+    color:#fff; font-weight:700; font-size:0.6rem; cursor:pointer; transition:var(--transition);
+    text-transform:uppercase; letter-spacing:0.5px; box-shadow:0 4px 25px rgba(255,215,0,0.15);
+}
+.premium-btn:hover { transform:scale(1.05); box-shadow:0 8px 40px rgba(255,215,0,0.25); }
+.main-grid { display:flex; gap:16px; flex:1; min-height:500px; }
+
 .player-section {
-    flex: 3;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background: var(--bg-glass);
-    backdrop-filter: blur(24px);
-    border-radius: var(--radius-lg);
-    border: 1px solid var(--border-color);
-    padding: 14px;
-    box-shadow: var(--shadow);
-    position: sticky;
-    top: 80px;
-    align-self: flex-start;
-    max-height: calc(100vh - 140px);
-    min-height: 420px;
-    position: relative;
-    overflow: hidden;
+    flex:3; display:flex; flex-direction:column; gap:10px;
+    background:var(--bg-glass); backdrop-filter:blur(24px);
+    border-radius:var(--radius-lg); border:1px solid var(--border-color);
+    padding:14px; box-shadow:var(--shadow);
+    position:sticky; top:80px; align-self:flex-start;
+    max-height:calc(100vh - 140px); min-height:420px; position:relative; overflow:hidden;
 }
 .player-section::before {
-    content: '';
-    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
-    border-radius: var(--radius-lg);
-    padding: 1px;
-    background: var(--gradient-premium);
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor; mask-composite: exclude;
-    pointer-events: none;
-    opacity: 0.5;
+    content:''; position:absolute; top:0; left:0; right:0; bottom:0;
+    border-radius:var(--radius-lg); padding:1px;
+    background:var(--gradient-premium);
+    -webkit-mask:linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask:linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite:xor; mask-composite:exclude;
+    pointer-events:none; opacity:0.5;
 }
 
 .video-wrap {
-    position: relative;
-    width: 100%;
-    padding-top: 56.25%;
-    background: #000;
-    border-radius: var(--radius);
-    overflow: hidden;
-    flex: 1;
-    max-height: 65vh;
-    min-height: 340px;
-    box-shadow: inset 0 0 80px rgba(255, 215, 0, 0.03);
+    position:relative; width:100%; padding-top:56.25%;
+    background:#000; border-radius:var(--radius); overflow:hidden;
+    flex:1; max-height:65vh; min-height:340px;
+    box-shadow:inset 0 0 80px rgba(255,215,0,0.03);
 }
-.video-wrap #player {
-    position: absolute; top: 0; left: 0;
-    width: 100% !important; height: 100% !important;
-}
+.video-wrap #player { position:absolute; top:0; left:0; width:100% !important; height:100% !important; }
 
-/* ========================================
-           প্লেয়ার কন্ট্রোল
-        ======================================== */
 .player-controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 4px;
-    flex-wrap: wrap;
-    gap: 8px;
-    flex-shrink: 0;
+    display:flex; justify-content:space-between; align-items:center;
+    padding:0 4px; flex-wrap:wrap; gap:8px; flex-shrink:0;
 }
 
-.now-playing {
-    font-size: 0.8rem; font-weight: 600;
-    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-    max-width: 40%;
-}
+.now-playing { font-size:0.8rem; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:40%; }
 .now-playing .live {
-    background: var(--gradient-premium);
-    color: #fff; font-size: 0.4rem; font-weight: 800;
-    padding: 2px 12px; border-radius: 20px;
-    margin-right: 8px; text-transform: uppercase;
-    animation: livePulse 1.2s infinite;
-    box-shadow: 0 2px 20px rgba(255,215,0,0.2);
+    background:var(--gradient-premium); color:#fff; font-size:0.4rem; font-weight:800;
+    padding:2px 12px; border-radius:20px; margin-right:8px; text-transform:uppercase;
+    animation:livePulse 1.2s infinite; box-shadow:0 2px 20px rgba(255,215,0,0.2);
 }
 @keyframes livePulse { 0%,100%{ opacity:1; transform:scale(1); } 50%{ opacity:0.6; transform:scale(0.95); } }
 
-.controls-group {
-    display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
-}
+.controls-group { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
 .controls-group .credit {
-    color: var(--gold);
-    font-size: 0.5rem; font-weight: 700;
-    background: rgba(255,215,0,0.08);
-    padding: 2px 14px; border-radius: 40px;
-    border: 1px solid rgba(255,215,0,0.15);
-    letter-spacing: 0.5px;
+    color:var(--gold); font-size:0.5rem; font-weight:700;
+    background:rgba(255,215,0,0.08); padding:2px 14px; border-radius:40px;
+    border:1px solid rgba(255,215,0,0.15); letter-spacing:0.5px;
 }
 
 .btn {
-    padding: 5px 14px; border: none; border-radius: var(--radius-sm);
-    font-weight: 700; font-size: 0.6rem;
-    cursor: pointer; transition: var(--transition);
-    background: var(--bg-glass); color: var(--text-primary);
-    border: 1px solid var(--border-color);
-    text-transform: uppercase; letter-spacing: 0.5px;
+    padding:5px 14px; border:none; border-radius:var(--radius-sm);
+    font-weight:700; font-size:0.6rem; cursor:pointer; transition:var(--transition);
+    background:var(--bg-glass); color:var(--text-primary);
+    border:1px solid var(--border-color); text-transform:uppercase; letter-spacing:0.5px;
 }
-.btn:hover {
-    background: var(--gradient-premium);
-    color: #fff;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 35px rgba(255,215,0,0.25);
-}
-.btn-reload:hover { background: linear-gradient(135deg, #ff9800, #ff6b00); }
-.btn-random:hover { background: linear-gradient(135deg, #6c1b8a, #ff006e); }
-/* ========================================
-           SIDEBAR
-        ======================================== */
+.btn:hover { background:var(--gradient-premium); color:#fff; transform:translateY(-3px); box-shadow:0 8px 35px rgba(255,215,0,0.25); }
+.btn-reload:hover { background:linear-gradient(135deg, #ff9800, #ff6b00); }
+.btn-random:hover { background:linear-gradient(135deg, #6c1b8a, #ff006e); }
 .sidebar {
-    flex: 1;
-    min-width: 220px;
-    max-width: 360px;
-    background: var(--bg-glass);
-    backdrop-filter: blur(24px);
-    border-radius: var(--radius-lg);
-    border: 1px solid var(--border-color);
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    max-height: calc(100vh - 140px);
-    box-shadow: var(--shadow);
-    position: relative;
+    flex:1; min-width:220px; max-width:360px;
+    background:var(--bg-glass); backdrop-filter:blur(24px);
+    border-radius:var(--radius-lg); border:1px solid var(--border-color);
+    display:flex; flex-direction:column; overflow:hidden;
+    max-height:calc(100vh - 140px); box-shadow:var(--shadow); position:relative;
 }
 .sidebar::before {
-    content: '';
-    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
-    border-radius: var(--radius-lg);
-    padding: 1px;
-    background: var(--gradient-premium);
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor; mask-composite: exclude;
-    pointer-events: none;
-    opacity: 0.3;
+    content:''; position:absolute; top:0; left:0; right:0; bottom:0;
+    border-radius:var(--radius-lg); padding:1px;
+    background:var(--gradient-premium);
+    -webkit-mask:linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask:linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite:xor; mask-composite:exclude;
+    pointer-events:none; opacity:0.3;
 }
 
 .sidebar-top {
-    padding: 12px 16px 10px;
-    border-bottom: 1px solid var(--border-color);
-    flex-shrink: 0;
-    position: relative; z-index: 1;
+    padding:12px 16px 10px; border-bottom:1px solid var(--border-color);
+    flex-shrink:0; position:relative; z-index:1;
 }
 
-.search-box { position: relative; }
+.search-box { position:relative; }
 .search-box input {
-    width: 100%;
-    padding: 9px 14px 9px 40px;
-    border-radius: var(--radius-sm);
-    border: 1px solid var(--border-color);
-    background: rgba(255,255,255,0.02);
-    color: var(--text-primary);
-    font-size: 0.75rem;
-    outline: none;
-    transition: var(--transition);
+    width:100%; padding:9px 14px 9px 40px; border-radius:var(--radius-sm);
+    border:1px solid var(--border-color); background:rgba(255,255,255,0.02);
+    color:var(--text-primary); font-size:0.75rem; outline:none; transition:var(--transition);
 }
-.search-box input:focus { border-color: var(--gold); box-shadow: 0 0 40px rgba(255,215,0,0.05); }
-.search-box input::placeholder { color: var(--text-muted); }
-.search-box .icon {
-    position: absolute; left: 12px; top: 50%;
-    transform: translateY(-50%);
-    color: var(--text-muted); font-size: 14px;
-}
+.search-box input:focus { border-color:var(--gold); box-shadow:0 0 40px rgba(255,215,0,0.05); }
+.search-box input::placeholder { color:var(--text-muted); }
+.search-box .icon { position:absolute; left:12px; top:50%; transform:translateY(-50%); color:var(--text-muted); font-size:14px; }
 
-.cat-tabs {
-    display: flex; flex-wrap: wrap; gap: 4px;
-    margin-top: 10px;
-}
+.cat-tabs { display:flex; flex-wrap:wrap; gap:4px; margin-top:10px; }
 .cat-tab {
-    padding: 3px 12px; border-radius: 40px;
-    background: rgba(255,255,255,0.02);
-    color: var(--text-secondary);
-    font-size: 0.45rem; font-weight: 600;
-    border: 1px solid transparent;
-    cursor: pointer; transition: var(--transition);
-    text-transform: uppercase; letter-spacing: 0.5px;
+    padding:3px 12px; border-radius:40px; background:rgba(255,255,255,0.02);
+    color:var(--text-secondary); font-size:0.45rem; font-weight:600;
+    border:1px solid transparent; cursor:pointer; transition:var(--transition);
+    text-transform:uppercase; letter-spacing:0.5px;
 }
-.cat-tab:hover { background: rgba(255,215,0,0.04); border-color: rgba(255,215,0,0.08); }
-.cat-tab.active { background: var(--gradient-premium); color: #fff; border-color: transparent; box-shadow: 0 4px 25px rgba(255,215,0,0.15); }
+.cat-tab:hover { background:rgba(255,215,0,0.04); border-color:rgba(255,215,0,0.08); }
+.cat-tab.active { background:var(--gradient-premium); color:#fff; border-color:transparent; box-shadow:0 4px 25px rgba(255,215,0,0.15); }
 
 .channel-list {
-    padding: 10px 14px 16px;
-    overflow-y: auto;
-    flex: 1;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
-    gap: 10px;
-    align-content: start;
-    position: relative; z-index: 1;
+    padding:10px 14px 16px; overflow-y:auto; flex:1;
+    display:grid; grid-template-columns:repeat(auto-fill, minmax(90px,1fr)); gap:10px; align-content:start;
+    position:relative; z-index:1;
 }
-.channel-list::-webkit-scrollbar { width: 4px; }
-.channel-list::-webkit-scrollbar-thumb { background: var(--gradient-premium); border-radius: 10px; }
+.channel-list::-webkit-scrollbar { width:4px; }
+.channel-list::-webkit-scrollbar-thumb { background:var(--gradient-premium); border-radius:10px; }
 
 .channel-item {
-    background: var(--bg-glass);
-    border-radius: var(--radius-sm);
-    padding: 12px 6px;
-    text-align: center;
-    cursor: pointer;
-    border: 1px solid transparent;
-    transition: var(--transition);
-    position: relative;
+    background:var(--bg-glass); border-radius:var(--radius-sm);
+    padding:12px 6px; text-align:center; cursor:pointer;
+    border:1px solid transparent; transition:var(--transition); position:relative;
 }
-.channel-item:hover {
-    background: rgba(255,215,0,0.04);
-    border-color: rgba(255,215,0,0.15);
-    transform: translateY(-4px) scale(1.02);
-    box-shadow: 0 12px 40px rgba(0,0,0,0.3);
-}
-.channel-item.active {
-    border-color: var(--gold);
-    background: rgba(255,215,0,0.05);
-    box-shadow: 0 4px 30px rgba(255,215,0,0.08);
-}
-.channel-item .ch-icon { font-size: 24px; margin-bottom: 4px; opacity: 0.6; transition: var(--transition); }
-.channel-item:hover .ch-icon { opacity: 1; transform: scale(1.1); }
-.channel-item .ch-name { font-size: 0.58rem; font-weight: 600; color: var(--text-secondary); line-height: 1.3; word-break: break-word; }
+.channel-item:hover { background:rgba(255,215,0,0.04); border-color:rgba(255,215,0,0.15); transform:translateY(-4px) scale(1.02); box-shadow:0 12px 40px rgba(0,0,0,0.3); }
+.channel-item.active { border-color:var(--gold); background:rgba(255,215,0,0.05); box-shadow:0 4px 30px rgba(255,215,0,0.08); }
+.channel-item .ch-icon { font-size:24px; margin-bottom:4px; opacity:0.6; transition:var(--transition); }
+.channel-item:hover .ch-icon { opacity:1; transform:scale(1.1); }
+.channel-item .ch-name { font-size:0.58rem; font-weight:600; color:var(--text-secondary); line-height:1.3; word-break:break-word; }
 
-/* ফেভারিট বাটন */
 .fav-btn {
-    position: absolute; top: 4px; right: 4px;
-    background: none; border: none;
-    color: var(--text-muted);
-    font-size: 14px;
-    cursor: pointer;
-    transition: var(--transition);
+    position:absolute; top:4px; right:4px; background:none; border:none;
+    color:var(--text-muted); font-size:14px; cursor:pointer; transition:var(--transition);
 }
-.fav-btn:hover { transform: scale(1.2); }
-.fav-btn.active { color: #ff4757; text-shadow: 0 0 20px rgba(255,71,87,0.3); }
-/* ========================================
-           PROFILE POPUP
-        ======================================== */
+.fav-btn:hover { transform:scale(1.2); }
+.fav-btn.active { color:#ff4757; text-shadow:0 0 20px rgba(255,71,87,0.3); }
 .profile-overlay {
-display: none;
-    position: fixed; top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.7);
-    backdrop-filter: blur(16px);
-    z-index: 9999;
-    align-items: center; justify-content: center;
+    display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+    background:rgba(0,0,0,0.7); backdrop-filter:blur(16px); z-index:9999;
+    align-items:center; justify-content:center;
 }
-.profile-overlay.active { display: flex; }
+.profile-overlay.active { display:flex; }
 
 .profile-card {
-    background: var(--bg-secondary);
-    border-radius: var(--radius-lg);
-    padding: 30px 26px;
-    max-width: 400px; width: 92%;
-    border: 1px solid var(--border-color);
-    box-shadow: 0 30px 80px rgba(0,0,0,0.8);
-    text-align: center;
-    position: relative;
-    animation: premiumPop 0.4s ease;
+    background:var(--bg-secondary); border-radius:var(--radius-lg);
+    padding:30px 26px; max-width:400px; width:92%;
+    border:1px solid var(--border-color); box-shadow:0 30px 80px rgba(0,0,0,0.8);
+    text-align:center; position:relative; animation:premiumPop 0.4s ease;
 }
-@keyframes premiumPop { from { opacity:0; transform:scale(0.85) translateY(30px); } to { opacity:1; transform:scale(1) translateY(0); } }
+@keyframes premiumPop { from{ opacity:0; transform:scale(0.85) translateY(30px); } to{ opacity:1; transform:scale(1) translateY(0); } }
 .profile-card::before {
-    content: '';
-    position: absolute; top: -1px; left: -1px; right: -1px; bottom: -1px;
-    border-radius: var(--radius-lg);
-    padding: 1px;
-    background: var(--gradient-premium);
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor; mask-composite: exclude;
-    pointer-events: none;
+    content:''; position:absolute; top:-1px; left:-1px; right:-1px; bottom:-1px;
+    border-radius:var(--radius-lg); padding:1px;
+    background:var(--gradient-premium);
+    -webkit-mask:linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask:linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite:xor; mask-composite:exclude;
+    pointer-events:none;
 }
 .profile-card .close-btn {
-    position: absolute; top: 12px; right: 16px;
-    background: none; border: none;
-    color: var(--text-muted); font-size: 22px;
-    cursor: pointer; transition: var(--transition);
+    position:absolute; top:12px; right:16px; background:none; border:none;
+    color:var(--text-muted); font-size:22px; cursor:pointer; transition:var(--transition);
 }
-.profile-card .close-btn:hover { color: var(--gold); transform: rotate(90deg); }
-.profile-card img { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 3px solid var(--gold); box-shadow: 0 0 50px rgba(255,215,0,0.15); }
-.profile-card h2 { font-size: 1.4rem; margin: 6px 0; background: var(--gradient-premium); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-.profile-card .desig { color: var(--gold); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.5px; }
-.profile-card .bio { color: var(--text-secondary); font-size: 0.75rem; line-height: 1.6; margin: 10px 0 14px; opacity: 0.8; }
-.profile-card .tags { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin-bottom: 16px; }
-.profile-card .tags span { background: var(--bg-glass); padding: 3px 14px; border-radius: 30px; font-size: 0.6rem; color: var(--text-secondary); border: 1px solid var(--border-color); }
-.profile-card .links { display: flex; flex-direction: column; gap: 8px; }
-.profile-card .links a { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 10px 16px; border-radius: var(--radius-sm); text-decoration: none; font-weight: 600; font-size: 0.8rem; transition: var(--transition); }
-.profile-card .links .wa { background: #25D366; color: #fff; }
-.profile-card .links .mail { background: #ea4335; color: #fff; }
-.profile-card .links .phone { background: var(--bg-glass); color: var(--text-primary); border: 1px solid var(--border-color); }
-.popup-close-btn { margin-top: 14px; padding: 10px 30px; background: var(--gradient-premium); border: none; border-radius: 50px; color: #fff; font-weight: 700; font-size: 0.85rem; cursor: pointer; transition: var(--transition); text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 4px 30px rgba(255,215,0,0.2); }
-.popup-close-btn:hover { transform: scale(1.05); box-shadow: 0 8px 50px rgba(255,215,0,0.35); }
+.profile-card .close-btn:hover { color:var(--gold); transform:rotate(90deg); }
+.profile-card img { width:100px; height:100px; border-radius:50%; object-fit:cover; border:3px solid var(--gold); box-shadow:0 0 50px rgba(255,215,0,0.15); }
+.profile-card h2 { font-size:1.4rem; margin:6px 0; background:var(--gradient-premium); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+.profile-card .desig { color:var(--gold); font-size:0.8rem; font-weight:600; letter-spacing:0.5px; }
+.profile-card .bio { color:var(--text-secondary); font-size:0.75rem; line-height:1.6; margin:10px 0 14px; opacity:0.8; }
+.profile-card .tags { display:flex; flex-wrap:wrap; gap:6px; justify-content:center; margin-bottom:16px; }
+.profile-card .tags span { background:var(--bg-glass); padding:3px 14px; border-radius:30px; font-size:0.6rem; color:var(--text-secondary); border:1px solid var(--border-color); }
+.profile-card .links { display:flex; flex-direction:column; gap:8px; }
+.profile-card .links a { display:flex; align-items:center; justify-content:center; gap:10px; padding:10px 16px; border-radius:var(--radius-sm); text-decoration:none; font-weight:600; font-size:0.8rem; transition:var(--transition); }
+.profile-card .links .wa { background:#25D366; color:#fff; }
+.profile-card .links .mail { background:#ea4335; color:#fff; }
+.profile-card .links .phone { background:var(--bg-glass); color:var(--text-primary); border:1px solid var(--border-color); }
+.popup-close-btn { margin-top:14px; padding:10px 30px; background:var(--gradient-premium); border:none; border-radius:50px; color:#fff; font-weight:700; font-size:0.85rem; cursor:pointer; transition:var(--transition); text-transform:uppercase; letter-spacing:1px; box-shadow:0 4px 30px rgba(255,215,0,0.2); }
+.popup-close-btn:hover { transform:scale(1.05); box-shadow:0 8px 50px rgba(255,215,0,0.35); }
 
-/* ========================================
-           পাসওয়ার্ড মোডাল (হিডেন)
-        ======================================== */
 .password-overlay {
-    display: none;
-    position: fixed; top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.7);
-    backdrop-filter: blur(16px);
-    z-index: 9998;
-    align-items: center; justify-content: center;
+    display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+    background:rgba(0,0,0,0.7); backdrop-filter:blur(16px); z-index:9998;
+    align-items:center; justify-content:center;
 }
-.password-overlay.active { display: flex; }
+.password-overlay.active { display:flex; }
 
 .password-box {
-    background: var(--bg-secondary);
-    border-radius: var(--radius-lg);
-    padding: 30px 26px;
-    max-width: 380px; width: 92%;
-    border: 1px solid var(--border-color);
-    box-shadow: 0 30px 80px rgba(0,0,0,0.8);
-    text-align: center;
-    position: relative;
-    animation: premiumPop 0.4s ease;
+    background:var(--bg-secondary); border-radius:var(--radius-lg);
+    padding:30px 26px; max-width:380px; width:92%;
+    border:1px solid var(--border-color); box-shadow:0 30px 80px rgba(0,0,0,0.8);
+    text-align:center; position:relative; animation:premiumPop 0.4s ease;
 }
 .password-box::before {
-    content: '';
-    position: absolute; top: -1px; left: -1px; right: -1px; bottom: -1px;
-    border-radius: var(--radius-lg);
-    padding: 1px;
-    background: var(--gradient-premium);
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor; mask-composite: exclude;
-    pointer-events: none;
+    content:''; position:absolute; top:-1px; left:-1px; right:-1px; bottom:-1px;
+    border-radius:var(--radius-lg); padding:1px;
+    background:var(--gradient-premium);
+    -webkit-mask:linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask:linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite:xor; mask-composite:exclude;
+    pointer-events:none;
 }
 .password-box .close-btn {
-    position: absolute; top: 12px; right: 16px;
-    background: none; border: none;
-    color: var(--text-muted); font-size: 22px;
-    cursor: pointer; transition: var(--transition);
+    position:absolute; top:12px; right:16px; background:none; border:none;
+    color:var(--text-muted); font-size:22px; cursor:pointer; transition:var(--transition);
 }
-.password-box .close-btn:hover { color: var(--gold); transform: rotate(90deg); }
-.password-box h3 { font-size: 1.3rem; margin-bottom: 8px; background: var(--gradient-premium); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-.password-box p { color: var(--text-secondary); font-size: 0.8rem; margin-bottom: 16px; }
+.password-box .close-btn:hover { color:var(--gold); transform:rotate(90deg); }
+.password-box h3 { font-size:1.3rem; margin-bottom:8px; background:var(--gradient-premium); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+.password-box p { color:var(--text-secondary); font-size:0.8rem; margin-bottom:16px; }
 .password-box input {
-    width: 100%;
-    padding: 12px 16px;
-    border-radius: var(--radius-sm);
-    border: 1px solid var(--border-color);
-    background: rgba(255,255,255,0.03);
-    color: var(--text-primary);
-    font-size: 1rem;
-    text-align: center;
-    outline: none;
-    transition: var(--transition);
-    letter-spacing: 8px;
-    font-weight: 700;
+    width:100%; padding:12px 16px; border-radius:var(--radius-sm);
+    border:1px solid var(--border-color); background:rgba(255,255,255,0.03);
+    color:var(--text-primary); font-size:1rem; text-align:center; outline:none;
+    transition:var(--transition); letter-spacing:8px; font-weight:700;
 }
-.password-box input:focus { border-color: var(--gold); box-shadow: 0 0 40px rgba(255,215,0,0.05); }
-.password-box .error-msg {
-    color: #ff4757;
-    font-size: 0.7rem;
-    margin-top: 8px;
-    display: none;
-}
-.password-box .error-msg.show { display: block; }
+.password-box input:focus { border-color:var(--gold); box-shadow:0 0 40px rgba(255,215,0,0.05); }
+.password-box .error-msg { color:#ff4757; font-size:0.7rem; margin-top:8px; display:none; }
+.password-box .error-msg.show { display:block; }
 .password-box .submit-btn {
-    margin-top: 14px;
-    padding: 10px 30px;
-    background: var(--gradient-premium);
-    border: none; border-radius: 50px;
-    color: #fff; font-weight: 700; font-size: 0.85rem;
-    cursor: pointer; transition: var(--transition);
-    text-transform: uppercase; letter-spacing: 1px;
-    box-shadow: 0 4px 30px rgba(255,215,0,0.2);
-    width: 100%;
+    margin-top:14px; padding:10px 30px; background:var(--gradient-premium);
+    border:none; border-radius:50px; color:#fff; font-weight:700; font-size:0.85rem;
+    cursor:pointer; transition:var(--transition); text-transform:uppercase; letter-spacing:1px;
+    box-shadow:0 4px 30px rgba(255,215,0,0.2); width:100%;
 }
-.password-box .submit-btn:hover { transform: scale(1.03); box-shadow: 0 8px 50px rgba(255,215,0,0.35); }
+.password-box .submit-btn:hover { transform:scale(1.03); box-shadow:0 8px 50px rgba(255,215,0,0.35); }
 
-/* ========================================
-           প্রিমিয়াম লগিন মোডাল
-        ======================================== */
 .premium-login-overlay {
-    display: none;
-    position: fixed; top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.7);
-    backdrop-filter: blur(16px);
-    z-index: 9997;
-    align-items: center; justify-content: center;
+    display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+    background:rgba(0,0,0,0.7); backdrop-filter:blur(16px); z-index:9997;
+    align-items:center; justify-content:center;
 }
-.premium-login-overlay.active { display: flex; }
+.premium-login-overlay.active { display:flex; }
 
 .premium-login-box {
-    background: var(--bg-secondary);
-    border-radius: var(--radius-lg);
-    padding: 30px 26px;
-    max-width: 400px; width: 92%;
-    border: 1px solid var(--border-color);
-    box-shadow: 0 30px 80px rgba(0,0,0,0.8);
-    text-align: center;
-    position: relative;
-    animation: premiumPop 0.4s ease;
+    background:var(--bg-secondary); border-radius:var(--radius-lg);
+    padding:30px 26px; max-width:400px; width:92%;
+    border:1px solid var(--border-color); box-shadow:0 30px 80px rgba(0,0,0,0.8);
+    text-align:center; position:relative; animation:premiumPop 0.4s ease;
 }
 .premium-login-box::before {
-    content: '';
-    position: absolute; top: -1px; left: -1px; right: -1px; bottom: -1px;
-    border-radius: var(--radius-lg);
-    padding: 1px;
-    background: var(--gradient-premium-btn);
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor; mask-composite: exclude;
-    pointer-events: none;
+    content:''; position:absolute; top:-1px; left:-1px; right:-1px; bottom:-1px;
+    border-radius:var(--radius-lg); padding:1px;
+    background:var(--gradient-premium-btn);
+    -webkit-mask:linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask:linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite:xor; mask-composite:exclude;
+    pointer-events:none;
 }
 .premium-login-box .close-btn {
-    position: absolute; top: 12px; right: 16px;
-    background: none; border: none;
-    color: var(--text-muted); font-size: 22px;
-    cursor: pointer; transition: var(--transition);
+    position:absolute; top:12px; right:16px; background:none; border:none;
+    color:var(--text-muted); font-size:22px; cursor:pointer; transition:var(--transition);
 }
-.premium-login-box .close-btn:hover { color: var(--gold); transform: rotate(90deg); }
-.premium-login-box h3 { font-size: 1.3rem; margin-bottom: 4px; background: var(--gradient-premium-btn); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-.premium-login-box .sub-title { color: var(--text-secondary); font-size: 0.75rem; margin-bottom: 16px; }
-.premium-login-box .field-group { margin-bottom: 12px; text-align: left; }
-.premium-login-box .field-group label { font-size: 0.7rem; color: var(--text-secondary); display: block; margin-bottom: 4px; }
+.premium-login-box .close-btn:hover { color:var(--gold); transform:rotate(90deg); }
+.premium-login-box h3 { font-size:1.3rem; margin-bottom:4px; background:var(--gradient-premium-btn); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+.premium-login-box .sub-title { color:var(--text-secondary); font-size:0.75rem; margin-bottom:16px; }
+.premium-login-box .field-group { margin-bottom:12px; text-align:left; }
+.premium-login-box .field-group label { font-size:0.7rem; color:var(--text-secondary); display:block; margin-bottom:4px; }
 .premium-login-box .field-group input {
-    width: 100%;
-    padding: 10px 14px;
-    border-radius: var(--radius-sm);
-    border: 1px solid var(--border-color);
-    background: rgba(255,255,255,0.03);
-    color: var(--text-primary);
-    font-size: 0.9rem;
-    outline: none;
-    transition: var(--transition);
+    width:100%; padding:10px 14px; border-radius:var(--radius-sm);
+    border:1px solid var(--border-color); background:rgba(255,255,255,0.03);
+    color:var(--text-primary); font-size:0.9rem; outline:none; transition:var(--transition);
 }
-.premium-login-box .field-group input:focus { border-color: var(--gold); box-shadow: 0 0 30px rgba(255,215,0,0.05); }
-.premium-login-box .error-msg {
-    color: #ff4757;
-    font-size: 0.7rem;
-    margin-top: 6px;
-    display: none;
-}
-.premium-login-box .error-msg.show { display: block; }
+.premium-login-box .field-group input:focus { border-color:var(--gold); box-shadow:0 0 30px rgba(255,215,0,0.05); }
+.premium-login-box .error-msg { color:#ff4757; font-size:0.7rem; margin-top:6px; display:none; }
+.premium-login-box .error-msg.show { display:block; }
 .premium-login-box .submit-btn {
-    margin-top: 14px;
-    padding: 10px 30px;
-    background: var(--gradient-premium-btn);
-    border: none; border-radius: 50px;
-    color: #fff; font-weight: 700; font-size: 0.85rem;
-    cursor: pointer; transition: var(--transition);
-    text-transform: uppercase; letter-spacing: 1px;
-    box-shadow: 0 4px 30px rgba(255,215,0,0.2);
-    width: 100%;
+    margin-top:14px; padding:10px 30px; background:var(--gradient-premium-btn);
+    border:none; border-radius:50px; color:#fff; font-weight:700; font-size:0.85rem;
+    cursor:pointer; transition:var(--transition); text-transform:uppercase; letter-spacing:1px;
+    box-shadow:0 4px 30px rgba(255,215,0,0.2); width:100%;
 }
-.premium-login-box .submit-btn:hover { transform: scale(1.03); box-shadow: 0 8px 50px rgba(255,215,0,0.35); }
+.premium-login-box .submit-btn:hover { transform:scale(1.03); box-shadow:0 8px 50px rgba(255,215,0,0.35); }
+        .hidden-player-overlay {
+            display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+            background:#000; z-index:9996; align-items:center; justify-content:center; flex-direction:column;
+        }
+        .hidden-player-overlay.active { display:flex; }
 
-/* ========================================
-           হিডেন / প্রিমিয়াম ভিডিও প্লেয়ার
-        ======================================== */
-.hidden-player-overlay {
-    display: none;
-    position: fixed; top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: #000;
-    z-index: 9996;
-    align-items: center; justify-content: center;
-    flex-direction: column;
-}
-.hidden-player-overlay.active { display: flex; }
+        .hidden-player-box {
+            width:95%; max-width:1200px; max-height:90vh;
+            background:#0a0a12; border-radius:var(--radius-lg);
+            border:1px solid var(--border-color); padding:16px;
+            position:relative; box-shadow:0 20px 80px rgba(0,0,0,0.9);
+        }
+        .hidden-player-box .close-hidden {
+            position:absolute; top:-12px; right:-12px;
+            width:40px; height:40px; border-radius:50%;
+            background:var(--gradient-premium); border:none;
+            color:#fff; font-size:20px; cursor:pointer; z-index:10;
+            box-shadow:0 4px 30px rgba(255,215,0,0.3); transition:var(--transition);
+        }
+        .hidden-player-box .close-hidden:hover { transform:scale(1.1); }
 
-.hidden-player-box {
-    width: 95%;
-    max-width: 1200px;
-    max-height: 90vh;
-    background: #0a0a12;
-    border-radius: var(--radius-lg);
-    border: 1px solid var(--border-color);
-    padding: 16px;
-    position: relative;
-    box-shadow: 0 20px 80px rgba(0,0,0,0.9);
-}
-.hidden-player-box .close-hidden {
-    position: absolute;
-    top: -12px; right: -12px;
-    width: 40px; height: 40px;
-    border-radius: 50%;
-    background: var(--gradient-premium);
-    border: none;
-    color: #fff;
-    font-size: 20px;
-    cursor: pointer;
-    z-index: 10;
-    box-shadow: 0 4px 30px rgba(255,215,0,0.3);
-    transition: var(--transition);
-}
-.hidden-player-box .close-hidden:hover { transform: scale(1.1); }
-
-.hidden-video-wrap {
-    position: relative;
-    padding-top: 56.25%;
-    background: #000;
-    border-radius: var(--radius);
-    overflow: hidden;
-}
-.hidden-video-wrap #hiddenPlayer {
-    position: absolute; top: 0; left: 0;
-    width: 100% !important; height: 100% !important;
-}
-
-.hidden-controls {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    padding: 8px 4px 0 4px;
-    color: var(--text-secondary);
-    font-size: 0.7rem;
-}
-.hidden-controls .top-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-.hidden-controls .title { font-weight: 600; color: var(--text-primary); }
-.hidden-controls .badge {
-    font-size: 0.55rem;
-    font-weight: 700;
-    padding: 2px 12px;
-    border-radius: 40px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-.hidden-controls .badge.hidden-badge { background: var(--gradient-premium); color: #fff; }
-.hidden-controls .badge.premium-badge { background: var(--gradient-premium-btn); color: #fff; }
-
-/* ===== হিডেন চ্যানেল লিস্ট ===== */
-#hiddenChannelList {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 6px;
-    padding: 6px 0 2px 0;
-    max-height: 80px;
-    overflow-y: auto;
-    margin-top: 4px;
-    border-top: 1px solid var(--border-color);
-    width: 100%;
-}
-#hiddenChannelList .btn {
-    padding: 3px 10px;
-    font-size: 0.5rem;
-    background: var(--bg-glass);
-    border: 1px solid var(--border-color);
-    color: var(--text-primary);
-    border-radius: 20px;
-    cursor: pointer;
-    transition: var(--transition);
-    white-space: nowrap;
-    flex-shrink: 0;
-}
-#hiddenChannelList .btn:hover {
-    border-color: rgba(255,215,0,0.3);
-    background: rgba(255,215,0,0.04);
-}
-#hiddenChannelList .btn.active-btn {
-    border-color: var(--gold);
-    background: rgba(255,215,0,0.12);
-}
-#hiddenChannelList .nav-btn {
-    padding: 2px 8px;
-    font-size: 0.65rem;
-    background: var(--bg-glass);
-    border: 1px solid var(--border-color);
-    color: var(--text-primary);
-    border-radius: 8px;
-    cursor: pointer;
-    transition: var(--transition);
-    flex-shrink: 0;
-}
-#hiddenChannelList .nav-btn:hover { border-color: var(--gold); }
-
-/* ========================================
-           FULLSCREEN
-        ======================================== */
-.app.fullscreen .sidebar,
-.app.fullscreen .header,
-.app.fullscreen .player-controls {
-    display: none !important;
-}
-.app.fullscreen .player-section {
-    position: fixed !important; top: 0 !important; left: 0 !important;
-    width: 100vw !important; height: 100vh !important;
-    z-index: 9998 !important;
-    border-radius: 0 !important; padding: 0 !important;
-    max-height: 100vh !important; min-height: 100vh !important;
-    background: #000 !important; border: none !important;
-    box-shadow: none !important;
-}
-.app.fullscreen .player-section::before { display: none !important; }
-.app.fullscreen .video-wrap { padding-top: 0 !important; height: 100vh !important; max-height: 100vh !important; border-radius: 0 !important; }
-.app.fullscreen .video-wrap #player { position: fixed !important; top: 0; left: 0; width: 100vw !important; height: 100vh !important; z-index: 9999 !important; border-radius: 0 !important; }
-
-.fs-back {
-    position: fixed; bottom: 30px; right: 24px;
-    z-index: 10001;
-    background: rgba(0,0,0,0.6); backdrop-filter: blur(16px);
-    border: 1px solid rgba(255,215,0,0.15);
-    color: #fff; padding: 10px 18px; border-radius: 50px;
-    cursor: pointer; font-size: 0.8rem; font-weight: 700;
-    display: none; align-items: center; gap: 10px;
-    transition: var(--transition);
-    box-shadow: 0 4px 40px rgba(0,0,0,0.6);
-    text-transform: uppercase; letter-spacing: 0.5px;
-}
-.fs-back:hover { background: var(--gradient-premium); transform: scale(1.05); box-shadow: 0 8px 50px rgba(255,215,0,0.2); }
-.fs-back svg { width: 18px; height: 18px; fill: currentColor; }
-.app.fullscreen .fs-back { display: flex; }
-        /* ========================================
-                   RESPONSIVE
-                ======================================== */
-        @media (max-width: 992px) {
-            .main-grid { flex-direction: column; min-height: auto; }
-            .player-section { position: relative !important; top: 0 !important; max-height: none !important; min-height: 300px !important; }
-            .sidebar { max-width: 100%; max-height: 55vh; }
-            .brand h1 { font-size: 1rem; }
-            .dev-btn .name { display: none; }
-            .channel-list { grid-template-columns: repeat(auto-fill, minmax(75px, 1fr)); }
-            .hidden-player-box { width: 98%; padding: 10px; }
-            .hidden-player-box .close-hidden { top: -8px; right: -8px; width: 32px; height: 32px; font-size: 16px; }
-            .header-actions .hidden-btn { font-size: 0.5rem; padding: 4px 10px; }
-            .header-actions .premium-btn { font-size: 0.5rem; padding: 4px 10px; }
+        .hidden-video-wrap {
+            position:relative; padding-top:56.25%;
+            background:#000; border-radius:var(--radius); overflow:hidden;
+        }
+        .hidden-video-wrap #hiddenPlayer {
+            position:absolute; top:0; left:0; width:100% !important; height:100% !important;
         }
 
-        @media (max-width: 480px) {
-            .app { padding: 8px; gap: 8px; }
-            .brand h1 { font-size: 0.75rem; }
-            .brand .icon { width: 30px; height: 30px; font-size: 12px; }
-            .brand .sub { font-size: 0.35rem; }
-            .dev-btn { padding: 2px 8px 2px 2px; gap: 4px; }
-            .dev-btn img { width: 30px; height: 30px; }
-            .dev-btn .vip { display: none; }
-            .player-section { min-height: 220px !important; padding: 8px; }
-            .video-wrap { min-height: 180px !important; max-height: 40vh; }
-            .controls-group .credit { display: none; }
-            .btn { font-size: 0.4rem; padding: 2px 8px; }
-            .now-playing { font-size: 0.55rem; max-width: 35%; }
-            .channel-list { grid-template-columns: repeat(auto-fill, minmax(55px, 1fr)); gap: 6px; padding: 6px 8px; }
-            .channel-item { padding: 6px 3px; }
-            .channel-item .ch-name { font-size: 0.4rem; }
-            .channel-item .ch-icon { font-size: 16px; }
-            .cat-tab { font-size: 0.35rem; padding: 2px 8px; }
-            .search-box input { font-size: 0.55rem; padding: 5px 8px 5px 28px; }
-            .search-box .icon { font-size: 10px; left: 8px; }
-            .header { padding: 6px 10px; }
-            .profile-card { padding: 16px; }
-            .profile-card img { width: 70px; height: 70px; }
-            .fs-back { padding: 5px 12px; font-size: 0.55rem; bottom: 14px; right: 12px; }
-            .fs-back svg { width: 13px; height: 13px; }
-            .hidden-btn { font-size: 0.45rem; padding: 3px 8px; }
-            .premium-btn { font-size: 0.45rem; padding: 3px 8px; }
-            .password-box { padding: 20px 16px; }
-            .password-box input { font-size: 0.8rem; letter-spacing: 4px; }
-            .premium-login-box { padding: 20px 16px; }
-            .hidden-player-box .close-hidden { top: -6px; right: -6px; width: 28px; height: 28px; font-size: 14px; }
-            #hiddenChannelList .btn { font-size: 0.4rem; padding: 2px 6px; }
-            #hiddenChannelList .nav-btn { font-size: 0.5rem; padding: 2px 6px; }
+        .hidden-controls {
+            display:flex; flex-direction:column; gap:4px;
+            padding:8px 4px 0 4px; color:var(--text-secondary); font-size:0.7rem;
+        }
+        .hidden-controls .top-row {
+            display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;
+        }
+        .hidden-controls .title { font-weight:600; color:var(--text-primary); }
+        .hidden-controls .badge { font-size:0.55rem; font-weight:700; padding:2px 12px; border-radius:40px; text-transform:uppercase; letter-spacing:0.5px; }
+        .hidden-controls .badge.hidden-badge { background:var(--gradient-premium); color:#fff; }
+        .hidden-controls .badge.premium-badge { background:var(--gradient-premium-btn); color:#fff; }
+
+        #hiddenChannelList {
+            display:flex; flex-wrap:wrap; align-items:center; gap:6px;
+            padding:6px 0 2px 0; max-height:80px; overflow-y:auto;
+            margin-top:4px; border-top:1px solid var(--border-color); width:100%;
+        }
+        #hiddenChannelList .btn {
+            padding:3px 10px; font-size:0.5rem;
+            background:var(--bg-glass); border:1px solid var(--border-color);
+            color:var(--text-primary); border-radius:20px; cursor:pointer;
+            transition:var(--transition); white-space:nowrap; flex-shrink:0;
+        }
+        #hiddenChannelList .btn:hover { border-color:rgba(255,215,0,0.3); background:rgba(255,215,0,0.04); }
+        #hiddenChannelList .btn.active-btn { border-color:var(--gold); background:rgba(255,215,0,0.12); }
+        #hiddenChannelList .nav-btn {
+            padding:2px 8px; font-size:0.65rem;
+            background:var(--bg-glass); border:1px solid var(--border-color);
+            color:var(--text-primary); border-radius:8px; cursor:pointer; transition:var(--transition); flex-shrink:0;
+        }
+        #hiddenChannelList .nav-btn:hover { border-color:var(--gold); }
+
+        .app.fullscreen .sidebar,
+        .app.fullscreen .header,
+        .app.fullscreen .player-controls { display:none !important; }
+        .app.fullscreen .player-section {
+            position:fixed !important; top:0 !important; left:0 !important;
+            width:100vw !important; height:100vh !important;
+            z-index:9998 !important; border-radius:0 !important; padding:0 !important;
+            max-height:100vh !important; min-height:100vh !important;
+            background:#000 !important; border:none !important; box-shadow:none !important;
+        }
+        .app.fullscreen .player-section::before { display:none !important; }
+        .app.fullscreen .video-wrap { padding-top:0 !important; height:100vh !important; max-height:100vh !important; border-radius:0 !important; }
+        .app.fullscreen .video-wrap #player { position:fixed !important; top:0; left:0; width:100vw !important; height:100vh !important; z-index:9999 !important; border-radius:0 !important; }
+
+        .fs-back {
+            position:fixed; bottom:30px; right:24px; z-index:10001;
+            background:rgba(0,0,0,0.6); backdrop-filter:blur(16px);
+            border:1px solid rgba(255,215,0,0.15); color:#fff;
+            padding:10px 18px; border-radius:50px; cursor:pointer;
+            font-size:0.8rem; font-weight:700; display:none;
+            align-items:center; gap:10px; transition:var(--transition);
+            box-shadow:0 4px 40px rgba(0,0,0,0.6); text-transform:uppercase; letter-spacing:0.5px;
+        }
+        .fs-back:hover { background:var(--gradient-premium); transform:scale(1.05); box-shadow:0 8px 50px rgba(255,215,0,0.2); }
+        .fs-back svg { width:18px; height:18px; fill:currentColor; }
+        .app.fullscreen .fs-back { display:flex; }
+
+        @media (max-width:992px) {
+            .main-grid { flex-direction:column; min-height:auto; }
+            .player-section { position:relative !important; top:0 !important; max-height:none !important; min-height:300px !important; }
+            .sidebar { max-width:100%; max-height:55vh; }
+            .brand h1 { font-size:1rem; }
+            .dev-btn .name { display:none; }
+            .channel-list { grid-template-columns:repeat(auto-fill, minmax(75px,1fr)); }
+            .hidden-player-box { width:98%; padding:10px; }
+            .hidden-player-box .close-hidden { top:-8px; right:-8px; width:32px; height:32px; font-size:16px; }
+            .hidden-btn, .premium-btn { font-size:0.5rem; padding:4px 10px; }
+        }
+        @media (max-width:480px) {
+            .app { padding:8px; gap:8px; }
+            .brand h1 { font-size:0.75rem; }
+            .brand .icon { width:30px; height:30px; font-size:12px; }
+            .brand .sub { font-size:0.35rem; }
+            .dev-btn { padding:2px 8px 2px 2px; gap:4px; }
+            .dev-btn img { width:30px; height:30px; }
+            .dev-btn .vip { display:none; }
+            .player-section { min-height:220px !important; padding:8px; }
+            .video-wrap { min-height:180px !important; max-height:40vh; }
+            .controls-group .credit { display:none; }
+            .btn { font-size:0.4rem; padding:2px 8px; }
+            .now-playing { font-size:0.55rem; max-width:35%; }
+            .channel-list { grid-template-columns:repeat(auto-fill, minmax(55px,1fr)); gap:6px; padding:6px 8px; }
+            .channel-item { padding:6px 3px; }
+            .channel-item .ch-name { font-size:0.4rem; }
+            .channel-item .ch-icon { font-size:16px; }
+            .cat-tab { font-size:0.35rem; padding:2px 8px; }
+            .search-box input { font-size:0.55rem; padding:5px 8px 5px 28px; }
+            .search-box .icon { font-size:10px; left:8px; }
+            .header { padding:6px 10px; }
+            .profile-card { padding:16px; }
+            .profile-card img { width:70px; height:70px; }
+            .fs-back { padding:5px 12px; font-size:0.55rem; bottom:14px; right:12px; }
+            .fs-back svg { width:13px; height:13px; }
+            .hidden-btn, .premium-btn { font-size:0.45rem; padding:3px 8px; }
+            .password-box, .premium-login-box { padding:20px 16px; }
+            .password-box input { font-size:0.8rem; letter-spacing:4px; }
+            .hidden-player-box .close-hidden { top:-6px; right:-6px; width:28px; height:28px; font-size:14px; }
+            #hiddenChannelList .btn { font-size:0.4rem; padding:2px 6px; }
+            #hiddenChannelList .nav-btn { font-size:0.5rem; padding:2px 6px; }
         }
     </style>
 </head>
 <body>
 <div class="app" id="app">
 
-    <!-- ===== HEADER ===== -->
     <header class="header">
         <div class="brand">
             <div class="icon">📺</div>
@@ -871,15 +511,12 @@ display: none;
         </div>
     </header>
 
-    <!-- ===== MAIN GRID ===== -->
     <div class="main-grid">
 
-        <!-- ===== PLAYER SECTION ===== -->
         <section class="player-section">
             <div class="video-wrap">
                 <div id="player"></div>
             </div>
-
             <div class="player-controls">
                 <span class="now-playing" id="nowPlaying">
                     <span class="live">লাইভ</span> চ্যানেল নির্বাচন করুন
@@ -894,8 +531,7 @@ display: none;
             </div>
         </section>
 
-        <!-- ===== SIDEBAR ===== -->
-         <aside class="sidebar">
+        <aside class="sidebar">
             <div class="sidebar-top">
                 <div class="search-box">
                     <span class="icon">🔍</span>
@@ -908,15 +544,12 @@ display: none;
 
     </div>
 
-    <!-- ===== FULLSCREEN BACK BUTTON ===== -->
     <button class="fs-back" id="fsBackBtn">
         <svg viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
         ⬅ ব্যাক
     </button>
 
 </div>
-
-<!-- ===== PROFILE POPUP ===== -->
 <div class="profile-overlay" id="profileOverlay">
     <div class="profile-card">
         <button class="close-btn" id="closeProfileBtn">✕</button>
@@ -940,19 +573,17 @@ display: none;
     </div>
 </div>
 
-<!-- ===== PASSWORD MODAL (হিডেন) ===== -->
 <div class="password-overlay" id="passwordOverlay">
     <div class="password-box">
         <button class="close-btn" id="closePasswordBtn">✕</button>
         <h3>🔒 হিডেন কন্টেন্ট</h3>
-        <p>এই কন্টেন্ট দেখতে পাসওয়ার্ড দিন</p>
+        <p>পাসওয়ার্ড দিন</p>
         <input type="password" id="passwordInput" placeholder="পাসওয়ার্ড" maxlength="8" autocomplete="off" />
-        <div class="error-msg" id="passwordError">❌ ভুল পাসওয়ার্ড! আবার চেষ্টা করুন।</div>
+        <div class="error-msg" id="passwordError">❌ ভুল পাসওয়ার্ড!</div>
         <button class="submit-btn" id="passwordSubmitBtn">✅ ভেরিফাই করুন</button>
     </div>
 </div>
 
-<!-- ===== PREMIUM LOGIN MODAL ===== -->
 <div class="premium-login-overlay" id="premiumLoginOverlay">
     <div class="premium-login-box">
         <button class="close-btn" id="closePremiumLoginBtn">✕</button>
@@ -960,18 +591,17 @@ display: none;
         <p class="sub-title">লগিন করে প্রিমিয়াম চ্যানেল দেখুন</p>
         <div class="field-group">
             <label>👤 ইউজারনেম</label>
-            <input type="text" id="premiumUserInput" placeholder="ইউজারনেম দিন" autocomplete="off" />
+            <input type="text" id="premiumUserInput" placeholder="ইউজারনেম" autocomplete="off" />
         </div>
         <div class="field-group">
             <label>🔑 পাসওয়ার্ড</label>
-            <input type="password" id="premiumPassInput" placeholder="পাসওয়ার্ড দিন" autocomplete="off" />
+            <input type="password" id="premiumPassInput" placeholder="পাসওয়ার্ড" autocomplete="off" />
         </div>
         <div class="error-msg" id="premiumLoginError">❌ ভুল ইউজারনেম বা পাসওয়ার্ড!</div>
         <button class="submit-btn" id="premiumLoginBtn">✅ লগিন করুন</button>
     </div>
 </div>
 
-<!-- ===== HIDDEN / PREMIUM VIDEO PLAYER ===== -->
 <div class="hidden-player-overlay" id="hiddenPlayerOverlay">
     <div class="hidden-player-box">
         <button class="close-hidden" id="closeHiddenPlayer">✕</button>
@@ -1002,13 +632,11 @@ display: none;
     const randomBtn = document.getElementById('randomBtn');
     const themeToggle = document.getElementById('themeToggle');
 
-    // ===== প্রোফাইল =====
     const devBtn = document.getElementById('devBtn');
     const profileOverlay = document.getElementById('profileOverlay');
     const closeProfileBtn = document.getElementById('closeProfileBtn');
     const closePopupBtn = document.getElementById('closePopupBtn');
 
-    // ===== হিডেন পাসওয়ার্ড =====
     const hiddenBtn = document.getElementById('hiddenBtn');
     const passwordOverlay = document.getElementById('passwordOverlay');
     const closePasswordBtn = document.getElementById('closePasswordBtn');
@@ -1016,7 +644,6 @@ display: none;
     const passwordSubmitBtn = document.getElementById('passwordSubmitBtn');
     const passwordError = document.getElementById('passwordError');
 
-    // ===== প্রিমিয়াম লগিন =====
     const premiumBtn = document.getElementById('premiumBtn');
     const premiumLoginOverlay = document.getElementById('premiumLoginOverlay');
     const closePremiumLoginBtn = document.getElementById('closePremiumLoginBtn');
@@ -1025,7 +652,6 @@ display: none;
     const premiumLoginBtn = document.getElementById('premiumLoginBtn');
     const premiumLoginError = document.getElementById('premiumLoginError');
 
-    // ===== হিডেন প্লেয়ার =====
     const hiddenPlayerOverlay = document.getElementById('hiddenPlayerOverlay');
     const closeHiddenPlayer = document.getElementById('closeHiddenPlayer');
     const hiddenNowPlaying = document.getElementById('hiddenNowPlaying');
@@ -1041,36 +667,51 @@ display: none;
     let allChannels = [];
     let hiddenChannels = [];
     let premiumChannels = [];
-
     let hiddenCurrentIndex = 0;
     let isPremiumMode = false;
+    let CORRECT_PASSWORD = null;
+    let PREMIUM_USERS = [];
 
-    // ===== পাসওয়ার্ড (হিডেন) =====
-    const CORRECT_PASSWORD = 'zzzzxxxx';
+    themeToggle.addEventListener('click', () => { document.body.classList.toggle('light-mode'); });
 
-    // ===== প্রিমিয়াম ইউজার লিস্ট (এডিট করতে পারেন) =====
-    const PREMIUM_USERS = [
-        { username: 'admin', password: '1234' },
-        { username: 'sumon', password: '5678' },
-        { username: 'user1', password: '9012' },
-        { username: 'vip', password: 'vip2025' },
-        { username: 'guest', password: 'guest123' },
-        { username:'sbu' , password: 'zzxx' }
-        ];
-
-    // ===== থিম টগল =====
-    themeToggle.addEventListener('click', () => {
-        document.body.classList.toggle('light-mode');
-    });
-
-    // ===== প্রোফাইল =====
     devBtn.addEventListener('click', () => { profileOverlay.classList.add('active'); document.body.style.overflow = 'hidden'; });
     closeProfileBtn.addEventListener('click', () => { profileOverlay.classList.remove('active'); document.body.style.overflow = ''; });
     closePopupBtn.addEventListener('click', () => { profileOverlay.classList.remove('active'); document.body.style.overflow = ''; });
     profileOverlay.addEventListener('click', (e) => { if (e.target === profileOverlay) { profileOverlay.classList.remove('active'); document.body.style.overflow = ''; } });
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') { profileOverlay.classList.remove('active'); document.body.style.overflow = ''; } });
 
-    // ===== হিডেন পাসওয়ার্ড =====
+    // ===== হিডেন পাসওয়ার্ড লোড (ডিফল্ট নেই) =====
+    function loadHiddenPassword() {
+        fetch('hidden_password.json')
+            .then(res => {
+                if (!res.ok) throw new Error('hidden_password.json পাওয়া যায়নি');
+                return res.json();
+            })
+            .then(data => {
+                CORRECT_PASSWORD = data.password || null;
+            })
+            .catch(() => {
+                CORRECT_PASSWORD = null;
+            });
+    }
+    loadHiddenPassword();
+
+    // ===== প্রিমিয়াম ইউজার লোড (ডিফল্ট নেই) =====
+    function loadPremiumUsers() {
+        fetch('users.json')
+            .then(res => {
+                if (!res.ok) throw new Error('users.json পাওয়া যায়নি');
+                return res.json();
+            })
+            .then(data => {
+                PREMIUM_USERS = data.users || [];
+            })
+            .catch(() => {
+                PREMIUM_USERS = [];
+            });
+    }
+    loadPremiumUsers();
+
     function openPasswordModal() {
         passwordOverlay.classList.add('active');
         document.body.style.overflow = 'hidden';
@@ -1088,7 +729,7 @@ display: none;
 
     passwordSubmitBtn.addEventListener('click', function() {
         const entered = passwordInput.value.trim();
-        if (entered === CORRECT_PASSWORD) {
+        if (CORRECT_PASSWORD && entered === CORRECT_PASSWORD) {
             closePasswordModal();
             isPremiumMode = false;
             hiddenPlayerBadge.textContent = '🔒 হিডেন';
@@ -1105,7 +746,6 @@ display: none;
         if (e.key === 'Escape') closePasswordModal();
     });
 
-    // ===== প্রিমিয়াম লগিন =====
     function openPremiumLogin() {
         premiumLoginOverlay.classList.add('active');
         document.body.style.overflow = 'hidden';
@@ -1139,291 +779,207 @@ display: none;
             premiumUserInput.focus();
         }
     });
-
     premiumUserInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') premiumPassInput.focus(); });
     premiumPassInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') premiumLoginBtn.click(); });
-    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') { closePremiumLogin(); } });
-// ===== হিডেন কন্টেন্ট লোড =====
-function loadHiddenContent() {
-    fetch('hidden_channels.json')
-        .then(res => {
-            if (!res.ok) throw new Error('হিডেন JSON পাওয়া যায়নি');
-            return res.json();
-        })
-        .then(data => {
-            if (!data.channels || !data.channels.length) {
-                alert('⚠️ হিডেন চ্যানেল পাওয়া যায়নি!');
-                return;
-            }
-            hiddenChannels = data.channels.filter(ch => ch.status !== 'hidden');
-            if (hiddenChannels.length === 0) {
-                alert('⚠️ কোনো দৃশ্যমান হিডেন চ্যানেল নেই!');
-                return;
-            }
-            hiddenPlayerOverlay.classList.add('active');
-            document.body.style.overflow = 'hidden';
-            buildHiddenList(hiddenChannels);
-            hiddenCurrentIndex = 0;
-            playHiddenChannel(hiddenCurrentIndex);
-        })
-        .catch(err => {
-            console.error('হিডেন JSON Error:', err);
-            alert('⚠️ hidden_channels.json ফাইলটি পাওয়া যায়নি!');
-        });
-}
-
-// ===== প্রিমিয়াম কন্টেন্ট লোড =====
-function loadPremiumContent() {
-    fetch('premium_channels.json')
-        .then(res => {
-            if (!res.ok) throw new Error('প্রিমিয়াম JSON পাওয়া যায়নি');
-            return res.json();
-        })
-        .then(data => {
-            if (!data.channels || !data.channels.length) {
-                alert('⚠️ প্রিমিয়াম চ্যানেল পাওয়া যায়নি!');
-                return;
-            }
-            premiumChannels = data.channels.filter(ch => ch.status !== 'hidden');
-            if (premiumChannels.length === 0) {
-                alert('⚠️ কোনো দৃশ্যমান প্রিমিয়াম চ্যানেল নেই!');
-                return;
-            }
-            hiddenPlayerOverlay.classList.add('active');
-            document.body.style.overflow = 'hidden';
-            buildHiddenList(premiumChannels);
-            hiddenCurrentIndex = 0;
-            playHiddenChannel(hiddenCurrentIndex);
-        })
-        .catch(err => {
-            console.error('প্রিমিয়াম JSON Error:', err);
-            alert('⚠️ premium_channels.json ফাইলটি পাওয়া যায়নি!');
-        });
-}
-
-// ===== হিডেন চ্যানেল প্লে =====
-function playHiddenChannel(index) {
-    const channels = isPremiumMode ? premiumChannels : hiddenChannels;
-    if (!channels || channels.length === 0) return;
-    if (index < 0) index = channels.length - 1;
-    if (index >= channels.length) index = 0;
-    hiddenCurrentIndex = index;
-
-    const channel = channels[index];
-    hiddenNowPlaying.textContent = '📡 ' + channel.name;
-
-    document.querySelectorAll('#hiddenChannelList .btn').forEach((b, i) => {
-        b.classList.toggle('active-btn', i === index);
-    });
-
-    if (hiddenJwInstance) {
-        hiddenJwInstance.load([{ file: channel.url }]);
-        hiddenJwInstance.play();
-    } else {
-        setupHiddenPlayer(channel);
-    }
-}
-
-// ===== নেভিগেশন =====
-function nextHiddenChannel() { playHiddenChannel(hiddenCurrentIndex + 1); }
-function prevHiddenChannel() { playHiddenChannel(hiddenCurrentIndex - 1); }
-
-// ===== হিডেন চ্যানেল লিস্ট বিল্ড =====
-function buildHiddenList(channels) {
-    const container = document.getElementById('hiddenChannelList');
-    container.innerHTML = '';
-
-    // নেভিগেশন বাটন
-    const navWrapper = document.createElement('div');
-    navWrapper.style.cssText = `display: flex; gap: 4px; flex-shrink: 0; margin-right: 4px;`;
-
-    const prevBtn = document.createElement('button');
-    prevBtn.className = 'nav-btn';
-    prevBtn.textContent = '⏮';
-    prevBtn.title = 'পূর্ববর্তী';
-    prevBtn.addEventListener('click', (e) => { e.stopPropagation(); prevHiddenChannel(); });
-
-    const nextBtn = document.createElement('button');
-    nextBtn.className = 'nav-btn';
-    nextBtn.textContent = '⏭';
-    nextBtn.title = 'পরবর্তী';
-    nextBtn.addEventListener('click', (e) => { e.stopPropagation(); nextHiddenChannel(); });
-
-    navWrapper.appendChild(prevBtn);
-    navWrapper.appendChild(nextBtn);
-    container.appendChild(navWrapper);
-
-    // চ্যানেল বাটন
-    channels.forEach((ch, index) => {
-        const btn = document.createElement('button');
-        btn.className = 'btn';
-        btn.dataset.index = index;
-        btn.textContent = '📺 ' + ch.name;
-        btn.addEventListener('click', () => playHiddenChannel(index));
-        container.appendChild(btn);
-    });
-
-    // প্রথম বাটন হাইলাইট
-    const firstBtn = container.querySelector('.btn');
-    if (firstBtn) firstBtn.classList.add('active-btn');
-}
-
-// ===== হিডেন প্লেয়ার সেটআপ =====
-function setupHiddenPlayer(channel) {
-    hiddenNowPlaying.textContent = '📡 ' + channel.name;
-    if (hiddenJwInstance) {
-        hiddenJwInstance.load([{ file: channel.url }]);
-        hiddenJwInstance.play();
-        return;
-    }
-
-    hiddenJwInstance = jwplayer('hiddenPlayer').setup({
-        file: channel.url,
-        width: '100%',
-        height: '100%',
-        autostart: true,
-        mute: false,
-        primary: 'html5',
-        hlsjsConfig: {
-            enableWorker: true,
-            useCues: true,
-            xhrSetup: (xhr, url) => { xhr.withCredentials = false; }
-        },
-        androidhls: true,
-        playbackRateControls: false,
-        bufferLength: 3,
-        preload: 'auto'
-    });
-
-    hiddenJwInstance.on('error', function(e) {
-        console.log('Hidden Player Error:', e.message);
-        hiddenNowPlaying.textContent = '⚠️ ' + e.message;
-    });
-}
-
-// ===== হিডেন প্লেয়ার বন্ধ =====
-closeHiddenPlayer.addEventListener('click', () => {
-    hiddenPlayerOverlay.classList.remove('active');
-    document.body.style.overflow = '';
-    if (hiddenJwInstance) {
-        hiddenJwInstance.stop();
-        hiddenJwInstance.remove();
-        hiddenJwInstance = null;
-    }
-});
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && hiddenPlayerOverlay.classList.contains('active')) {
-        closeHiddenPlayer.click();
-    }
-});
-// ===== JW PLAYER =====
-function setupPlayer(url, callback) {
-    currentUrl = url;
-    if (jwInstance) {
-        jwInstance.load([{ file: url }]);
-        jwInstance.play();
-        if (callback) callback();
-        return;
-    }
-
-    jwInstance = jwplayer('player').setup({
-        file: url,
-        width: '100%',
-        height: '100%',
-        autostart: true,
-        mute: false,
-        primary: 'html5',
-        hlsjsConfig: {
-            enableWorker: true,
-            useCues: true,
-            xhrSetup: (xhr, url) => { xhr.withCredentials = false; }
-        },
-        androidhls: true,
-        playbackRateControls: false,
-        bufferLength: 3,
-        preload: 'auto'
-    });
-
-    jwInstance.on('error', function(e) {
-        console.log('Error:', e.message);
-        nowPlaying.innerHTML = '<span class="live">⚠️</span> ' + e.message;
-    });
-
-    jwInstance.on('play', () => {
-        if (callback) callback();
-    });
-}
-
-// ===== PiP =====
-pipBtn.addEventListener('click', async () => {
-    if (!jwInstance) return;
-    const container = jwInstance.getContainer();
-    const video = container.querySelector('video');
-    if (!video) return;
-    try {
-        if (document.pictureInPictureElement) {
-            await document.exitPictureInPicture();
-        } else {
-            await video.requestPictureInPicture();
+        function loadHiddenContent() {
+            fetch('hidden_channels.json')
+                .then(res => {
+                    if (!res.ok) throw new Error('হিডেন JSON পাওয়া যায়নি');
+                    return res.json();
+                })
+                .then(data => {
+                    if (!data.channels || !data.channels.length) { alert('⚠️ হিডেন চ্যানেল পাওয়া যায়নি!'); return; }
+                    hiddenChannels = data.channels.filter(ch => ch.status !== 'hidden');
+                    if (!hiddenChannels.length) { alert('⚠️ কোনো দৃশ্যমান হিডেন চ্যানেল নেই!'); return; }
+                    hiddenPlayerOverlay.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                    buildHiddenList(hiddenChannels);
+                    hiddenCurrentIndex = 0;
+                    playHiddenChannel(hiddenCurrentIndex);
+                })
+                .catch(() => { alert('⚠️ hidden_channels.json পাওয়া যায়নি!'); });
         }
-    } catch (err) { console.log('PiP Error:', err); }
-});
 
-// ===== র্যান্ডম =====
-randomBtn.addEventListener('click', () => {
-    const visible = allItems.filter(item => item.style.display !== 'none');
-    if (!visible.length) return;
-    const random = visible[Math.floor(Math.random() * visible.length)];
-    if (random) random.click();
-});
+        function loadPremiumContent() {
+            fetch('premium_channels.json')
+                .then(res => {
+                    if (!res.ok) throw new Error('প্রিমিয়াম JSON পাওয়া যায়নি');
+                    return res.json();
+                })
+                .then(data => {
+                    if (!data.channels || !data.channels.length) { alert('⚠️ প্রিমিয়াম চ্যানেল পাওয়া যায়নি!'); return; }
+                    premiumChannels = data.channels.filter(ch => ch.status !== 'hidden');
+                    if (!premiumChannels.length) { alert('⚠️ কোনো দৃশ্যমান প্রিমিয়াম চ্যানেল নেই!'); return; }
+                    hiddenPlayerOverlay.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                    buildHiddenList(premiumChannels);
+                    hiddenCurrentIndex = 0;
+                    playHiddenChannel(hiddenCurrentIndex);
+                })
+                .catch(() => { alert('⚠️ premium_channels.json পাওয়া যায়নি!'); });
+        }
 
-// ===== রিলোড =====
-reloadBtn.addEventListener('click', () => {
-    if (jwInstance && currentUrl) {
-        nowPlaying.innerHTML = '<span class="live">🔄</span> রিলোড...';
-        jwInstance.load([{ file: currentUrl }]);
-        jwInstance.play();
-    }
-});
-
-// ===== ফুলস্ক্রিন =====
-function toggleFullscreen() {
-    isFullscreen = !isFullscreen;
-    app.classList.toggle('fullscreen', isFullscreen);
-    fullscreenBtn.textContent = isFullscreen ? '✕' : '⛶';
-    document.body.style.overflow = isFullscreen ? 'hidden' : '';
-    if (jwInstance) {
-        setTimeout(() => {
-            if (isFullscreen) {
-                jwInstance.resize(window.innerWidth, window.innerHeight);
+        function playHiddenChannel(index) {
+            const channels = isPremiumMode ? premiumChannels : hiddenChannels;
+            if (!channels || !channels.length) return;
+            if (index < 0) index = channels.length - 1;
+            if (index >= channels.length) index = 0;
+            hiddenCurrentIndex = index;
+            const channel = channels[index];
+            hiddenNowPlaying.textContent = '📡 ' + channel.name;
+            document.querySelectorAll('#hiddenChannelList .btn').forEach((b, i) => {
+                b.classList.toggle('active-btn', i === index);
+            });
+            if (hiddenJwInstance) {
+                hiddenJwInstance.load([{ file: channel.url }]);
+                hiddenJwInstance.play();
             } else {
-                const container = document.querySelector('.video-wrap');
-                jwInstance.resize(container.offsetWidth, container.offsetHeight);
+                setupHiddenPlayer(channel);
             }
-        }, 150);
-    }
-}
-fullscreenBtn.addEventListener('click', toggleFullscreen);
-fsBackBtn.addEventListener('click', () => { if (isFullscreen) toggleFullscreen(); });
+        }
 
-// ===== কিবোর্ড শর্টকাট =====
-document.addEventListener('keydown', (e) => {
-    if (e.target.tagName === 'INPUT') return;
-    if (e.key === ' ' || e.key === 'Space') { e.preventDefault(); if (jwInstance) jwInstance.playPause(); }
-    if (e.key === 'f' || e.key === 'F') { toggleFullscreen(); }
-    if (e.key === 'm' || e.key === 'M') {
-        if (jwInstance) { isMuted = !isMuted; jwInstance.setMute(isMuted); }
-    }
-    if (e.key === 'ArrowUp') { if (jwInstance) { const v = Math.min(jwInstance.getVolume() + 10, 100); jwInstance.setVolume(v); } }
-    if (e.key === 'ArrowDown') { if (jwInstance) { const v = Math.max(jwInstance.getVolume() - 10, 0); jwInstance.setVolume(v); } }
-    if (e.key === 'Escape' && isFullscreen) toggleFullscreen();
-});
-        // ===== JSON লোড (সাধারণ চ্যানেল) =====
+        function nextHiddenChannel() { playHiddenChannel(hiddenCurrentIndex + 1); }
+        function prevHiddenChannel() { playHiddenChannel(hiddenCurrentIndex - 1); }
+
+        function buildHiddenList(channels) {
+            const container = document.getElementById('hiddenChannelList');
+            container.innerHTML = '';
+            const navWrapper = document.createElement('div');
+            navWrapper.style.cssText = 'display:flex; gap:4px; flex-shrink:0; margin-right:4px;';
+            const prevBtn = document.createElement('button');
+            prevBtn.className = 'nav-btn';
+            prevBtn.textContent = '⏮';
+            prevBtn.addEventListener('click', (e) => { e.stopPropagation(); prevHiddenChannel(); });
+            const nextBtn = document.createElement('button');
+            nextBtn.className = 'nav-btn';
+            nextBtn.textContent = '⏭';
+            nextBtn.addEventListener('click', (e) => { e.stopPropagation(); nextHiddenChannel(); });
+            navWrapper.appendChild(prevBtn);
+            navWrapper.appendChild(nextBtn);
+            container.appendChild(navWrapper);
+            channels.forEach((ch, index) => {
+                const btn = document.createElement('button');
+                btn.className = 'btn';
+                btn.dataset.index = index;
+                btn.textContent = '📺 ' + ch.name;
+                btn.addEventListener('click', () => playHiddenChannel(index));
+                container.appendChild(btn);
+            });
+            const firstBtn = container.querySelector('.btn');
+            if (firstBtn) firstBtn.classList.add('active-btn');
+        }
+
+        function setupHiddenPlayer(channel) {
+            hiddenNowPlaying.textContent = '📡 ' + channel.name;
+            if (hiddenJwInstance) {
+                hiddenJwInstance.load([{ file: channel.url }]);
+                hiddenJwInstance.play();
+                return;
+            }
+            hiddenJwInstance = jwplayer('hiddenPlayer').setup({
+                file: channel.url,
+                width: '100%',
+                height: '100%',
+                autostart: true,
+                mute: false,
+                primary: 'html5',
+                hlsjsConfig: { enableWorker: true, useCues: true, xhrSetup: (xhr, url) => { xhr.withCredentials = false; } },
+                androidhls: true,
+                playbackRateControls: false,
+                bufferLength: 3,
+                preload: 'auto'
+            });
+            hiddenJwInstance.on('error', function(e) {
+                console.log('Hidden Player Error:', e.message);
+                hiddenNowPlaying.textContent = '⚠️ ' + e.message;
+            });
+        }
+
+        closeHiddenPlayer.addEventListener('click', () => {
+            hiddenPlayerOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+            if (hiddenJwInstance) { hiddenJwInstance.stop(); hiddenJwInstance.remove(); hiddenJwInstance = null; }
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && hiddenPlayerOverlay.classList.contains('active')) closeHiddenPlayer.click();
+        });
+
+        function setupPlayer(url, callback) {
+            currentUrl = url;
+            if (jwInstance) { jwInstance.load([{ file: url }]); jwInstance.play(); if (callback) callback(); return; }
+            jwInstance = jwplayer('player').setup({
+                file: url,
+                width: '100%',
+                height: '100%',
+                autostart: true,
+                mute: false,
+                primary: 'html5',
+                hlsjsConfig: { enableWorker: true, useCues: true, xhrSetup: (xhr, url) => { xhr.withCredentials = false; } },
+                androidhls: true,
+                playbackRateControls: false,
+                bufferLength: 3,
+                preload: 'auto'
+            });
+            jwInstance.on('error', function(e) {
+                console.log('Error:', e.message);
+                nowPlaying.innerHTML = '<span class="live">⚠️</span> ' + e.message;
+            });
+            jwInstance.on('play', () => { if (callback) callback(); });
+        }
+
+        pipBtn.addEventListener('click', async () => {
+            if (!jwInstance) return;
+            const container = jwInstance.getContainer();
+            const video = container.querySelector('video');
+            if (!video) return;
+            try {
+                if (document.pictureInPictureElement) { await document.exitPictureInPicture(); }
+                else { await video.requestPictureInPicture(); }
+            } catch (err) { console.log('PiP Error:', err); }
+        });
+
+        randomBtn.addEventListener('click', () => {
+            const visible = allItems.filter(item => item.style.display !== 'none');
+            if (!visible.length) return;
+            const random = visible[Math.floor(Math.random() * visible.length)];
+            if (random) random.click();
+        });
+
+        reloadBtn.addEventListener('click', () => {
+            if (jwInstance && currentUrl) {
+                nowPlaying.innerHTML = '<span class="live">🔄</span> রিলোড...';
+                jwInstance.load([{ file: currentUrl }]);
+                jwInstance.play();
+            }
+        });
+
+        function toggleFullscreen() {
+            isFullscreen = !isFullscreen;
+            app.classList.toggle('fullscreen', isFullscreen);
+            fullscreenBtn.textContent = isFullscreen ? '✕' : '⛶';
+            document.body.style.overflow = isFullscreen ? 'hidden' : '';
+            if (jwInstance) {
+                setTimeout(() => {
+                    if (isFullscreen) { jwInstance.resize(window.innerWidth, window.innerHeight); }
+                    else { const container = document.querySelector('.video-wrap'); jwInstance.resize(container.offsetWidth, container.offsetHeight); }
+                }, 150);
+            }
+        }
+        fullscreenBtn.addEventListener('click', toggleFullscreen);
+        fsBackBtn.addEventListener('click', () => { if (isFullscreen) toggleFullscreen(); });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.target.tagName === 'INPUT') return;
+            if (e.key === ' ' || e.key === 'Space') { e.preventDefault(); if (jwInstance) jwInstance.playPause(); }
+            if (e.key === 'f' || e.key === 'F') { toggleFullscreen(); }
+            if (e.key === 'm' || e.key === 'M') { if (jwInstance) { isMuted = !isMuted; jwInstance.setMute(isMuted); } }
+            if (e.key === 'ArrowUp') { if (jwInstance) { const v = Math.min(jwInstance.getVolume() + 10, 100); jwInstance.setVolume(v); } }
+            if (e.key === 'ArrowDown') { if (jwInstance) { const v = Math.max(jwInstance.getVolume() - 10, 0); jwInstance.setVolume(v); } }
+            if (e.key === 'Escape' && isFullscreen) toggleFullscreen();
+        });
+
         fetch('tv_channels.json')
-            .then(res => {
-                if (!res.ok) throw new Error('HTTP Error: ' + res.status);
-                return res.json();
-            })
+            .then(res => { if (!res.ok) throw new Error('HTTP Error: ' + res.status); return res.json(); })
             .then(data => {
                 if (!data.channels || !data.channels.length) {
                     channelList.innerHTML = '<div style="grid-column:1/-1;text-align:center;color:#666;padding:30px;">কোন চ্যানেল পাওয়া যায়নি</div>';
@@ -1436,10 +992,9 @@ document.addEventListener('keydown', (e) => {
             })
             .catch(err => {
                 console.error(err);
-                channelList.innerHTML = `<div style="grid-column:1/-1;text-align:center;color:#888;padding:30px;">⚠️ tv_channels.json পাওয়া যায়নি</div>`;
+                channelList.innerHTML = '<div style="grid-column:1/-1;text-align:center;color:#888;padding:30px;">⚠️ tv_channels.json পাওয়া যায়নি</div>';
             });
 
-        // ===== ক্যাটাগরি ট্যাব =====
         function buildCategoryTabs(channels) {
             const categories = {};
             channels.forEach(ch => { const cat = ch.category || 'Other'; categories[cat] = (categories[cat] || 0) + 1; });
@@ -1459,7 +1014,6 @@ document.addEventListener('keydown', (e) => {
             });
         }
 
-        // ===== ফেভারিট =====
         function getFavorites() {
             try { return JSON.parse(localStorage.getItem('sbu_favorites')) || []; } catch(e) { return []; }
         }
@@ -1484,7 +1038,6 @@ document.addEventListener('keydown', (e) => {
             });
         }
 
-        // ===== চ্যানেল লিস্ট =====
         function buildList(channels) {
             channelList.innerHTML = '';
             allItems = [];
@@ -1494,21 +1047,14 @@ document.addEventListener('keydown', (e) => {
                 div.dataset.name = ch.name.toLowerCase();
                 div.dataset.category = ch.category || 'Other';
                 div.dataset.url = ch.url;
-
                 const fav = isFavorite(ch.name) ? 'active' : '';
-
                 div.innerHTML = `
                     <button class="fav-btn ${fav}" data-name="${ch.name}">❤️</button>
                     <div class="ch-icon">📺</div>
                     <div class="ch-name">${ch.name}</div>
                 `;
-
                 const favBtn = div.querySelector('.fav-btn');
-                favBtn.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    toggleFavorite(ch.name);
-                });
-
+                favBtn.addEventListener('click', (e) => { e.stopPropagation(); toggleFavorite(ch.name); });
                 div.addEventListener('click', function() {
                     const url = this.dataset.url;
                     const name = this.dataset.name;
@@ -1519,7 +1065,6 @@ document.addEventListener('keydown', (e) => {
                     setupPlayer(url);
                     if (isFullscreen) toggleFullscreen();
                 });
-
                 channelList.appendChild(div);
                 allItems.push(div);
             });
@@ -1529,7 +1074,6 @@ document.addEventListener('keydown', (e) => {
             if (favCountEl) favCountEl.textContent = getFavorites().length;
         }
 
-        // ===== ফিল্টার =====
         function filterChannels() {
             const query = searchInput.value.toLowerCase().trim();
             const favs = getFavorites();
@@ -1543,7 +1087,6 @@ document.addEventListener('keydown', (e) => {
 
         searchInput.addEventListener('input', filterChannels);
 
-        // ===== শেয়ার বাটন =====
         const shareGroup = document.createElement('div');
         shareGroup.style.display = 'flex';
         shareGroup.style.gap = '4px';
@@ -1553,7 +1096,6 @@ document.addEventListener('keydown', (e) => {
         `;
         document.querySelector('.controls-group').appendChild(shareGroup);
 
-        // ===== রিসাইজ =====
         window.addEventListener('resize', () => {
             if (jwInstance && !isFullscreen) {
                 const container = document.querySelector('.video-wrap');
