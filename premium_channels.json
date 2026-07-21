@@ -1,1 +1,496 @@
-yy
+{
+    "channels": [
+        {
+            "name": "AlArabiya العربية (1)",
+            "category": "News",
+            "url": "https://live.alarabiya.net/alarabiapublish/alarabiya.smil/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "AlArabiya العربية (2)",
+            "category": "News",
+            "url": "https://live.alarabiya.net/alarabiapublish/alarabiya.smil/alarabiapublish/alarabiya_1080p/chunks.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "AlArabiya العربية (3)",
+            "category": "News",
+            "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-alarabiya/7f90de73d777d04f3dada92f90d35c44/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "América TV",
+            "category": "News",
+            "url": "https://raw.githubusercontent.com/MachineSystems/archived_m3u8/main/america_hls.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Net TV (1)",
+            "category": "News",
+            "url": "https://unlimited1-us.dps.live/nettv/nettv.smil/nettv/livestream1/chunks.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Net TV (2)",
+            "category": "News",
+            "url": "https://unlimited1-us.dps.live/nettv/nettv.smil/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Net TV (3)",
+            "category": "News",
+            "url": "https://unlimited6-cl.dps.live/nettv/nettv.smil/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Net TV (4)",
+            "category": "News",
+            "url": "https://unlimited1-us.dps.live/nettv/nettv.smil/nettv/livestream2/chunks.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Radio10",
+            "category": "Music",
+            "url": "https://radio10.stweb.tv/radio10/live/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "24 horas",
+            "category": "News",
+            "url": "https://mdstrm.com/live-stream-playlist/689ba606ecfe7915e1f8f741.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Radio ADN",
+            "category": "Music",
+            "url": "https://redirector.rudo.video/hls-video/931b584451fa6dd1313ee66efbfd5802e3f3bcea/adntv/adntv.smil/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "AGRICULTURA TV (1)",
+            "category": "Music",
+            "url": "https://redirector.rudo.video/hls-video/ey6283je82983je9823je8jowowiekldk9838274/921tv/921tv.smil/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "AGRICULTURA TV (2)",
+            "category": "Music",
+            "url": "https://unlimited2-cl-isp.dps.live/921tv/921tv.smil/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Radio Alternativa FM (1)",
+            "category": "Music",
+            "url": "https://vs20.live.opencaster.com/alternativatv_859ab4a0/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Radio Alternativa FM (2)",
+            "category": "Music",
+            "url": "https://live20.bozztv.com/giatv/giatv-alternativatv/alternativatv/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "America TV",
+            "category": "General",
+            "url": "https://v2.tustreaming.cl/radioamericatv/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Antofagasta TV (1)",
+            "category": "General",
+            "url": "https://unlimited1-cl-isp.dps.live/atv/atv.smil/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Antofagasta TV (2)",
+            "category": "General",
+            "url": "https://unlimited6-cl.dps.live/atv/atv.smil/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Arica TV",
+            "category": "General",
+            "url": "https://envivo.arica.tv/hls/Live2025AricaTV.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Atacama TV (1)",
+            "category": "General",
+            "url": "https://v2.tustreaming.cl/atacamatv/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Atacama TV (2)",
+            "category": "General",
+            "url": "https://v2.tustreaming.cl/atacamatv/tracks-v1a1/mono.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Atacama TV (3)",
+            "category": "General",
+            "url": "https://v2.tustreaming.cl/atacamanoticias/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Aysen TV (1)",
+            "category": "General",
+            "url": "https://v1.tustreaming.cl/aysentv/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Aysen TV (2)",
+            "category": "General",
+            "url": "https://v1.tustreaming.cl/aysentv/tracks-v1a1/mono.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Aysen TV (3)",
+            "category": "General",
+            "url": "https://v1.tustreaming.cl:443/aysentv/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Radio Biobio TV",
+            "category": "Music",
+            "url": "https://redirector.rudo.video/hls-video/339f69c6122f6d8f4574732c235f09b7683e31a5/bbtv/bbtv.smil/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Canal 1 Ñuble",
+            "category": "General",
+            "url": "https://tls-cl.cdnz.cl/canal21tv/live/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Canal 11 Aysen",
+            "category": "General",
+            "url": "https://v2.tustreaming.cl/canal11aysen/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Canal 13",
+            "category": "General",
+            "url": "https://redirector.rudo.video/hls-video/ey6283je82983je9823je8jowowiekldk9838274/13popup/13popup.smil/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Canal 2 Quellón (1)",
+            "category": "General",
+            "url": "https://unlimited2-cl-isp.dps.live/tvquellon/tvquellon.smil/tvquellon/livestream1/chunks.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Canal 2 Quellón (2)",
+            "category": "General",
+            "url": "https://pantera1-100gb-cl-movistar.dps.live/tvquellon/tvquellon.smil/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Canal 2 Quellón (3)",
+            "category": "General",
+            "url": "https://redirector.dps.live/hls/tvquellon/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Canal 2 Quellón (4)",
+            "category": "General",
+            "url": "https://unlimited6-cl.dps.live/tvquellon/tvquellon.smil/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Canal 2 Quellón (5)",
+            "category": "General",
+            "url": "https://unlimited1-cl-isp.dps.live/tvquellon/tvquellon.smil/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Canal 2 Quellón (6)",
+            "category": "General",
+            "url": "https://unlimited2-cl-isp.dps.live/tvquellon/tvquellon.smil/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Canal 2 San Antonio (1)",
+            "category": "General",
+            "url": "https://unlimited1-us.dps.live/canal2/canal2.smil/canal2/livestream1/chunks.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Canal 2 San Antonio (2)",
+            "category": "General",
+            "url": "https://pantera1-100gb-cl-movistar.dps.live/canal2/canal2.smil/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Canal 2 San Antonio (3)",
+            "category": "General",
+            "url": "https://unlimited1-cl-isp.dps.live/canal2/canal2.smil/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Canal 5 Pto. Montt (1)",
+            "category": "General",
+            "url": "https://5ff3d9babae13.streamlock.net/aufymdjpjf/aufymdjpjf/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Canal 5 Pto. Montt (2)",
+            "category": "General",
+            "url": "https://5ff3d9babae13.streamlock.net:443/aufymdjpjf/aufymdjpjf/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Canal 9 (1)",
+            "category": "General",
+            "url": "https://unlimited6-cl.dps.live/c9/c9.smil/c9/livestream1/chunks.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Canal 9 (2)",
+            "category": "General",
+            "url": "https://unlimited1-cl-isp.dps.live/c9/c9.smil/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Canal 9 (3)",
+            "category": "General",
+            "url": "https://unlimited6-cl.dps.live/c9/c9.smil/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Canal Local Quillota (1)",
+            "category": "General",
+            "url": "https://v2.tustreaming.cl/canallocalcl/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Canal Local Quillota (2)",
+            "category": "General",
+            "url": "https://v2.tustreaming.cl/canallocalcl/tracks-v1a1/mono.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Canal Local Quillota (3)",
+            "category": "General",
+            "url": "https://v2.tustreaming.cl:443/canallocalcl/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Canal Sur Patagonia (1)",
+            "category": "General",
+            "url": "https://v2.tustreaming.cl/fmarcoirirs/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Canal Sur Patagonia (2)",
+            "category": "General",
+            "url": "https://v2.tustreaming.cl/fmarcoirirs/tracks-v1a1/mono.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Canal Sur Patagonia (3)",
+            "category": "General",
+            "url": "https://v2.tustreaming.cl:443/fmarcoirirs/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Caracola TV La Florida",
+            "category": "General",
+            "url": "https://wifispeed.trapemn.tv:1936/comunales/caracola-tv/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Radio Carolina TV",
+            "category": "Music",
+            "url": "https://mdstrm.com/live-stream-playlist/63a06468117f42713374addd.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Radio Carolina 2 TV",
+            "category": "Music",
+            "url": "https://jireh-1-hls-video-cl-isp.dps.live/hls-video/ey6283je82983je9823je8jowowiekldk9838274/carolinatv2/carolinatv2.smil/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Chile Channel TV",
+            "category": "Outdoor",
+            "url": "https://v2.tustreaming.cl/chilechannel/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Chilevisión",
+            "category": "General",
+            "url": "https://redirector.rudo.video/hls-video/10b92cafdf3646cbc1e727f3dc76863621a327fd/chv/chv.smil/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Chiloé Red 25",
+            "category": "General",
+            "url": "https://v2.tustreaming.cl/chiloered/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "CHV Noticias",
+            "category": "News",
+            "url": "https://mdstrm.com/live-stream-playlist/6491ced935a5833c47dd7f41.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "ClickTv Chile (1)",
+            "category": "General",
+            "url": "https://v2.tustreaming.cl/clicktv/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "ClickTv Chile (2)",
+            "category": "General",
+            "url": "https://v2.tustreaming.cl/clicktv/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Club TV Santa Juana",
+            "category": "General",
+            "url": "https://cloudpro.servidoresdestream.com:8081/8010/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "CNN Chile (1)",
+            "category": "News",
+            "url": "https://redirector.rudo.video/hls-video/339f69c6122f6d8f4574732c235f09b7683e31a5/cnn/cnn.smil/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "CNN Chile (2)",
+            "category": "News",
+            "url": "https://redirector.rudo.video/hls-video/lvcl5/cnn/cnn.smil/playlist.m3u8?DVR",
+            "status": "visible"
+        },
+        {
+            "name": "Concepcion TV",
+            "category": "General",
+            "url": "https://stream.blserver.cl/hls/ctv/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Contivision (1)",
+            "category": "General",
+            "url": "https://unlimited1-cl-isp.dps.live/cm/cm.smil/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Contivision (2)",
+            "category": "General",
+            "url": "https://unlimited6-cl.dps.live/cm/cm.smil/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Contivision (3)",
+            "category": "General",
+            "url": "https://unlimited2-cl-isp.dps.live/cm/cm.smil/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Radio Cooperativa",
+            "category": "Music",
+            "url": "https://unlimited1-cl-isp.dps.live/coopetv/coopetv.smil/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Cronicas del Sur TV",
+            "category": "General",
+            "url": "https://s1.tvdatta.com:3384/live/canal20tvlive.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Dance FM Chile TV",
+            "category": "Music",
+            "url": "https://5eaccbab48461.streamlock.net:1936/dancefm_1/dancefm_1/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Décima TV (Ancud) (1)",
+            "category": "General",
+            "url": "https://unlimited2-cl-isp.dps.live/decimatv/decimatv.smil/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Décima TV (Ancud) (2)",
+            "category": "General",
+            "url": "https://unlimited6-cl.dps.live/decimatv/decimatv.smil/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "EnerGeek Fan (1)",
+            "category": "Animation",
+            "url": "https://backend.energeek.cl/webtv/egfanweb/index.m3u8?token=ZZDemoIPTVGH",
+            "status": "visible"
+        },
+        {
+            "name": "EnerGeek Fan (2)",
+            "category": "Animation",
+            "url": "https://backend.energeek.cl/webtv/egfanweb/index.m3u8?token=D3m0M3UCLWeb",
+            "status": "visible"
+        },
+        {
+            "name": "EnerGeek Radio (1)",
+            "category": "Music",
+            "url": "https://backend.energeek.cl/webtv/egradioweb/index.m3u8?token=ZZDemoIPTVGH",
+            "status": "visible"
+        },
+        {
+            "name": "EnerGeek Radio (2)",
+            "category": "Music",
+            "url": "https://backend.energeek.cl/webtv/egradioweb/index.m3u8?token=D3m0M3UCLWeb",
+            "status": "visible"
+        },
+        {
+            "name": "EnerGeek Retro (1)",
+            "category": "Animation",
+            "url": "https://backend.energeek.cl/webtv/egretroweb/index.m3u8?token=ZZDemoIPTVGH",
+            "status": "visible"
+        },
+        {
+            "name": "EnerGeek Retro (2)",
+            "category": "Animation",
+            "url": "https://backend.energeek.cl/webtv/egretroweb/index.m3u8?token=D3m0M3UCLWeb",
+            "status": "visible"
+        },
+        {
+            "name": "Frecuencia 7 (1)",
+            "category": "General",
+            "url": "https://v2.tustreaming.cl/frecuencia7/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Frecuencia 7 (2)",
+            "category": "General",
+            "url": "https://v2.tustreaming.cl:443/frecuencia7/index.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Girovisual Televisión (1)",
+            "category": "General",
+            "url": "https://pantera1-100gb-cl-movistar.dps.live/girovisual2/girovisual2.smil/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Girovisual Televisión (2)",
+            "category": "General",
+            "url": "https://unlimited1-cl-isp.dps.live/girovisual2/girovisual2.smil/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Holvoet TV (1)",
+            "category": "General",
+            "url": "https://unlimited1-cl-isp.dps.live/holvoettv/holvoettv.smil/playlist.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Holvoet TV (2)",
+            "category": "General",
+            "url": "https://unlimited1-us.dps.live/holvoettv/holvoettv.smil",
+            "status": "visible"
+        }
+    ]
+}
