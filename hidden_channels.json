@@ -1,477 +1,627 @@
 {
     "channels": [
         {
-            "name": "Rai 1",
-            "category": "Italy",
-            "url": "https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=2606803&output=7&forceUserAgent=rainet/4.0.5",
+            "name": "MyCamTV MILF",
+            "category": "Adult",
+            "url": "http://live.mycamtv.com/milf.m3u8",
             "status": "visible"
         },
         {
-            "name": "Rai 2",
-            "category": "Italy",
-            "url": "https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308718&output=7&forceUserAgent=rainet/4.0.5",
+            "name": "MyCamTV Mature",
+            "category": "Adult",
+            "url": "http://live.mycamtv.com/bigtits.m3u8",
             "status": "visible"
         },
         {
-            "name": "Rai 3",
-            "category": "Italy",
-            "url": "https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308709&output=7&forceUserAgent=rainet/4.0.5",
+            "name": "MyCamTV Arab Girls",
+            "category": "Adult",
+            "url": "http://live.mycamtv.com/arab.m3u8",
             "status": "visible"
         },
         {
-            "name": "Rete 4",
-            "category": "Italy",
-            "url": "https://live02-seg.msf.cdn.mediaset.net/live/ch-r4/r4-clr.isml/index.m3u8",
+            "name": "MyCamTV Ebony Girls",
+            "category": "Adult",
+            "url": "http://live.mycamtv.com/ebony.m3u8",
             "status": "visible"
         },
         {
-            "name": "Canale 5",
-            "category": "Italy",
-            "url": "https://live02-seg.msf.cdn.mediaset.net/live/ch-c5/c5-clr.isml/index.m3u8",
+            "name": "MyCamTV Asian Girls",
+            "category": "Adult",
+            "url": "http://live.mycamtv.com/asian.m3u8",
             "status": "visible"
         },
         {
-            "name": "Italia 1",
-            "category": "Italy",
-            "url": "https://live02-seg.msf.cdn.mediaset.net/live/ch-i1/i1-clr.isml/index.m3u8",
+            "name": "MyCamTV Brunette Girls",
+            "category": "Adult",
+            "url": "http://live.mycamtv.com/brunette.m3u8",
             "status": "visible"
         },
         {
-            "name": "La7",
-            "category": "Italy",
-            "url": "https://d1chghleocc9sm.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-evfku205gqrtf/Live.m3u8",
+            "name": "MyCamTV Latina Girls",
+            "category": "Adult",
+            "url": "http://live.mycamtv.com/latina.m3u8",
             "status": "visible"
         },
         {
-            "name": "TV8",
-            "category": "Italy",
-            "url": "https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/11223/tv8web/master.m3u8?hdnts=st=1764666351~exp=1829466206~acl=/*~hmac=b0e9165b6c55027903ad103c8219f363d8765eb300c0d9a339e9767fc3509556",
+            "name": "MyCamTV White Girls",
+            "category": "Adult",
+            "url": "http://live.mycamtv.com/white.m3u8",
             "status": "visible"
         },
         {
-            "name": "Nove",
-            "category": "Italy",
-            "url": "https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out/v1/IT_SIMULCAST/NOVE/CMAF/index.m3u8",
+            "name": "MyCamTV Blonde Girls",
+            "category": "Adult",
+            "url": "http://live.mycamtv.com/blonde.m3u8",
             "status": "visible"
         },
         {
-            "name": "20 Mediaset",
-            "category": "Italy",
-            "url": "https://live02-seg.msf.cdn.mediaset.net/live/ch-lb/lb-clr.isml/index.m3u8",
+            "name": "MyCamTV Anal",
+            "category": "Adult",
+            "url": "http://live.mycamtv.com/anal.m3u8",
             "status": "visible"
         },
         {
-            "name": "Rai 4",
-            "category": "Italy",
-            "url": "https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746966&output=7&forceUserAgent=rainet/4.0.5",
+            "name": "MyCamTV Big Ass Girls",
+            "category": "Adult",
+            "url": "http://live.mycamtv.com/bigass.m3u8",
             "status": "visible"
         },
         {
-            "name": "Iris",
-            "category": "Italy",
-            "url": "https://live02-seg.msf.cdn.mediaset.net/live/ch-ki/ki-clr.isml/index.m3u8",
+            "name": "MyCamTV Girls Squirt",
+            "category": "Adult",
+            "url": "http://live.mycamtv.com/squirt.m3u8",
             "status": "visible"
         },
         {
-            "name": "Rai 5",
-            "category": "Italy",
-            "url": "https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=395276&output=7&forceUserAgent=rainet/4.0.5",
+            "name": "MyCamTV Big Tits Girls",
+            "category": "Adult",
+            "url": "http://live.mycamtv.com/bigtits.m3u8",
             "status": "visible"
         },
         {
-            "name": "Rai Movie",
-            "category": "Italy",
-            "url": "https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=747002&output=7&forceUserAgent=rainet/4.0.5",
+            "name": "MyCamTV Skinny Girls",
+            "category": "Adult",
+            "url": "http://live.mycamtv.com/skinny.m3u8",
             "status": "visible"
         },
         {
-            "name": "Rai Premium",
-            "category": "Italy",
-            "url": "https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746992&output=7&forceUserAgent=rainet/4.0.5",
+            "name": "MyCamTV Medium Girls",
+            "category": "Adult",
+            "url": "http://live.mycamtv.com/medium.m3u8",
             "status": "visible"
         },
         {
-            "name": "Cielo",
-            "category": "Italy",
-            "url": "https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/11219/cieloweb/master.m3u8?hdnts=st=1764666351~exp=1829466206~acl=/*~hmac=b0e9165b6c55027903ad103c8219f363d8765eb300c0d9a339e9767fc3509556",
+            "name": "MyCamTV Blowjob",
+            "category": "Adult",
+            "url": "http://live.mycamtv.com/blowjob.m3u8",
             "status": "visible"
         },
         {
-            "name": "27 Twentyseven",
-            "category": "Italy",
-            "url": "https://live02-seg.msf.cdn.mediaset.net/live/ch-ts/ts-clr.isml/index.m3u8",
+            "name": "Live Cams",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/livecams.m3u8",
             "status": "visible"
         },
         {
-            "name": "TV 2000",
-            "category": "Italy",
-            "url": "https://hls-live-tv2000.akamaized.net/hls/live/2028510/tv2000/master.m3u8",
+            "name": "MILF",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/milf.m3u8",
             "status": "visible"
         },
         {
-            "name": "La7 Cinema",
-            "category": "Italy",
-            "url": "https://viamotionhsi.netplus.ch/live/eds/la7d/browser-HLS8/la7d.m3u8",
+            "name": "Big Dick",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/bigdick.m3u8",
             "status": "visible"
         },
         {
-            "name": "La 5",
-            "category": "Italy",
-            "url": "https://live02-seg.msf.cdn.mediaset.net/live/ch-ka/ka-clr.isml/index.m3u8",
+            "name": "Big Tits",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/bigtits.m3u8",
             "status": "visible"
         },
         {
-            "name": "Real Time",
-            "category": "Italy",
-            "url": "https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out/v1/IT_SIMULCAST/REALTIME/CMAF/index.m3u8",
+            "name": "Fetish",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/fetish.m3u8",
             "status": "visible"
         },
         {
-            "name": "QVC",
-            "category": "Italy",
-            "url": "https://qrg.akamaized.net/hls/live/2017383/lsqvc1it/master.m3u8",
+            "name": "Pornstar",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/pornstar.m3u8",
             "status": "visible"
         },
         {
-            "name": "Food Network",
-            "category": "Italy",
-            "url": "https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out/v1/IT_SIMULCAST/FOODNETWORK/CMAF/index.m3u8",
+            "name": "Big Ass",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/bigass.m3u8",
             "status": "visible"
         },
         {
-            "name": "Cine34",
-            "category": "Italy",
-            "url": "https://live02-seg.msf.cdn.mediaset.net/live/ch-b6/b6-clr.isml/index.m3u8",
+            "name": "Interracial",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/interracial.m3u8",
             "status": "visible"
         },
         {
-            "name": "Focus",
-            "category": "Italy",
-            "url": "https://live02-seg.msf.cdn.mediaset.net/live/ch-fu/fu-clr.isml/index.m3u8",
+            "name": "Latina",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/latina.m3u8",
             "status": "visible"
         },
         {
-            "name": "RTL 102.5",
-            "category": "Italy",
-            "url": "https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S97044836/tbbP8T1ZRPBL/playlist.m3u8",
+            "name": "POV",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/pov.m3u8",
             "status": "visible"
         },
         {
-            "name": "Discovery Channel",
-            "category": "Italy",
-            "url": "https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out/v1/IT_SIMULCAST/DISCOVERYCHANNEL/CMAF/index.m3u8",
+            "name": "Blowjob",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/blowjob.m3u8",
             "status": "visible"
         },
         {
-            "name": "Giallo",
-            "category": "Italy",
-            "url": "https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out/v1/IT_SIMULCAST/GIALLO/CMAF/index.m3u8",
+            "name": "Hardcore",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/hardcore.m3u8",
             "status": "visible"
         },
         {
-            "name": "Top Crime",
-            "category": "Italy",
-            "url": "https://live02-seg.msf.cdn.mediaset.net/live/ch-lt/lt-clr.isml/index.m3u8",
+            "name": "Cuckold",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/cuckold.m3u8",
             "status": "visible"
         },
         {
-            "name": "BOING",
-            "category": "Italy",
-            "url": "https://live02-seg.msf.cdn.mediaset.net/live/ch-kb/kb-clr.isml/index.m3u8",
+            "name": "Threesome",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/threesome.m3u8",
             "status": "visible"
         },
         {
-            "name": "K2",
-            "category": "Italy",
-            "url": "https://d1pmpe0hs35ka5.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-39hsskpppgf72/K2_IT.m3u8",
+            "name": "Russian",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/russian.m3u8",
             "status": "visible"
         },
         {
-            "name": "Rai Gulp",
-            "category": "Italy",
-            "url": "https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746953&output=7&forceUserAgent=rainet/4.0.5",
+            "name": "Lesbian",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/lesbian.m3u8",
             "status": "visible"
         },
         {
-            "name": "Rai YoYo",
-            "category": "Italy",
-            "url": "https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746899&output=7&forceUserAgent=rainet/4.0.5",
+            "name": "Rough",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/rough.m3u8",
             "status": "visible"
         },
         {
-            "name": "Frisbee",
-            "category": "Italy",
-            "url": "https://d6m7lubks416z.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-zmbstsedxme9s/Frisbee_IT.m3u8",
+            "name": "Gangbang",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/gangbang.m3u8",
             "status": "visible"
         },
         {
-            "name": "Cartoonito",
-            "category": "Italy",
-            "url": "https://live02-seg.msf.cdn.mediaset.net/live/ch-la/la-clr.isml/index.m3u8",
+            "name": "Anal",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/anal.m3u8",
             "status": "visible"
         },
         {
-            "name": "Super!",
-            "category": "Italy",
-            "url": "https://495c5a85d9074f29acffeaea9e0215eb.msvdn.net/super/super_main/super_main_hbbtv/playlist.m3u8",
+            "name": "Compilation",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/compilation.m3u8",
             "status": "visible"
         },
         {
-            "name": "Rai News 24",
-            "category": "Italy",
-            "url": "https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=1&output=7&forceUserAgent=rainet/4.0.5",
+            "name": "Brunette",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/brunette.m3u8",
             "status": "visible"
         },
         {
-            "name": "Italia 2",
-            "category": "Italy",
-            "url": "https://live02-seg.msf.cdn.mediaset.net/live/ch-i2/i2-clr.isml/index.m3u8",
+            "name": "Blonde",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/blonde.m3u8",
             "status": "visible"
         },
         {
-            "name": "Sky TG24",
-            "category": "Italy",
-            "url": "https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/12221/web/master.m3u8?hdnts=st=1764666351~exp=1829466206~acl=/*~hmac=b0e9165b6c55027903ad103c8219f363d8765eb300c0d9a339e9767fc3509556",
+            "name": "Gay",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/gay.m3u8",
             "status": "visible"
         },
         {
-            "name": "TGCOM 24",
-            "category": "Italy",
-            "url": "https://live02-seg.msf.cdn.mediaset.net/live/ch-kf/kf-clr.isml/index.m3u8",
+            "name": "Asian",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/asian.m3u8",
             "status": "visible"
         },
         {
-            "name": "DMAX",
-            "category": "Italy",
-            "url": "https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out/v1/IT_SIMULCAST/DMAX/CMAF/index.m3u8",
+            "name": "MyCamTV MILF",
+            "category": "Adult",
+            "url": "http://live.mycamtv.com/milf.m3u8",
             "status": "visible"
         },
         {
-            "name": "Rai Storia",
-            "category": "Italy",
-            "url": "https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746990&output=7&forceUserAgent=rainet/4.0.5",
+            "name": "MyCamTV Mature",
+            "category": "Adult",
+            "url": "http://live.mycamtv.com/bigtits.m3u8",
             "status": "visible"
         },
         {
-            "name": "Mediaset Extra",
-            "category": "Italy",
-            "url": "https://live02-seg.msf.cdn.mediaset.net/live/ch-kq/kq-clr.isml/index.m3u8",
+            "name": "MyCamTV Arab Girls",
+            "category": "Adult",
+            "url": "http://live.mycamtv.com/arab.m3u8",
             "status": "visible"
         },
         {
-            "name": "HGTV",
-            "category": "Italy",
-            "url": "https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out/v1/IT_SIMULCAST/HGTV/CMAF/index.m3u8",
+            "name": "MyCamTV Ebony Girls",
+            "category": "Adult",
+            "url": "http://live.mycamtv.com/ebony.m3u8",
             "status": "visible"
         },
         {
-            "name": "Rai Scuola",
-            "category": "Italy",
-            "url": "https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=747011&output=7&forceUserAgent=rainet/4.0.5",
+            "name": "MyCamTV Asian Girls",
+            "category": "Adult",
+            "url": "http://live.mycamtv.com/asian.m3u8",
             "status": "visible"
         },
         {
-            "name": "Rai Sport",
-            "category": "Italy",
-            "url": "https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=358025&output=7&forceUserAgent=rainet/4.0.5",
+            "name": "MyCamTV Brunette Girls",
+            "category": "Adult",
+            "url": "http://live.mycamtv.com/brunette.m3u8",
             "status": "visible"
         },
         {
-            "name": "Turbo",
-            "category": "Italy",
-            "url": "https://streaming.aurora.enhanced.live/live/mpc/enl0eG1mLmVncmVzcy5mZDJ2eHI=/out/v1/IT_SIMULCAST/TURBO/CMAF/index.m3u8",
+            "name": "MyCamTV Latina Girls",
+            "category": "Adult",
+            "url": "http://live.mycamtv.com/latina.m3u8",
             "status": "visible"
         },
         {
-            "name": "Sportitalia Plus",
-            "category": "Italy",
-            "url": "https://sportsitalia-samsungitaly.amagi.tv/playlist.m3u8",
+            "name": "MyCamTV White Girls",
+            "category": "Adult",
+            "url": "http://live.mycamtv.com/white.m3u8",
             "status": "visible"
         },
         {
-            "name": "Travel TV",
-            "category": "Italy",
-            "url": "https://streaming.softwarecreation.it/GoldTvSat/GoldTvSat/playlist.m3u8",
+            "name": "MyCamTV Blonde Girls",
+            "category": "Adult",
+            "url": "http://live.mycamtv.com/blonde.m3u8",
             "status": "visible"
         },
         {
-            "name": "Donna TV",
-            "category": "Italy",
-            "url": "https://5a1178b42cc03.streamlock.net/donnatv/donnatv/playlist.m3u8",
+            "name": "MyCamTV Anal",
+            "category": "Adult",
+            "url": "http://live.mycamtv.com/anal.m3u8",
             "status": "visible"
         },
+       {
+            "name": "MyCamTV Big Ass Girls",
+            "category": "Adult",
+            "url": "http://live.mycamtv.com/bigass.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "MyCamTV Girls Squirt",
+            "category": "Adult",
+            "url": "http://live.mycamtv.com/squirt.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "MyCamTV Big Tits Girls",
+            "category": "Adult",
+            "url": "http://live.mycamtv.com/bigtits.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "MyCamTV Skinny Girls",
+            "category": "Adult",
+            "url": "http://live.mycamtv.com/skinny.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "MyCamTV Medium Girls",
+            "category": "Adult",
+            "url": "http://live.mycamtv.com/medium.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "MyCamTV Blowjob",
+            "category": "Adult",
+            "url": "http://live.mycamtv.com/blowjob.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Live Cams",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/livecams.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "MILF",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/milf.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Big Dick",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/bigdick.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Big Tits",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/bigtits.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Fetish",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/fetish.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Pornstar",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/pornstar.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Big Ass",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/bigass.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Interracial",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/interracial.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Latina",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/latina.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "POV",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/pov.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Blowjob",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/blowjob.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Hardcore",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/hardcore.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Cuckold",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/cuckold.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Threesome",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/threesome.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Russian",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/russian.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Lesbian",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/lesbian.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Rough",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/rough.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Gangbang",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/gangbang.m3u8",
+            "status": "visible"
+        },
+        {
+            "name": "Anal",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/anal.m3u8",
+            "status": "visible"
+        },
         {
-            "name": "SuperTennis",
-            "category": "Italy",
-            "url": "https://live-embed.supertennix.hiway.media/restreamer/supertennix_client/gpu-a-c0-16/restreamer/outgest/aa3673f1-e178-44a9-a947-ef41db73211a/manifest.m3u8",
+            "name": "Compilation",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/compilation.m3u8",
             "status": "visible"
         },
         {
-            "name": "Alma TV",
-            "category": "Italy",
-            "url": "https://streaming.softwarecreation.it/AlmaTv/AlmaTv/playlist.m3u8",
+            "name": "Brunette",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/brunette.m3u8",
             "status": "visible"
         },
         {
-            "name": "Radio 105 TV",
-            "category": "Italy",
-            "url": "https://live02-seg.msr.cdn.mediaset.net/live/ch-ec/ec-clr.isml/index.m3u8",
+            "name": "Blonde",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/blonde.m3u8",
             "status": "visible"
         },
         {
-            "name": "R101 TV",
-            "category": "Italy",
-            "url": "https://live02-seg.msr.cdn.mediaset.net/live/ch-er/er-clr.isml/index.m3u8",
+            "name": "Gay",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/gay.m3u8",
             "status": "visible"
         },
         {
-            "name": "Deejay TV",
-            "category": "Italy",
-            "url": "https://4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S85984808/sMO0tz9Sr2Rk/playlist.m3u8",
+            "name": "Asian",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/asian.m3u8",
             "status": "visible"
         },
         {
-            "name": "RadioItaliaTV",
-            "category": "Italy",
-            "url": "https://radioitaliatv.akamaized.net/hls/live/2093117/RadioitaliaTV/master.m3u8",
+            "name": "Adult IPTV - Live Cams",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/livecams.m3u8",
             "status": "visible"
         },
         {
-            "name": "Radio KISS KISS TV",
-            "category": "Italy",
-            "url": "https://kk.fluid.stream/KKMulti/smil:KissKissTV.smil/playlist.m3u8",
+            "name": "Adult IPTV - MILF",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/milf.m3u8",
             "status": "visible"
         },
         {
-            "name": "Rai Radio 2 Visual",
-            "category": "Italy",
-            "url": "https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=5674080&output=7&forceUserAgent=rainet/4.0.5",
+            "name": "Adult IPTV - Big Dick",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/bigdick.m3u8",
             "status": "visible"
         },
         {
-            "name": "RTL 102.5 Traffic",
-            "category": "Italy",
-            "url": "https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S38122967/2lyQRIAAGgRR/playlist.m3u8",
+            "name": "Adult IPTV - Big Tits",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/bigtits.m3u8",
             "status": "visible"
         },
         {
-            "name": "MAN-GA",
-            "category": "Italy",
-            "url": "https://c65b9e710bde44819015af98e72cd7ab.msvdn.net/live/S93572876/aILSQPYFY3pF/playlist.m3u",
+            "name": "Adult IPTV - Fetish",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/fetish.m3u8",
             "status": "visible"
         },
         {
-            "name": "Radio24-IlSole24OreTV",
-            "category": "Italy",
-            "url": "https://ilsole24ore-radiovisual.akamaized.net/hls/live/2035302/persidera/master.m3u8",
+            "name": "Adult IPTV - Pornstar",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/pornstar.m3u8",
             "status": "visible"
         },
         {
-            "name": "BeJoy.Kids",
-            "category": "Italy",
-            "url": "https://64b16f23efbee.streamlock.net/bejoy/bejoy/playlist.m3u8",
+            "name": "Adult IPTV - Big Ass",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/bigass.m3u8",
             "status": "visible"
         },
         {
-            "name": "Gambero Rosso",
-            "category": "Italy",
-            "url": "https://2018f6355a15442ebb37007fa4f6c064.msvdn.net/live/S7530969/XWerenuxbSdW/playlist.m3u8",
+            "name": "Adult IPTV - Interracial",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/interracial.m3u8",
             "status": "visible"
         },
         {
-            "name": "RadioFreccia",
-            "category": "Italy",
-            "url": "https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S3160845/0tuSetc8UFkF/playlist.m3u8",
+            "name": "Adult IPTV - Latina",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/latina.m3u8",
             "status": "visible"
         },
         {
-            "name": "RDS Social TV",
-            "category": "Italy",
-            "url": "https://stream.rdstv.radio/index.m3u8",
+            "name": "Adult IPTV - POV",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/pov.m3u8",
             "status": "visible"
         },
         {
-            "name": "Radio ZETA",
-            "category": "Italy",
-            "url": "https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S9346184/XEx1LqlYbNic/playlist.m3u8",
+            "name": "Adult IPTV - Blowjob",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/blowjob.m3u8",
             "status": "visible"
         },
         {
-            "name": "Radio TV Serie A con RDS",
-            "category": "Italy",
-            "url": "https://stream.radioseriea.com/50773f0d0070476a8612d9984c6059d8/index.m3u8",
+            "name": "Adult IPTV - Hardcore",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/hardcore.m3u8",
             "status": "visible"
         },
         {
-            "name": "Sportitalia SOLOCALCIO",
-            "category": "Italy",
-            "url": "https://di-g7ij0rwh.vo.lswcdn.net/sportitalia/sisolocalcio.smil/playlist.m3u8",
+            "name": "Adult IPTV - Cuckold",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/cuckold.m3u8",
             "status": "visible"
         },
         {
-            "name": "BIKE Channel",
-            "category": "Italy",
-            "url": "https://stream.prod-01.milano.nxmedge.net/argocdn/bikechannel/video.m3u8",
+            "name": "Adult IPTV - Threesome",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/threesome.m3u8",
             "status": "visible"
         },
         {
-            "name": "Radio Montecarlo TV",
-            "category": "Italy",
-            "url": "https://live02-seg.msr.cdn.mediaset.net/live/ch-bb/bb-clr.isml/index.m3u8",
+            "name": "Adult IPTV - Russian",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/russian.m3u8",
             "status": "visible"
         },
         {
-            "name": "Virgin Radio TV",
-            "category": "Italy",
-            "url": "https://live02-seg.msr.cdn.mediaset.net/live/ch-ew/ew-clr.isml/index.m3u8",
+            "name": "Adult IPTV - Lesbian",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/lesbian.m3u8",
             "status": "visible"
         },
         {
-            "name": "Senato TV",
-            "category": "Italy",
-            "url": "https://senato-live.morescreens.com/SENATO_1_001/playlist.m3u8",
+            "name": "Adult IPTV - Rough",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/rough.m3u8",
             "status": "visible"
         },
         {
-            "name": "Camera dei Deputati",
-            "category": "Italy",
-            "url": "https://video-ar.radioradicale.it/diretta/camera2/playlist.m3u8",
+            "name": "Adult IPTV - Gangbang",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/gangbang.m3u8",
             "status": "visible"
         },
         {
-            "name": "Rai 4K",
-            "category": "Italy",
-            "url": "https://raievent10-elem-live.akamaized.net/hls/live/619189/raievent10/raievent10/playlist.m3u8",
+            "name": "Adult IPTV - Anal",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/anal.m3u8",
             "status": "visible"
         },
         {
-            "name": "UniNettuno University TV",
-            "category": "Italy",
-            "url": "https://stream6-rai-it.akamaized.net/live/uninettuno/playlist.m3u8",
+            "name": "Adult IPTV - Compilation",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/compilation.m3u8",
             "status": "visible"
         },
         {
-            "name": "111 Tv",
-            "category": "Italy",
-            "url": "https://5db313b643fd8.streamlock.net/111/111/playlist.m3u8",
+            "name": "Adult IPTV - Brunette",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/brunette.m3u8",
             "status": "visible"
         },
         {
-            "name": "12 Tv Parma",
-            "category": "Italy",
-            "url": "https://5929b138b139d.streamlock.net/12TVParma/livestream/playlist.m3u8",
+            "name": "Adult IPTV - Blonde",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/blonde.m3u8",
             "status": "visible"
         },
         {
-            "name": "4 You Tv",
-            "category": "Italy",
-            "url": "https://streamsrv2.nets-sr.com:19360/4youtv/4youtv.m3u8",
+            "name": "Adult IPTV - Gay",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/gay.m3u8",
             "status": "visible"
         },
         {
-            "name": "Abc Tv",
-            "category": "Italy",
-            "url": "https://diretta.arcapuglia.it:8080/live/abctv/index.m3u8",
+            "name": "Adult IPTV - Asian",
+            "category": "Adult",
+            "url": "http://cdn.adultiptv.net/asian.m3u8",
             "status": "visible"
         }
     ]
