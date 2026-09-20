@@ -3,212 +3,152 @@
     {
       "নাম": "সময় টিভি এইচডি",
       "বিভাগ": "সংবাদ",
-      "url": "http://198.195.239.50:8095/somoyTv/index.m3u8",
-      "লোগো": "img/channels/SOMOY TV.png",
-      "স্ট্যাটাস": "দৃশ্যমান"
+      "url": "http://198.195.239.50:8095/somoyTv/index.m3u8"
     },
     {
       "নাম": "চ্যানেল ২৪",
       "বিভাগ": "সংবাদ",
-      "url": "http://198.195.239.50:8095/channel24/index.m3u8",
-      "লোগো": "img/channels/CHANNEL 24.png",
-      "স্ট্যাটাস": "দৃশ্যমান"
+      "url": "http://198.195.239.50:8095/channel24/index.m3u8"
     },
     {
       "নাম": "এটিএন নিউজ এইচডি",
       "বিভাগ": "সংবাদ",
-      "url": "http://198.195.239.50:8095/atnNews/video.m3u8",
-      "লোগো": "img/channels/ATN NEWS.png",
-      "স্ট্যাটাস": "দৃশ্যমান"
+      "url": "http://198.195.239.50:8095/atnNews/video.m3u8"
     },
     {
       "নাম": "একাত্তর টিভি এইচডি",
       "বিভাগ": "সংবাদ",
-      "url": "http://198.195.239.50:8095/ekattorTv/index.m3u8",
-      "লোগো": "img/channels/EKATTOR_TV.png",
-      "স্ট্যাটাস": "দৃশ্যমান"
+      "url": "http://198.195.239.50:8095/ekattorTv/index.m3u8"
     },
     {
       "নাম": "যমুনা টিভি",
       "বিভাগ": "সংবাদ",
-      "url": "http://198.195.239.50:8095/jamunaTv/index.m3u8",
-      "লোগো": "img/channels/JAMUNA TV.png",
-      "স্ট্যাটাস": "দৃশ্যমান"
+      "url": "http://198.195.239.50:8095/jamunaTv/index.m3u8"
     },
     {
       "নাম": "এটিএন বাংলা এইচডি",
       "বিভাগ": "বাংলা",
-      "url": "http://198.195.239.50:8095/atnBangla/index.m3u8",
-      "লোগো": "img/channels/ATN BANGLA.png",
-      "স্ট্যাটাস": "দৃশ্যমান"
+      "url": "http://198.195.239.50:8095/atnBangla/index.m3u8"
     },
     {
       "নাম": "বাংলা ভিশন এইচডি",
       "বিভাগ": "বাংলা",
-      "url": "http://198.195.239.50:8095/banglaVision/index.m3u8",
-      "লোগো": "img/channels/BANGLA_VISION.png",
-      "স্ট্যাটাস": "দৃশ্যমান"
+      "url": "http://198.195.239.50:8095/banglaVision/index.m3u8"
     },
     {
       "নাম": "চ্যানেল ১ এইচডি",
       "বিভাগ": "বাংলা",
-      "url": "http://198.195.239.50:8095/channelI/index.m3u8",
-      "লোগো": "img/channels/CHANNEL I.png",
-      "স্ট্যাটাস": "দৃশ্যমান"
+      "url": "http://198.195.239.50:8095/channelI/index.m3u8"
     },
     {
       "নাম": "এনটিভি এইচডি",
       "বিভাগ": "বাংলা",
-      "url": "http://198.195.239.50:8095/ntv/index.m3u8",
-      "লোগো": "img/channels/NTV.png",
-      "স্ট্যাটাস": "দৃশ্যমান"
+      "url": "http://198.195.239.50:8095/ntv/index.m3u8"
     },
     {
       "নাম": "দীপ্ত টিভি",
       "বিভাগ": "বাংলা",
-      "url": "http://198.195.239.50:8095/deepto/index.m3u8",
-      "লোগো": "img/channels/DEEPTO.png",
-      "স্ট্যাটাস": "দৃশ্যমান"
+      "url": "http://198.195.239.50:8095/deepto/index.m3u8"
     },
     {
       "নাম": "বিটিভি",
       "বিভাগ": "বাংলা",
-      "url": "http://198.195.239.50:8095/btv/index.m3u8",
-      "লোগো": "img/channels/BTV.HD.png",
-      "স্ট্যাটাস": "দৃশ্যমান"
+      "url": "http://198.195.239.50:8095/btv/index.m3u8"
     },
     {
       "নাম": "স্টার জলশা এইচডি",
       "বিভাগ": "ভারতীয় বাংলা",
-      "url": "http://198.195.239.50:8095/starJalsha/index.m3u8",
-      "লোগো": "img/channels/STAR JALSHA HD.png",
-      "স্ট্যাটাস": "দৃশ্যমান"
+      "url": "http://198.195.239.50:8095/starJalsha/index.m3u8"
     },
     {
       "নাম": "জলশা মুভিজ এইচডি",
       "বিভাগ": "ভারতীয় বাংলা",
-      "url": "http://198.195.239.50:8095/jalshaMovies/index.m3u8",
-      "লোগো": "img/channels/JALSHA MOVIES HD.png",
-      "স্ট্যাটাস": "দৃশ্যমান"
+      "url": "http://198.195.239.50:8095/jalshaMovies/index.m3u8"
     },
     {
       "নাম": "জি বাংলা এইচডি",
       "বিভাগ": "ভারতীয় বাংলা",
-      "url": "http://198.195.239.50:8095/zeeBangla/index.m3u8",
-      "লোগো": "img/channels/ZEE BANGLA HD.png",
-      "স্ট্যাটাস": "দৃশ্যমান"
+      "url": "http://198.195.239.50:8095/zeeBangla/index.m3u8"
     },
     {
       "নাম": "কালার বাংলা এইচডি",
       "বিভাগ": "ভারতীয় বাংলা",
-      "url": "http://198.195.239.50:8095/colorsBangla/index.m3u8",
-      "লোগো": "img/channels/COLORS BANGLA HD.png",
-      "স্ট্যাটাস": "দৃশ্যমান"
+      "url": "http://198.195.239.50:8095/colorsBangla/index.m3u8"
     },
     {
       "নাম": "কালার বাংলা সিনেমা এইচডি",
       "বিভাগ": "ভারতীয় বাংলা",
-      "url": "http://198.195.239.50:8095/colorsBanglaChinema/index.m3u8",
-      "লোগো": "img/channels/COLORS BANGLA CINEMA.png",
-      "স্ট্যাটাস": "দৃশ্যমান"
+      "url": "http://198.195.239.50:8095/colorsBanglaChinema/index.m3u8"
     },
     {
       "নাম": "সনি আথ",
       "বিভাগ": "ভারতীয় বাংলা",
-      "url": "http://198.195.239.50:8095/sonyAath/index.m3u8",
-      "লোগো": "img/channels/SONY AATH.png",
-      "স্ট্যাটাস": "দৃশ্যমান"
+      "url": "http://198.195.239.50:8095/sonyAath/index.m3u8"
     },
     {
       "নাম": "সংগীত বাংলা",
       "বিভাগ": "সঙ্গীত",
-      "url": "http://198.195.239.50:8095/sangeetBangla/index.m3u8",
-      "লোগো": "img/channels/SANGEET BANGLA.png",
-      "স্ট্যাটাস": "দৃশ্যমান"
+      "url": "http://198.195.239.50:8095/sangeetBangla/index.m3u8"
     },
     {
       "নাম": "এন্টার ১০ বাংলা",
       "বিভাগ": "ভারতীয় বাংলা",
-      "url": "http://198.195.239.50:8095/enter10Bangla/index.m3u8",
-      "লোগো": "img/channels/ENTERR 10 BANGLA.png",
-      "স্ট্যাটাস": "দৃশ্যমান"
+      "url": "http://198.195.239.50:8095/enter10Bangla/index.m3u8"
     },
     {
       "নাম": "ডিসকভারি এইচডি",
       "বিভাগ": "তথ্যচিত্র",
-      "url": "http://198.195.239.50:8095/discovery/index.m3u8",
-      "লোগো": "img/channels/DISCOVERY HD.png",
-      "স্ট্যাটাস": "দৃশ্যমান"
+      "url": "http://198.195.239.50:8095/discovery/index.m3u8"
     },
     {
       "নাম": "ন্যাশনাল জিওগ্রাফিক এইচডি",
       "বিভাগ": "তথ্যচিত্র",
-      "url": "http://198.195.239.50:8095/nationalGeographic/index.m3u8",
-      "লোগো": "img/channels/NATGEO HD.png",
-      "স্ট্যাটাস": "দৃশ্যমান"
+      "url": "http://198.195.239.50:8095/nationalGeographic/index.m3u8"
     },
     {
       "নাম": "অ্যানিমেল প্ল্যানেট এইচডি",
       "বিভাগ": "তথ্যচিত্র",
-      "url": "http://198.195.239.50:8095/animalPlanet/index.m3u8",
-      "লোগো": "img/channels/ANIMAL PLANET HD.png",
-      "স্ট্যাটাস": "দৃশ্যমান"
+      "url": "http://198.195.239.50:8095/animalPlanet/index.m3u8"
     },
     {
       "নাম": "ট্রাভেল এক্সপি",
       "বিভাগ": "তথ্যচিত্র",
-      "url": "http://198.195.239.50:8095/travelXp/index.m3u8",
-      "লোগো": "img/channels/TRAVEL XP.png",
-      "স্ট্যাটাস": "দৃশ্যমান"
+      "url": "http://198.195.239.50:8095/travelXp/index.m3u8"
     },
     {
       "নাম": "কার্টুন নেটওয়ার্ক এইচডি",
       "বিভাগ": "বাচ্চাদের",
-      "url": "http://198.195.239.50:8095/cartoonNetwork/index.m3u8",
-      "লোগো": "img/channels/CARTOON NETWORK.png",
-      "স্ট্যাটাস": "দৃশ্যমান"
+      "url": "http://198.195.239.50:8095/cartoonNetwork/index.m3u8"
     },
     {
       "নাম": "পোগো",
       "বিভাগ": "বাচ্চাদের",
-      "url": "http://198.195.239.50:8095/pogo/index.m3u8",
-      "লোগো": "img/channels/POGO.png",
-      "স্ট্যাটাস": "দৃশ্যমান"
+      "url": "http://198.195.239.50:8095/pogo/index.m3u8"
     },
     {
       "নাম": "দুরন্ত টিভি",
       "বিভাগ": "বাচ্চাদের",
-      "url": "http://198.195.239.50:8095/duranta/index.m3u8",
-      "লোগো": "img/channels/DURANTA TV.png",
-      "স্ট্যাটাস": "দৃশ্যমান"
+      "url": "http://198.195.239.50:8095/duranta/index.m3u8"
     },
     {
       "নাম": "নিক",
       "বিভাগ": "বাচ্চাদের",
-      "url": "http://198.195.239.50:8095/nick/index.m3u8",
-      "লোগো": "img/channels/NICK.png",
-      "স্ট্যাটাস": "দৃশ্যমান"
+      "url": "http://198.195.239.50:8095/nick/index.m3u8"
     },
     {
       "নাম": "নিক জুনিয়র",
       "বিভাগ": "বাচ্চাদের",
-      "url": "http://198.195.239.50:8095/nickJr/index.m3u8",
-      "লোগো": "img/channels/NICK JR.png",
-      "স্ট্যাটাস": "দৃশ্যমান"
+      "url": "http://198.195.239.50:8095/nickJr/index.m3u8"
     },
     {
       "নাম": "সোনিক",
       "বিভাগ": "বাচ্চাদের",
-      "url": "http://198.195.239.50:8095/sonic/index.m3u8",
-      "লোগো": "img/channels/SONIC.png",
-      "স্ট্যাটাস": "দৃশ্যমান"
+      "url": "http://198.195.239.50:8095/sonic/index.m3u8"
     },
     {
       "নাম": "সনি ইয়ে",
       "বিভাগ": "বাচ্চাদের",
-      "url": "http://198.195.239.50:8095/sonyYay/index.m3u8",
-      "লোগো": "img/channels/SONY YAY.png",
-      "স্ট্যাটাস": "দৃশ্যমান"
+      "url": "http://198.195.239.50:8095/sonyYay/index.m3u8"
     }
   ]
 }
