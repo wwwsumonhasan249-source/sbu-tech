@@ -5,15 +5,14 @@ const urlsToCache = [
     './style.css',
     './app.js',
     './manifest.json',
-    './icons/favicon.ico',
-    './icons/favicon-16x16.png',
-    './icons/favicon-32x32.png',
-    './icons/apple-touch-icon.png',
-    './icons/android-chrome-192x192.png',
-    './icons/android-chrome-512x512.png'
+    './favicon.ico',
+    './favicon-16x16.png',
+    './favicon-32x32.png',
+    './apple-touch-icon.png',
+    './android-chrome-192x192.png',
+    './android-chrome-512x512.png'
 ];
 
-// ইনস্টল হলে cache-এ সেভ
 self.addEventListener('install', event => {
     console.log('📦 Service Worker installing...');
     event.waitUntil(
@@ -26,7 +25,6 @@ self.addEventListener('install', event => {
     );
 });
 
-// অ্যাক্টিভ হলে পুরনো cache মুছবে
 self.addEventListener('activate', event => {
     console.log('🚀 Service Worker activating...');
     event.waitUntil(
@@ -43,13 +41,11 @@ self.addEventListener('activate', event => {
     );
 });
 
-// ফেচ ইভেন্ট — offline support
 self.addEventListener('fetch', event => {
-    // শুধু GET request handle করবে
     if (event.request.method !== 'GET') return;
     
-    // JW Player / m3u8 স্ট্রিম বাদ দেবে (এগুলো cache হবে না)
     const url = event.request.url;
+    // স্ট্রিম cache করবে না
     if (url.includes('.m3u8') || url.includes('.ts') || url.includes('jwplayer')) {
         return;
     }
@@ -57,11 +53,8 @@ self.addEventListener('fetch', event => {
     event.respondWith(
         caches.match(event.request)
             .then(response => {
-                if (response) {
-                    return response;
-                }
+                if (response) return response;
                 return fetch(event.request).then(response => {
-                    // শুধু সফল response cache করবে
                     if (!response || response.status !== 200 || response.type === 'opaque') {
                         return response;
                     }
@@ -73,7 +66,6 @@ self.addEventListener('fetch', event => {
                 });
             })
             .catch(() => {
-                // Offline হলে index.html দেখাবে
                 if (event.request.mode === 'navigate') {
                     return caches.match('./index.html');
                 }
