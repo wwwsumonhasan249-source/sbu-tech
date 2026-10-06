@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+<meta name="theme-color" content="#0a0a12" />
+<title>SBU TV Player Pro</title>
+
+<!-- ✅ Favicon Links -->
+<link rel="icon" type="image/x-icon" href="icons/favicon.ico" />
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png" />
+
+<!-- ✅ Apple Touch Icon (iPhone/iPad হোমস্ক্রিন) -->
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
+
+<!-- ✅ Android Chrome Icons -->
+<link rel="icon" type="image/png" sizes="192x192" href="icons/android-chrome-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="icons/android-chrome-512x512.png" />
+
+<!-- ✅ PWA Manifest -->
+<link rel="manifest" href="manifest.json" />
+
+<!-- ✅ iOS PWA Support -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="SBU TV" />
+
+<!-- ✅ Android PWA Support -->
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="application-name" content="SBU TV Player" />
+
+<!-- ✅ Open Graph (Social Share Preview) -->
+<meta property="og:title" content="SBU TV Player Pro" />
+<meta property="og:description" content="প্রিমিয়াম লাইভ স্ট্রিমিং প্ল্যাটফর্ম" />
+<meta property="og:image" content="icons/android-chrome-512x512.png" />
+<meta property="og:type" content="website" />
+
+<!-- ✅ Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="SBU TV Player Pro" />
+<meta name="twitter:description" content="প্রিমিয়াম লাইভ স্ট্রিমিং প্ল্যাটফর্ম" />
+<meta name="twitter:image" content="icons/android-chrome-512x512.png" />
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+<script src="https://jwpsrv.com/library/XpMfzFwiEeOfZhIxOQfUww.js"></script>
+</head>
+<body>
+
+<div class="app" id="app">
+
+<header class="header">
+    <div class="brand">
+        <div class="icon">👑</div>
+        <div>
+            <h1>SBU TV Player</h1>
+            <span class="sub">✦ প্রিমিয়াম লাইভ স্ট্রিমিং ✦</span>
+        </div>
+    </div>
+    <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" title="থিম পরিবর্তন"></button>
+        <button class="hidden-btn" id="hiddenBtn">🔥🔒🔥</button>
+        <button class="premium-btn" id="premiumBtn">⭐🌟⭐ প্রিমিয়াম</button>
+        <div class="dev-btn" id="devBtn">
+            <img src="profile.jpg" alt="Developer" id="devImg" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2250%22 height=%2250%22%3E%3Ccircle cx=%2225%22 cy=%2225%22 r=%2224%22 fill=%22%23333%22/%3E%3Ctext x=%2225%22 y=%2232%22 text-anchor=%22middle%22 fill=%22%23666%22 font-size=%2224%22%3E😎%3C/text%3E%3C/svg%3E'" />
+            <span class="name">👤 <span>সুমন হাসান</span></span>
+            <span class="vip">✦ VIP ✦</span>
+        </div>
+    </div>
+</header>
+
+<div class="main-grid">
+    <section class="player-section">
+        <div class="video-wrap">
+            <div id="player"></div>
+            <div class="loading-overlay" id="loadingOverlay"><div class="spinner"></div></div>
+        </div>
+        <div class="player-controls">
+            <span class="now-playing" id="nowPlaying">
+                <span class="live">লাইভ</span> চ্যানেল নির্বাচন করুন
+            </span>
+            <div class="controls-group">
+                <span class="credit">✦ sumon dot net ✦</span>
+                <button class="btn" id="pipBtn" title="Picture in Picture">🖼️ PiP</button>
+                <button class="btn btn-random" id="randomBtn" title="Random">🎲</button>
+                <button class="btn btn-reload" id="reloadBtn" title="Reload">🔄</button>
+                <button class="btn" id="helpBtn" title="Shortcuts">❓</button>
+                <button class="btn" id="fullscreenBtn" title="Fullscreen">⛶</button>
+            </div>
+        </div>
+    </section>
+
+    <aside class="sidebar">
+        <div class="sidebar-top">
+            <div class="search-box">
+                <span class="icon">🔍</span>
+                <input id="searchInput" placeholder="চ্যানেল খুঁজুন..." autocomplete="off" />
+            </div>
+            <div class="cat-tabs" id="catTabs"></div>
+        </div>
+        <div class="channel-list" id="channelList"></div>
+    </aside>
+</div>
+
+<button class="fs-back" id="fsBackBtn">
+    <svg viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+    ⬅ ব্যাক
+</button>
+
+</div>
+
+<div class="profile-overlay" id="profileOverlay">
+    <div class="profile-card">
+        <button class="close-btn" id="closeProfileBtn">✕</button>
+        <img src="profile.jpg" alt="Developer" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2250%22 height=%2250%22%3E%3Ccircle cx=%2225%22 cy=%2225%22 r=%2224%22 fill=%22%23333%22/%3E%3Ctext x=%2225%22 y=%2232%22 text-anchor=%22middle%22 fill=%22%23666%22 font-size=%2224%22%3E😎%3C/text%3E%3C/svg%3E'" />
+        <h2>সুমন হাসান</h2>
+        <div class="desig">✦ Founder & Developer | SBU TV Player ✦</div>
+        <div class="bio">পেশাদার ওয়েব ডেভেলপার, UI/UX ডিজাইনার এবং লাইভ স্ট্রিমিং প্রযুক্তি বিশেষজ্ঞ। ৫+ বছর অভিজ্ঞতা, ১০০+ প্রজেক্ট সম্পন্ন।</div>
+        <div class="tags">
+            <span>🌐 ওয়েব ডেভেলপার</span><span>📱 UI/UX ডিজাইনার</span>
+            <span>📡 IPTV বিশেষজ্ঞ</span><span>⚡ ফ্রিল্যান্সার</span><span>🇧🇩 বাংলাদেশ</span>
+        </div>
+        <div class="links">
+            <a href="https://wa.me/8801960678584" target="_blank" class="wa">💬 হোয়াটসঅ্যাপে যোগাযোগ</a>
+            <a href="mailto:ww.sumanhasan249@gmail.com" class="mail">✉️ ইমেইল করুন</a>
+            <a href="tel:+8801960678584" class="phone">📞 সরাসরি কল</a>
+        </div>
+        <button class="popup-close-btn" id="closePopupBtn">✕ বন্ধ করুন</button>
+    </div>
+</div>
+
+<div class="password-overlay" id="passwordOverlay">
+    <div class="password-box">
+        <button class="close-btn" id="closePasswordBtn">✕</button>
+        <h3>🔒 হিডেন কন্টেন্ট</h3>
+        <p>পাসওয়ার্ড দিন</p>
+        <input type="password" id="passwordInput" placeholder="পাসওয়ার্ড" maxlength="32" autocomplete="off" />
+        <div class="error-msg" id="passwordError">❌ ভুল পাসওয়ার্ড!</div>
+        <button class="submit-btn" id="passwordSubmitBtn">✅ ভেরিফাই করুন</button>
+    </div>
+</div>
+
+<div class="premium-login-overlay" id="premiumLoginOverlay">
+    <div class="premium-login-box">
+        <button class="close-btn" id="closePremiumLoginBtn">✕</button>
+        <h3>⭐ প্রিমিয়াম কন্টেন্ট</h3>
+        <p class="sub-title">লগিন করে প্রিমিয়াম চ্যানেল দেখুন</p>
+        <div class="field-group"><label>👤 ইউজারনেম</label><input type="text" id="premiumUserInput" placeholder="ইউজারনেম" autocomplete="off" /></div>
+        <div class="field-group"><label>🔑 পাসওয়ার্ড</label><input type="password" id="premiumPassInput" placeholder="পাসওয়ার্ড" autocomplete="off" /></div>
+        <div class="error-msg" id="premiumLoginError">❌ ভুল ইউজারনেম বা পাসওয়ার্ড!</div>
+        <button class="submit-btn" id="premiumLoginBtn">✅ লগিন করুন</button>
+    </div>
+</div>
+
+<div class="hidden-player-overlay" id="hiddenPlayerOverlay">
+    <div class="hidden-player-box">
+        <button class="close-hidden" id="closeHiddenPlayer">✕</button>
+        <div class="hidden-video-wrap">
+            <div id="hiddenPlayer"></div>
+        </div>
+        <div class="hidden-controls">
+            <div class="top-row">
+                <span class="title" id="hiddenNowPlaying">📡 চ্যানেল</span>
+                <span class="badge hidden-badge" id="hiddenPlayerBadge">🔒 সুরক্ষিত</span>
+            </div>
+            <div id="hiddenChannelList"></div>
+        </div>
+    </div>
+</div>
+
+<div class="help-overlay" id="helpOverlay">
+    <div class="help-card">
+        <h3>⌨️ কীবোর্ড শর্টকাট</h3>
+        <table>
+            <tr><td><kbd>Space</kbd></td><td>Play / Pause</td></tr>
+            <tr><td><kbd>F</kbd></td><td>Fullscreen</td></tr>
+            <tr><td><kbd>M</kbd></td><td>Mute / Unmute</td></tr>
+            <tr><td><kbd>↑</kbd> / <kbd>↓</kbd></td><td>Volume +/−</td></tr>
+            <tr><td><kbd>R</kbd></td><td>Reload Channel</td></tr>
+            <tr><td><kbd>N</kbd></td><td>Random Channel</td></tr>
+            <tr><td><kbd>Esc</kbd></td><td>Close / Back</td></tr>
+        </table>
+        <button class="popup-close-btn" id="closeHelpBtn" style="margin-top:16px;">বন্ধ করুন</button>
+    </div>
+</div>
+
+<script src="app.js"></script>
+
+<!-- ✅ Service Worker Registration (PWA) -->
+<script>
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js')
+            .then(reg => console.log('✅ Service Worker registered:', reg.scope))
+            .catch(err => console.log('⚠️ Service Worker failed:', err));
+    });
+}
+</script>
+
+</body>
+</html>

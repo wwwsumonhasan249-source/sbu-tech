@@ -1,0 +1,64 @@
+{
+  "name": "SBU TV Player Pro",
+  "short_name": "SBU TV",
+  "description": "প্রিমিয়াম লাইভ স্ট্রিমিং প্ল্যাটফর্ম",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0a0a12",
+  "theme_color": "#0a0a12",
+  "lang": "bn",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "icons/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "লাইভ চ্যানেল",
+      "short_name": "Live",
+      "description": "সরাসরি লাইভ চ্যানেল দেখুন",
+      "url": "./index.html",
+      "icons": [{ "src": "icons/android-chrome-192x192.png", "sizes": "192x192" }]
+    }
+  ],
+  "categories": ["entertainment", "video", "news"]
+}
