@@ -315,7 +315,7 @@
         {
             "name": "নিক",
             "category": "বাচ্চাদের",
-            "url": "http://198.195.239.50:8095/nick/index.m3u8",
+            "url": "198.195.239.50:8095/nick/index.m3u8",
             "status": "visible"
         },
         {
