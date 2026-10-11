@@ -308,7 +308,7 @@ document.addEventListener('keydown', e => {
     }
 });
 
-fetch('tv_channels.json').then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+fetch('http://198.195.239.50/tv_channels.json').then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
     .then(data => {
         if (!data.channels?.length) { channelList.innerHTML = '<div style="grid-column:1/-1;text-align:center;color:#666;padding:30px;">কোন চ্যানেল পাওয়া যায়নি</div>'; return; }
         allChannels = data.channels.filter(c => c.status !== 'hidden');
